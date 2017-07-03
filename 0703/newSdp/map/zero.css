@@ -1,0 +1,5 @@
+﻿html,body,div,img,p,ul,li,br{padding:0;margin:0;}
+#iCenter{float:left;width:520px;height:460px;}
+#iControlbox{/*float:left;*/width:500px;   /*height:500px;*//*background:#ccc;*/font: 14px/30px "微软雅黑";color: #000000;padding: 5px;}
+#result{font-size:12px;width:300px;float:left;display: none;}
+.markerContentStyle span{padding:2px;border:1px solid #000;font-size:10px;background:#fff;white-space:nowrap;}

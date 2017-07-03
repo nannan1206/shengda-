@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录界面</title>
+		<meta name="keywords" content="盛大印刷，郑州印刷厂，盛大彩印，数码印刷，不干胶印刷，郑州名片印刷，盛大印刷厂，海报印刷，单页印刷，河南印刷厂，名片印刷">
+		<meta name="description" content="河南盛大彩色印刷有限公司是河南地区知名的印刷服务企业，成立于2000年。主营商务印刷（DM单页、海报、画册、手提袋等）、拼版名片、不干胶标签、骑马钉、覆膜、数码彩印为主要业务范围，面向广大广告公司、设计公司、文印店、图文店等业内同行提供服务。">
+		<!--网页导航图标-->
+		<link rel="shortcut icon" type="image/x-icon" href="css/shengda.ico" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/login.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+
+	</head>
+
+	<body>
+		<!--公用的导航条-->
+		<!--在此页导航条向右移动50像素，和下边对齐-->
+		<!--固定-->
+		<div class="fixed">
+			<div class="fixbox">
+				<div class="fixbox-left">
+					<p>您好,欢迎来盛大印刷！</p>
+					<a class="login" href="login.html">请登录</a>
+					<img src="img/file/shuxian.jpg">
+					<a class="register" href="">免费注册</a>
+				</div>
+				<!--登录后的状态-->
+				<div class="fixbox-left" style="display: none;">
+					<p>您好,欢迎来盛大印刷！</p>
+					<a class="login" href="userCenter.html">流浪的孩子</a>
+					<img src="img/file/shuxian.jpg">
+					<a class="register" href="">注销</a>
+				</div>
+
+				<div class="fixbox-right" style="width:500px">
+
+					<!--<p class="company">企业&nbsp;QQ：</p>-->
+					<p class="company">在线客服：</p>
+					<div class="order" style=" margin-left: -20px;">
+						<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=800002736&site=qq&menu=yes" target="_blank"><img src="img/file/qq.png" style="padding:0;width:25px">800002736</a>
+					</div>
+					<p class="phone">电话：0371-55017685</p>
+					<div class="order">
+						<!-- <img src="img/dingdan.jpg">-->
+						<!--我的订单图标-->
+						<i class="iconfont">&#xe612;</i>
+						<a href="http://www.shengdaprint.com/usercenter/MyOrder">我的订单</a>
+					</div>
+					<div class="members">
+						<!--<img src="img/huiyuan.jpg">-->
+						<!--会员图标-->
+						<i class="iconfont">&#xe604;</i>
+						<a href="http://www.shengdaprint.com/UserCenter/Center">会员中心</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--登录页面主页-->
+		<div class="loginbody">
+			<!--登录页面头部-->
+			<div class="logintop">
+				<!--<a href="index.html" class="llogo ">
+					<img src="img/login/logo.png" />
+					<span> 盛大印刷</span>
+						<img src="img/index/logo.png" alt="盛大印刷logo">
+				</a>-->
+				<a href="index.html" class="fl"><img src="img/index/logo.png" alt="盛大印刷logo"></a>
+				<div class="logina fr">
+					<a href="index.html">首页   </a>| <a href="">联系我们</a>
+				</div>
+			</div>
+			<!--主页背景-->
+			<div class="loginform">
+				<div class="login-box">
+					<div class="login-left">
+						<p>盛大会员</p>
+						<form action="https://hao.360.cn" id="signForm" method="post" onsubmit="return check()">
+							<input type="text" id="Account" name="Account" placeholder=" 用户名">
+							<input type="password" id="Password" name="Password" placeholder=" 密码">
+							<div class="check">
+
+							</div>
+							<button type="submit" class="btn">登录</button>
+						</form>
+
+					</div>
+					<div class="login-right">
+						<p class="p1">还没有账号？</p>
+						<button onclick="window.location.href = &#39;/Account/Register&#39;" class="btn">注册</button>
+
+						<img class="img03" src="img/login/image-10.jpg">
+						<p class="p3">扫一扫有惊喜！</p>
+					</div>
+				</div>
+
+			</div>
+			<!--如果用戶名或者密碼為空-->
+			<script>
+				function check() {
+					//alert($("#Account").val());
+					if ($("#Account").val() == "" || $("#Account").val() == null) {
+						alert("用户名不能为空");
+						//layer.msg("用户名不能为空");
+						return false;
+					}
+					if ($("#Password").val() == "" || $("#Password").val() == null) {
+						alert("密码不能为空");
+						//			            layer.msg("密码不能为空");
+						return false;
+					}
+					return true;
+				}
+			</script>
+		</div>
+
+		<!--底部公用-->
+		<div class="footer3">
+			<p><a href=""> 关于我们</a> -<a href="">联系我们</a> -<a href="">商务合作</a> -<a href=""> 版权声明</a> - <a href="">服务协议</a> - <a href="">下单注意事项</a> -<a href="">网站地图</a>
+				<br /> Copyright © 2016 - 2020 <a href="">郑州盛大彩色印刷有限公司</a> 版权所有 备案号：豫ICP备15032432号-1</p>
+		</div>
+	</body>
+
+</html>

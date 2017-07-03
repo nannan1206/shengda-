@@ -1,0 +1,91 @@
+/*联系我们*/
+.usad{width: 100%;/*height: 400px;*/ height: auto; }
+.usbody{width: 1200px;height:auto;  border:1px solid #f0f0f0;margin: 10px auto 30px;overflow: hidden;padding-bottom: 20px;}
+.usleft{width: 300px;height: auto; /*border-right:1px solid #f0f0f0;*/}
+.usleft ul{margin-top: 20px;font: 24px/56px "微软雅黑";color: #404040;text-align: center;width: 100%;height: 56px;display: block;}
+.usleft ul li{margin-top: 10px;}
+.usleft ul li a{color:#404040;width: 100%;height: 56px; display: block;} 
+.usleft ul li:hover,.usleft ul li.active{background: #003586; color: #fff;}
+.usleft ul li a:hover,.usleft ul li a.active{ color: #fff;}
+.usarea{width: 880px;height: auto;padding-top: 40px;}
+.postion{margin-left: 30px;font: 15px/20px "微软雅黑";}
+.postion span{color: #000;}
+.postion a{color: #4f4f4f;margin: 0 10px; }
+.postion a:hover{color:#27adf4 ;}
+/*地图*/
+.mapimg{ margin: 40px 110px; }
+
+.message{margin: 0 168px 5px;}
+.message h3{font:bold 14px/54px "微软雅黑";color: #f53f31;}
+.message p{font: 12px/30px "微软雅黑";color:#3f3f3f ;}
+
+/*物流配送*/
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+    margin: 42px 0 0 35px;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr:nth-child(odd) {
+    background-color: #eeeeee;
+    color: #7d7d7d;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    font: 12px/30px "微软雅黑";
+}
+tr .first {
+    border-left: none;
+}
+tr .last {
+    border: none;
+}
+table tr th, td {
+    /*border-left: 1px solid #f0f0f0;
+    border-right: 1px solid #dadada;*/
+    text-align: center;
+}
+table th {
+    background-color: #acacac;
+    padding: 5px 0;
+    font-size: 13px;
+    color: #f3f3f3;
+    font-weight: normal;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+/*帮助中心*/
+.hotContents{padding:10px 60px; margin-top: 10px;border-top: 2px solid #f0f0f0; display: block;    }
+.hotContents h4{color: #0894F3;line-height: 60px; }
+.hotContents ul{padding-left:25px;}
+.hotContents ul li{display:list-item;/*color: #0094EC;*/  list-style-type:disc;padding:5px 0;font: 12px/19px "Microsoft YaHei";}
+.hotContents ul li a{color:#5e5e5e;cursor:pointer;}
+.hotContents ul li a:hover{color:#ed2835;cursor:pointer;}
+
+/*帮助中心内容页*/
+.article p{ font: 12px/20px "微软雅黑"; color:#3f3f3f; text-align: left;}
+.article h3{ font: 24px/35px "微软雅黑"; color:#101010 ;margin-bottom: 5px; text-align: center; }
+.article i{font:12px/20px "微软雅黑" ; color: #a2a2a2;font-style:normal ;}
+.article {text-align: center;}
+.article img{width: 758px;height: 414px;margin: 15px auto 40px;}
+
+.usleft dl dt{font:bold 18px/40px "微软雅黑";color:#2f2f2f ;padding-left: 130px;}
+.usleft dl dd { display: block; font: 15px/30px "微软雅黑";padding-left: 145px;margin-top: 5px;border: 1px solid #FFFFFF;}
+.usleft dl dd a{color: #444444;}
+/*.usleft dl dd:hover,.usleft dl dd.active{color: #03a0e9;border: 1px solid #03a0e9; border-right:0;}*/
+.usleft dl dd a:hover,.usleft dl dd a.active{color: #03a0e9;}
+
+.articlehref a{ float: right;  }
+.articlehref a i:hover{color:#0094EC;}
+.articlehref a span{font:14px/20px "微软雅黑" ;color:#474747 ;}
+.articlehref a i{font:14px/20px "微软雅黑" ;color:#a2a2a2 ; font-style: normal;}

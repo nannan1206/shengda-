@@ -1,0 +1,41 @@
+/*微信支付*/
+/*.payment{width: 1200px;height: 500px;margin: 0 auto;border: 1px solid #000000;}*/
+/*.pay-box{overflow:hidden;width:1050px;height:auto; color:#3e3e3e;font-weight:bold;margin-top:30px;background-color:#fff;margin-left:auto;margin-right:auto;}
+.first_ul{overflow: hidden;margin:60px 0 40px 90px;}
+.first_ul>li{float:left;}
+.first_ul_ful{margin:0 0 0 18px;}
+.first_ul_ful>li:first-child{font-size:25px;}
+.first_ul_ful>li:last-child{font-size:16px;}
+.first_ul>li:last-child{font-size:20px;margin:52px 0 0 30px;}
+.last_ul{overflow:hidden;margin-left:122px;font-size:20px;}
+.last_ul_ful{margin:65px 0 0 55px;width:500px;}
+.last_ul_ful>li:first-child{margin-bottom:5px;}
+.last_ul_ful>li:last-child{color:#ff0000;font-size:16px;margin-top:50px;}
+.last_ul>li{float:left;}
+.last_ul_sul{overflow: hidden;line-height:24px;}
+.last_ul_sul>li{float:left;}
+{color:#ff0000;font-size:24px;}
+.last_ul_sul>li:nth-child(even) span{color:#ff0000;font-size:24px;}
+.last_ul_sul>li:last-child{color:#0094ec;font-size:16px;margin:5px 0 0 5px;}
+.last_ul_sul>li:last-child:hover{cursor:pointer;}*/
+
+/*两种不同支付方式合并*/
+.pay-box{overflow:hidden;width:1050px;height:auto; color:#3e3e3e;font-weight:bold;margin-top:30px;background-color:#fff;margin-left:auto;margin-right:auto;}
+.alipaycss{width: 50%;float: left;}
+.pay-box p{font:bold 14px/40px "微软雅黑";}
+.first_ul>li:first-child{float:left;margin: 10px;}
+.first_ul>li:last-child{margin-left: 100px;display: block;}
+.first_ul_ful{margin:0 0 0 18px;}
+.first_ul_ful>li:first-child{font-size:25px;}
+.first_ul_ful>li:last-child{font-size:16px;}
+/*.last_ul{overflow:hidden;margin-left:122px;font-size:20px;}*/
+.last_ul_ful{margin:35px 0 0 55px;width:800px;padding-left: 100px;}
+.last_ul_ful>li:first-child{margin-bottom:5px;}
+.last_ul_ful>li:last-child{color:#ff0000;font-size:16px;margin-top:50px;}
+.last_ul>li{float:left;}
+.last_ul_sul{overflow: hidden;line-height:24px;}
+.last_ul_sul>li{float:left;}
+{color:#ff0000;font-size:24px;}
+.last_ul_sul>li:nth-child(even) span{color:#ff0000;font-size:24px;}
+.last_ul_sul>li:last-child{color:#0094ec;font-size:16px;margin:5px 0 0 5px;}
+.last_ul_sul>li:last-child:hover{cursor:pointer;}

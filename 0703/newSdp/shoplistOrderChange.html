@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>河南郑州印刷厂_彩色印刷_名片单页海报印刷-河南盛大彩色印刷有限公司</title>
+		<meta name="keywords" content="盛大印刷，郑州印刷厂，盛大彩印，数码印刷，不干胶印刷，郑州名片印刷，盛大印刷厂，海报印刷，单页印刷，河南印刷厂，名片印刷">
+		<meta name="description" content="河南盛大彩色印刷有限公司是河南地区知名的印刷服务企业，成立于2000年。主营商务印刷（DM单页、海报、画册、手提袋等）、拼版名片、不干胶标签、骑马钉、覆膜、数码彩印为主要业务范围，面向广大广告公司、设计公司、文印店、图文店等业内同行提供服务。">
+		<!--网页导航图标-->
+		<link rel="shortcut icon" type="image/x-icon" href="css/shengda.ico" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/shoplist.css" />
+		<link rel="stylesheet" href="css/addAddress.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<!--顶级栏目的显示与隐藏-->
+		<script type="text/javascript" src="js/user.js"></script>
+		<!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2"></script>-->
+		<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=9f74357675095b5d471e7f642a9f51c7&plugin=AMap.Autocomplete"></script>
+		
+	</head>
+
+	<body onLoad="mapInit()">
+		<!--公用头部-->
+		<div>
+			<!--固定-->
+			<div class="fixed">
+				<div class="fixbox">
+					<div class="fixbox-left">
+						<p>您好,欢迎来盛大印刷！</p>
+						<a class="login" href="login.html">请登录</a>
+						<img src="img/file/shuxian.jpg">
+						<a class="register" href="">免费注册</a>
+					</div>
+					<!--登录后的状态-->
+					<div class="fixbox-left" style="display: none;">
+						<p>您好,欢迎来盛大印刷！</p>
+						<a class="login" href="userCenter.html">流浪的孩子</a>
+						<img src="img/file/shuxian.jpg">
+						<a class="register" href="">注销</a>
+					</div>
+
+					<div class="fixbox-right" style="width:500px">
+
+						<!--<p class="company">企业&nbsp;QQ：</p>-->
+						<p class="company">在线客服：</p>
+						<div class="order" style=" margin-left: -20px;">
+							<a href="http://wpa.b.qq.com/cgi/wpa.php?ln=2&uin=800002736&site=qq&menu=yes" target="_blank"><img src="img/file/qq.png" style="padding:0;width:25px">800002736</a>
+						</div>
+						<p class="phone">电话：0371-55017685</p>
+						<div class="order">
+							<!-- <img src="img/dingdan.jpg">-->
+							<!--我的订单图标-->
+							<i class="iconfont">&#xe612;</i>
+							<a href="http://www.shengdaprint.com/usercenter/MyOrder">我的订单</a>
+						</div>
+						<div class="members">
+							<!--<img src="img/huiyuan.jpg">-->
+							<!--会员图标-->
+							<i class="iconfont">&#xe604;</i>
+							<a href="http://www.shengdaprint.com/UserCenter/Center">会员中心</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--登录页面头部-->
+			<div class="logintop">
+				<!--<a href="index.html" class="llogo ">
+					<img src="img/login/logo.png" />
+					<span> 盛大印刷</span>
+				</a>-->
+				<a href="index.html" class="fl"><img src="img/index/logo.png" alt="盛大印刷logo"></a>
+			</div>
+
+		</div>
+
+		<!--特价商品预览页面-->
+		<div class="changeForm">
+			<!--表单内容-->
+			<div class="previewForm">
+				<!--订单产品信息-->
+				<div class="priveOrder">
+					<h4> 订单产品信息 </h4>
+					<table border="1" width="1200px">
+						<colgroup>
+							<col width="50" />
+							<col width="220" />
+							<col width="120" />
+							<col width="300" />
+							<col width="100" />
+							<col width="100" />
+							<col width="" />
+							<col width="100" />
+						</colgroup>
+						<thead>
+							<tr>
+								<th> <input type="checkbox" value="全选" onclick="selectAll('coffee',this)"> </th>
+								<th>产品信息</th>
+								<th>业务类型</th>
+								<th>印刷信息</th>
+								<th>数量</th>
+								<th>价格（元）</th>
+								<th>上传文件</th>
+								<th> 操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" name="coffee" value="apple"></td>
+								<td class="proName">
+									<a href="###"> pvc不干胶 pvc不干胶 pvc不干胶 pvc不干胶 pvc不干胶pvc不干胶1111</a>
+								</td>
+								<td>不干胶</td>
+								<td>21*14cm、覆膜、模切、2款</td>
+								<td>1000</td>
+								<td>1000</td>
+								<td>
+									<div class="imginput">
+										<i class="iconfont">&#xe61d;</i>
+										<input type="button" value="上传印刷文件" class="file" onClick="t_file.click()">
+									</div>
+
+									<input name="upload" type="file" id="t_file" onchange="f_file.value=this.value" style="display:none">
+									<input type="text" readonly="readonly" id="f_file" style="border: 0;">
+
+								</td>
+								<td>
+									<a class="changpos" href=""> 删除 </a>
+								</td>
+
+							</tr>
+
+						</tbody>
+
+					</table>
+					<div class="conterorder">
+						<a href="shoplistOrder.html">继续下单 </a>
+					</div>
+
+				</div>
+				<!--|收货人信息-->
+				<div class="priveOrder1">
+					<h4> 收货人信息 </h4>
+					<a class="addAd" onclick="Show()" href="###">新增收货地址 </a>
+					<table>
+						<tr>
+							<td class="addd  clockspan"> 天天印刷
+								<div class="ricon">
+									<img src="img/file/Rcoin.png" />
+								</div>
+							</td>
+							<td>河南 </td>
+							<td> 郑州市 </td>
+							<td>金水区 </td>
+							<td>北环路文化路交叉口路北129号绿地新都会1202</td>
+							<td> 13526438123</td>
+							<td> 天天印刷 </td>
+							<td class="changaa">
+								<a onclick="Show()" href="javascript:void(0)" class="changpos">修改 </a>|
+								<a class="changpos" href="javascript:void(0)">删除</a>
+							</td>
+
+						</tr>
+						<tr>
+							<td class="addd"> 天天印刷
+								<div class="ricon ">
+									<img src="img/file/Rcoin.png" />
+								</div>
+							</td>
+							<td>河南 </td>
+							<td> 郑州市 </td>
+							<td>金水区 </td>
+							<td>北环路文化路交叉口路北129号绿地新都会1202</td>
+							<td> 13526438123</td>
+							<td> 天天印刷 </td>
+							<td class="changaa">
+								<a onclick="Show()" href="javascript:void(0)" class="changpos">修改 </a>|
+								<a class="changpos" href="javascript:void(0)"> 删除 </a>
+							</td>
+
+						</tr>
+					</table>
+                 <!--显示更多按钮-->
+                  <div class="moreaddress">                 
+                  	<a href="javascript:void(0)">显示更多收货地址</a>
+                  </div>
+                 
+                 
+				</div>
+				<div class="priveOrder1">
+					<div class="fl">
+						<h4> 配送方式 </h4></div>
+					<div class="fl changarea">
+						<span class="soldthing"> 网站配送</span><span class="soldthing">发物流</span> <span class="soldthing active">中通快递</span>
+					</div>
+
+				</div>
+
+				<div class="upoderprive">
+					<div class="upul">
+						<ul>
+							<li> <span>产品金额：</span> <span>100</span> <span>  元 </span> </li>
+							<li> <span>配送费用：</span> <span>10</span> <span>  元 </span> </li>
+							<li> <span>应付总额：</span> <span class="acolor">100</span> <span>  元 </span> </li>
+						</ul>
+
+					</div>
+					<div class="upoderpbutton">
+						<a onclick="ShowLayer()" href="###">提交订单</a>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--底部-->
+		<div>
+			<div class="footer">
+				<div class="comwith">
+					<dl>
+						<dt>关于我们</dt>
+						<dd>
+							<a href="">公司简介</a>
+						</dd>
+						<dd>
+							<a href=""> 联系我们</a>
+						</dd>
+						<dd>
+							<a href="">加入我们</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>使用指南</dt>
+						<dd>
+							<a href="">注册指南</a>
+						</dd>
+						<dd>
+							<a href="">下单流程</a>
+						</dd>
+						<dd>
+							<a href="">支付帮助</a>
+						</dd>
+						<dd>
+							<a href="">法律声明</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>帮助中心</dt>
+						<dd>
+							<a href="">常见问题</a>
+						</dd>
+						<dd>
+							<a href="">下单工具问题</a>
+						</dd>
+					</dl>
+					<div class="footer1">
+						<h3>河南郑州</h3>
+						<p>电话：0371-55017685</p>
+						<p>QQ：800002736</p>
+						<p>QQ：800002736</p>
+						<p>地址：郑州市经济技术开发区第九大街与经南四路交叉口向西20米路南</p>
+					</div>
+					<div class="footer2">
+						<h3>成都成分</h3>
+						<p>电话：400 800 9112</p>
+						<p>接单：15202897656 13308052448</p>
+						<p>查货：028-61345908（名片部）</p>
+						<p>查货：028-61345908（名片部）</p>
+						<p>地址：成都市金牛区迎宾大道科北路38号（金牛工业园）</p>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="footer3">
+				<p>
+					<a href=""> 关于我们</a> -
+					<a href="">联系我们</a> -
+					<a href="">商务合作</a> -
+					<a href=""> 版权声明</a> -
+					<a href="">服务协议</a> -
+					<a href="">下单注意事项</a> -
+					<a href="">网站地图</a>
+					<br /> Copyright © 2016 - 2020
+					<a href="">郑州盛大彩色印刷有限公司</a> 版权所有 备案号：豫ICP备15032432号-1</p>
+			</div>
+		</div>
+		<!--弹框选择历史地址-->
+		<div class="modify_address">
+			<div class="modify_wrap comWidth">
+				<span class="closediv" onclick="Hide()"></span>
+				<h3>收货地址</h3>
+				<div class="formaddArea">
+					<ul>
+						<li>
+							<div class="infotitle fl">
+								<span>配送地区</span>
+							</div>
+							<div class="info fl">
+								<div>
+									<select id="s_province" name="s_province" onchange="GetStyle()"></select>
+									<select id="s_city" name="s_city" onchange="GetStyle()"></select>
+									<select id="s_county" name="s_county" onchange="GetStyle()"></select>
+									<script class="resources library" src="js/area.js" type="text/javascript"></script>
+
+									<script type="text/javascript">
+										_init_area();
+									</script>
+								</div>
+								<div id="show"></div>
+							</div>
+
+						</li>
+						<li>
+							<div class="infotitle fl">
+								<span>配送地址</span>
+							</div>
+							<div class="info fl">
+								<div class="adFoaddress">
+									<input id="detailaddress" type="text" placeholder="请输入详细的地址信息" value="" />
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<div class="infotitle fl">
+								<span>地图定位</span>
+							</div>
+							<div class="info fl">
+								<div class="infoinput">
+									<!--<input id="lonlat" name="lonlat" type="text">-->
+									<span>X:</span><span><input type="text" id="lnglatx" name="xpoint" placeholder="x坐标" /></span>
+
+									<span>Y:</span><span> <input type="text" id="lnglaty" name="ypoint"   placeholder="y坐标"  /></span>
+								</div>
+							</div>
+							<div onclick="ShowMap()" class="maparea">
+								<a  href="###">地图定位 </a>
+							</div>
+
+						</li>
+						<li>
+							<div class="infotitle fl">
+								<span>配送方式</span>
+							</div>
+							<div class="info fl">
+								<div class="fl changareac">
+									<span class="soldthing"> 网站配送</span><span class="soldthing">发物流</span> <span class="soldthing active">中通快递</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="infotitle fl">
+								<span>联&nbsp;&nbsp;系&nbsp;人</span>
+							</div>
+							<div class="info fl">
+								<div class="adFoaddressa">
+									<input type="text" placeholder="" value="" />
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<div class="infotitle fl">
+								<span>联系电话</span>
+							</div>
+							<div class="info fl">
+								<div class="adFoaddressb">
+									<input type="text" placeholder="" value="" />
+								</div>
+							</div>
+
+						</li>
+						<li>
+							<div class="infotitle fl">
+								<span>邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;编</span>
+							</div>
+							<div class="info fl">
+								<div class="adFoaddressb">
+									<input type="text" placeholder="" value="" />
+								</div>
+							</div>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+				<div onclick="Hide()" class="rightaddress">
+					<span>确定</span>
+				</div>
+			</div>
+
+		</div>
+		<!--弹出框选择下单方式-->
+		<div class="changepay">
+			<div class="changepays">
+				<span class="closediv" onclick="Hidelayer()"></span>
+				<span>请选择下单方式</span>
+				<div class="butpay">
+					<a href="alipay.html">支付宝</a>
+					<a href="weChat.html">微信</a>
+					<a href="#">直接下单</a>
+				</div>
+
+			</div>
+		</div>
+		<!--地图定位弹出框-->
+
+		<div class="changeMap">
+			<div class="changeMaps">
+				<form action="" method="get">
+					<!--ip定位-->
+
+					<!--查询-->
+					<div class="mapchang">
+						</br>
+						<label>搜索：</label>
+						<!-- <input type="text" placeholder="请输入关键字进行搜索" id="tipinput">-->
+						<input id="where" name="where" type="text" placeholder="输入你要查询的地点">
+						<input class="sear" type="button" value="地图上找" onClick="sear(document.getElementById('where').value);" />
+
+						<div id="iMap"></div>
+
+						<div class="infomap">
+							<div class="detail">
+								<p><span id="lnglat">&nbsp;</span></p>
+								<p><span id="iAddress">&nbsp;</span></p>
+							</div>
+
+						</div>
+
+						<!--经纬度：
+						<input id="lonlat" name="lonlat" type="text">-->
+						<div onclick="HideMap()" class="rightaddress">
+							<span>确定</span>
+						</div>
+						</br>
+					</div>
+
+				</form>
+			</div>
+		</div>
+
+		<!--<script type="text/javascript">
+			var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+			document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Faeff88f19045b513af7681b011cea3bd' type='text/javascript'%3E%3C/script%3E"));
+		</script>-->
+		<!-- tongji end -->
+	</body>
+	<script language="javascript">
+		var mapObj;
+		var lnglatXY;
+		//初始化地图
+		function mapInit() {
+			var opt = {
+				level: 15, //设置地图缩放级别    113.767794,34.769661绿地新都会
+				center: new AMap.LngLat(113.767598, 34.769847) //设置地图中心点   
+			}
+			mapObj = new AMap.Map("iMap", opt);
+
+			AMap.event.addListener(mapObj, 'click', getLnglat); //点击事件
+		}
+
+		function geocoder() {
+			var MGeocoder;
+			//加载地理编码插件
+			mapObj.plugin(["AMap.Geocoder"], function() {
+				MGeocoder = new AMap.Geocoder({
+					radius: 1000,
+					extensions: "all"
+				});
+				//返回地理编码结果 
+				AMap.event.addListener(MGeocoder, "complete", geocoder_CallBack);
+				//逆地理编码
+				MGeocoder.getAddress(lnglatXY);
+			});
+			//加点
+			var marker = new AMap.Marker({
+				map: mapObj,
+				icon: new AMap.Icon({
+					image: "http://api.amap.com/Public/images/js/mark.png",
+					size: new AMap.Size(58, 30),
+					imageOffset: new AMap.Pixel(-32, -0)
+				}),
+				position: lnglatXY,
+				offset: new AMap.Pixel(-5, -30)
+			});
+			// mapObj.setFitView();
+		}
+		//回调函数
+		function geocoder_CallBack(data) {
+			var address;
+			//返回地址描述
+			address = data.regeocode.formattedAddress;
+			//返回结果拼接输出
+			document.getElementById("iAddress").innerHTML = address;
+			document.getElementById("detailaddress").value = address;
+		}
+		//鼠标点击，获取经纬度坐标  
+		function getLnglat(e) {
+			mapObj.clearMap();
+			var x = e.lnglat.getLng();
+			var y = e.lnglat.getLat();
+			document.getElementById("lnglat").innerHTML = x + "," + y;
+			document.getElementById("lnglatx").value = x;
+			document.getElementById("lnglaty").value = y;
+			lnglatXY = new AMap.LngLat(x, y);
+			geocoder();
+		}
+	</script>
+	</body>
+
+</html>
