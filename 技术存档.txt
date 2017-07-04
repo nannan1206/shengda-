@@ -1,0 +1,139 @@
+盛大账户：3528048610
+    密码： 123456
+
+迪思彩印
+账户 13903834970   密码624970
+http://www.jdxsb.net/files/article/html/158/158643/25415130.html   叶宋小说
+ D:\用户目录\我的文档\HBuilderProjects\shengdaprint我写的首页位置
+   http://www.shengdaprint.com/  盛大印刷首页
+   www.zzdazheng.com       正大印刷首页   
+  参考网站
+  http://www.yin8.net/
+  http://www.yifutu.com/
+  https://www.0757p.com/
+  http://www.caihongguang.com/     彩虹
+ 
+免费查重网站
+http://xueshu.baidu.com/u/biye/?tag=check&upload=1
+
+代码优化
+https://wenku.baidu.com/view/ac6757c1172ded630b1cb6ce.html?re=view
+
+毕业论文查重工作开始进行，具体安排是：
+1）学生登陆入口：http://check.cnki.net/user/
+2）学生登录：用户名和初始密码均为学号，及时修改自己的密码
+4）论文检测时间：首次2017年5月18日开始至2017年25日；第2次检测时间2017年5月26日开始至2017年26日，仅有一天，首次检测不合格学生进行第二次检测，二检不合格学生不得参加毕业答辩。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+中工：
+http://graduate.ityestop.com/  毕业生管理系统
+网上同类教学大纲管理系统
+https://wenku.baidu.com/view/5e5e0bf54693daef5ef73dfe.html
+
+导出为word文档
+http://www.360doc.com/content/14/0224/11/13247663_355234675.shtml
+
+系统设计：架构设计
+http://www.cnblogs.com/simonw/archive/2005/04/27/146185.html
+
+http://www.docin.com/p-653308476.html
+
+
+"自适应网页设计"的核心，就是CSS3引入的MediaQuery模块。
+
+它的意思就是，自动探测屏幕宽度，然后加载相应的CSS文件。
+
+<link rel="stylesheet" type="text/css"media="screen and (max-device-width:400px)"href="tinyScreen.css" />
+
+上面的代码意思是，如果屏幕宽度小于400像素（max-device-width: 400px），就加载tinyScreen.css文件。
+
+<link rel="stylesheet" type="text/css"media="screen and (min-width: 400px)and (max-device-width: 600px)"href="smallScreen.css" />
+
+如果屏幕宽度在400像素到600像素之间，则加载smallScreen.css文件。
+
+
+7款jQuery图片轮播滑动插件
+http://www.phonegap100.com/article-237-1.html
+
+推荐一个免费的论文查重网站PaperFree：http://www.paperfree.cn
+
+登录wekan
+http://kanban.sdprint.tech
+
+配置
+C:\Windows\System32\drivers\etc
+host
+
+添加：
+http://192.168.20.157:8020/erpS/index.html
+http://192.168.20.157:8020/erpS/index.html
+192.168.20.103 git.sdprint.tech
+192.168.20.103 kanban.sdprint.tech
+
+然后登录：
+账户  nannan
+密码  abc123456
+密码
+
+
+局域网内访问页面
+（ip+端口号）
+http://192.168.20.114:8020/newSdp/myOrder.html
+http://192.168.20.157:8020/newSdp/businessArea.html
+http://192.168.20.157:8020/newSdp/helpCenter.html
+http://192.168.20.157:8020/erp/index.html
+http://192.168.20.157:8020/auction/actionBuy.html
+http://192.168.20.157:8020/%E9%81%93%E6%80%A1%E8%B4%A2%E5%AF%8C%E5%89%8D%E7%AB%AF%E4%BB%A3%E7%A0%81/daoyiwealth/cooperation/stock_details_page_cooperation.html
+http://192.168.20.157:8020/newSdp/shoplistOrder.html
+http://192.168.20.157:8020/newSdp/shoplistOrderform.html
+
+http://192.168.20.157:8020/%E5%A4%A9%E6%B2%B3/index.html
+调整页面百分比
+<!--<script type="text/javascript">
+		function bodyScale(){
+			var devicewidth=document.documentElement.clientWidth;
+			var scale=devicewidth/1920;
+			document.body.style.zoom=scale;
+		}
+		window.onload=window.onresize=function(){
+			bodyScale();
+		}
+	</script>-->
+
+拦截页面跳转（拦截页面刷新）
+<a class="changpos" href="javascript:void(0)"> 删除 </a>
+ href="javascript:void(0)"
+
+
+
+
+
+
+
+
+
+
+
