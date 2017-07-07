@@ -1,0 +1,63 @@
+a{cursor: pointer;}
+body{width:640px;/*min-height: 7000px;*/height: auto;  margin: 0 20px;padding: 0;margin: 0 auto;-webkit-appearance:none;}
+ul li{list-style: none;}
+/*头部*/
+.top{width:640px;height:146px;background:#fabe00;}
+.officer{display: block;margin-left:40px;padding-top: 16px;padding-right: 24px;}
+.officer img{width: 116px;height: 116px;border-radius: 50%;}
+.fl{float:left;}
+.fr{float: right;}
+.topWord{margin-top: 20px;}
+.topWord h3{font:bold 28px/20px "微软雅黑";}
+.topWord b{font:bold 20px/10px "微软雅黑";}
+/*banner*/
+.banner{width: 640px;height:90px;border-bottom:10px solid #e6e6e6;}
+.banner img{margin: 14px 130px;}
+/*多选框*/
+/*多选框标题*/
+.clohead{margin:20px 25px;}
+.clohead img{width:36px;height:36px;}
+.clohead span{font:bold 18px/22px "微软雅黑";color: #000000;margin-left:7px;}
+.serChock{width:630px;height:auto;min-height:100px;margin:0 10px;overflow: hidden;}
+.serChock ul{width: 96%;margin: 0 -20px;}
+.serChock ul li{display: block; float: left;margin-right: 16px;margin-bottom: 16px;padding: 0 10px; min-width:140px;height: 50px;text-align: center;border:3px solid #999999;font: 26px/50px "微软雅黑";color: #656565;border-radius: 10px;}
+.serChock ul li.active{color: #fa9300;border: 3px solid #ffb033;border-radius: 10px;}
+/*星星选中*/
+.star{display: block;margin: 20px 100px 10px 160px;}
+/*.star span{font: 21px/30px "微软雅黑";color: #FA9300;}*/
+.moveStar{display: block;width:50px;height:50px;margin-bottom: 30px;margin-right: 10px;   float:left;background:url(../img/star_red.png);}
+/*文本框*/
+.writeWord{width: 90%;height:auto;margin:40px auto 5px;display: block;}
+.writeWord textarea{border-radius: 10px; width: 100%;height: auto;min-height: 180px;font: 24px/36px "微软雅黑";padding-left: 10px;}
+/*默认是匿名状态*/
+.checrignt{width: 600px; height: 30px;  margin-right: 30px;}
+.checrignt label{font: 25px/30px "微软雅黑";}
+.ring span{display: block;width:25px;height:25px;border-radius:50%;background:#FF0000;;text-align: center;color: #FFFFFF;font: 16px/30px small-caps;margin: 0 10px;}
+.ring span.active{background:#cacaca;}
+.pWord{color: #656565;float:right;margin-right:30px;font: 16px/30px "微软雅黑";}
+/*不匿名时*/
+.phone{width:600px;height: 150px;margin-left: 30px;display: none;}
+.name input{width: 320px;height:50px;font:20px/50px "微软雅黑" ;padding-left:10px;border-radius: 10px;margin-bottom:10px; border: 1px solid #a9a9a9;}
+.name .changspan{font: 12px/20px "微软雅黑";color: #FF0000;}
+/*立即提交 */
+.upSubmit{width: 500px;height: 60px;text-align: center;margin: 10px auto 90px;border: 0;}
+.upSubmit .butButton{width: 400px;height: 60px;border-radius: 10px;border: 0;  background: #fabe00;color: #424242;text-decoration: none;font: 30px/60px "微软雅黑";}
+
+/*提交成功之后跳转页面*/
+.success{text-align: center;}
+.success label{display: block;margin-top: 50px;}
+.success label span{display: block;margin: 10px auto; margin:10px;  font:bolder 30px/40px "微软雅黑";color:#424242;}
+.success label img{width: 40px;height: 40px;margin-top: 10px;margin-left:130px;}
+.weChat{margin: 0 auto;text-align: center;margin-top: 200px;-webkit-appearance:none;}
+.csspp{display: inline-block;  font:18px/30px "微软雅黑";}
+/*进入主页之前的页面*/
+.changetop{width: 100%;height: 52px;background: #fabe00;text-align: center;margin-top: -18px;}
+.changetop p{font: 18px/52px "微软雅黑";}
+.changetop p span{font-size: 12px;}
+/*照片*/
+.photo{width: 98%;height: auto;min-height:500px;margin: 50px 10px;padding-bottom: 60px;}
+.photo li{display: block;width:190px;height: 280px;float: left;margin:12px 40px;}
+.photo li img{width: 190px;height:250px;margin: 0;}
+.usernum{width: 100%;height:36px;background:#fabe00;text-align: center;margin-top: -23px;}
+.usernum p{font: 18px/36px "微软雅黑";color: #000000;}
+a{cursor: pointer;font-style:none;text-underline: none;}
