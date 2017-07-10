@@ -51,6 +51,7 @@
 .changekey dl dd.active{color:#FFFFFF;background:#27adf4 ;}
 .changekey dl dd:hover{color:#FFFFFF;}
 /*.changekey dl dd input{display: block;background: #ededed;  float: left;width: 90px;height: 30px;}*/
+.addintstyle{float: left;width: 100%;}
 .inputdiv,.inputdiv1 {float: left;min-width: 100px;width: auto;padding: 0 5px;  height: 30px;/*background: #ededed;*/margin-top: 10px;}
 .inputdiv1 input{background:#ededed;width: 100px;height: 30px;text-align: center;}
 .inputdiv input{float: left;  background:#ededed;width: 100px;height: 30px;text-align: center;}

@@ -75,11 +75,12 @@ border-top:none;font: 14.5px/18px "微软雅黑"; z-index:999;}
 .bb01:last-child{ width:202px;line-height:55px; position:relative; }
 .bb01 .tittle{ font-size:16px; font-family:"微软雅黑"; color:#ffffff; text-decoration:none; display:block; text-align:center;}
 .bb01 .im01{ display:block;top:22px;;right:30px; position:absolute;}
-.bbb01{ width:150px; height:419px; background-color:#ffffff; border:solid 1px #0894F3; border-left:none; /* border-top:none;*/ z-index:100; display:none; position:absolute; right:-150px;top:-1px;}
-.ttt{ overflow:hidden;float:left;margin-top:10px;padding:0  10px 0 0;}
+.bbb01{height:419px;width: 900px;  /* border-top:none;*/ z-index:100; display:none; position:absolute; left:202px;top:-1px;}
+.ttt{height:419px;float:left;padding:0  10px 0 0; background-color:#ffffff;border:solid 1px #0894F3;border-left:none; }
 .aa_box a:hover{ color:#0894F3}
-.aa_box{overflow:hidden;line-height:40px;}
-.aa_box a{text-decoration:none; display:block; font-size:14.5px; color:#333;float:left;margin-left:30px;}
+.aa_box{line-height:40px;}
+.aaa_box{margin-top:10px;   display:block;float:left;height: 419px;}
+.aa_box a{text-decoration:none; display:block; font-size:14.5px; color:#333;width: 120px;height: 40px;}
 .beian{float:left;font-size:12px;color:#5f5f5f;margin-left:19px;margin-top:20px;}
 .lei12{border-left:solid 1px #0894F3; background-color:#ffffff;}
 .lei13{ color:#0894F3;}

@@ -10,6 +10,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="css/shengda.ico" />
 		<link rel="stylesheet" href="css/common.css" />
 		<link rel="stylesheet" href="css/userCenter.css" />
+		<link rel="stylesheet" href="css/paging.css" />
 		<link rel="stylesheet" href="css/customerSer.css" />
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
@@ -59,6 +60,7 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
 
 			<!--logo与搜索-->
@@ -257,13 +259,13 @@
 			</div>
 		</div>
 		<!--会员中心-->
-		<div class="userback">
+		<div class="userback" style="height:auto;overflow:hidden;">
 			<div class="userpostion comwith">
 				<a href="">首页</a>&nbsp;>&nbsp;<a href="">个人中心</a>
 			</div>
 			<div class="userbody comwith">
 				<!--左边栏目-->
-				<div class="userleft fl">
+				<div class="userleft fl" style="height: auto;min-height: 400px;">
 					<dl>
 						<dt>个人中心</dt>
 						<dd><a href="userCenter.html">个人资料</a> </dd>
@@ -272,165 +274,95 @@
 					</dl>
 					<dl>
 						<dt>订单中心</dt>
-						<dd> <a href="myOrder.html">我的订单</a> </dd>
-						<dd class="active"><a href="cusSerOrder.html">售后服务</a> </dd>
+						<dd><a href="myOrder.html">我的订单</a> </dd>
+						<dd class="active"><a href="cusSerOrder.html">售后服务</a></dd>
 					</dl>
 
 				</div>
 
 				<!--右边内容-->
-				<div class="userright fr">
+				<div class="userright fr" style="height: auto;">
 					<div class="wordpass">
-						<h3>申请售后</h3>
-						<div class="line"></div>
-						<!--申请售后表单-->
-						<div class="data">
-							<!--申请售后-->
-							<div class="cusServer">
-								<!--售后表单-->
-								<div class="mc">
-									<table>
-										<thead>
-											<tr class="formtop">
-												<th width="260">商品名称</th>
-												<th width="280">包装清单</th>
-												<th width="170">赠送清单</th>
-												<th width="105">购买数量</th>
+						<span> 我的订单</span>
+						<!--我的订单-->
+						<!--订单列表-->
+						<div class="ordertitle" id="order">
+							<!--全部有效订单      印刷中的订单      已发货的订单     已撤销的订单-->
+							<a class="active" onclick="javascript:test('order',6,1);">服务单信息</a>
 
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>
-													<a href="">报价静静_刘淑琴18普通不过膜名片_一千_90x54_09.cdr_铜版双10-1</a>
-												</td>
-												<td></td>
-												<td>-</td>
-												<td>1</td>
-											</tr>
-
-										</tbody>
-									</table>
-								</div>
-								<div class="warmLang"><em>*</em> <span>温馨提示： 本次售后服务将由 <em>河南盛大彩色印刷有限公司 </em> 为您提供</span> </div>
-								<!--售后类型与原因的填写-->
-								<div class="mS">
-									<!--默认是退货-->
-									<div class="cSitem">
-										<span><em>*</em>服务类型 ：</span>
-										<!--类型列表-->
-										<div class="fl citem" id="cServer">
-											<ul>
-												<li onclick="javascript:test('cServer',3,1);" class="active">
-													<a >退货</a>
-												</li>
-
-												<li  onclick="javascript:test('cServer',3,2);">
-													<a>换货</a>
-												</li>
-												<li onclick="javascript:test('cServer',3,2);">
-													<a >补发商品</a>
-												</li>
-											</ul>
-										</div>
-
-									</div>
-
-									<!--退货-->
-									<div class="cSform" id="cServer_1" style="display:block;">
-										<div class="cSFform">
-											<span><em>*</em>退款方式 ：</span>
-											<div class=" citem">
-												<ul>
-													<li class="active">
-														<a href="javascript:void(0);">退回账户</a>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class="cSFform">
-											<span><em>*</em>提交原因 ：</span>
-											<div class="uptop">
-												<select class="select" id="questionTypeCid3" name="applyReason" class="sele" style="padding-right: 0px">
-													<option>请选择</option>
-													<option value="七天无理由">七天无理由</option>
-													<option value="质量问题">质量问题</option>
-													<option value="商品与描述不符">商品与描述不符</option>
-													<option value="卖家发错货">卖家发错货</option>
-												</select>
-
-											</div>
-										</div>
-										<div class="cSFform">
-											<span><em>*</em>问题描述：</span>
-											<div class="citem">
-												<textarea name="apply_wareQuestionDesc_Content" cols="" rows="" class="area"placeholder="请输入问题描述"></textarea>
-											</div>
-											<!--<div class="fr ftx-03">10-500字</div>-->
-										</div>
-										<!--上传图片-->
-										<div class="cSFform">
-											<span><em>  </em>图片信息 ：</span>
-											<div class="uptop">
-												<!--<div class="imginput">
-													<i class="iconfont">&#xe61d;</i>
-													<input type="button" value="上传图片" onClick="t_file.click()">
-												</div>
-
-												<input name="upload" type="file" onchange="f_file.value=this.value" style="display:none">
-												<input type="text" readonly="readonly"  style="border: 0;">-->
-												<input type="file" value="上传图片" />
-											</div>
-										</div>
-
-									</div>
-
-									<!--换货和补发商品-->
-									<div class="cSform" id="cServer_2" style="display:none;">
-
-										<div class="cSFform">
-											<span><em>*</em>提交原因 ：</span>
-											<div class="uptop">
-												<select class="select" id="questionTypeCid3" name="applyReason" class="sele" style="padding-right: 0px">
-													<option>请选择</option>
-													<option value="七天无理由">七天无理由</option>
-													<option value="质量问题">质量问题</option>
-													<option value="商品与描述不符">商品与描述不符</option>
-													<option value="商品与描述不符">商品与描述不符</option>
-												</select>
-
-											</div>
-										</div>
-										<div class="cSFform">
-											<span><em>*</em>问题描述：</span>
-											<div class="citem">
-												<textarea name="apply_wareQuestionDesc_Content" cols="" rows="" class="area"></textarea>
-											</div>
-											<!--<div class="fr ftx-03">10-500字</div>-->
-										</div>
-										<!--上传图片-->
-										<div class="cSFform">
-											<span><em>  </em>图片信息 ：</span>
-											<div class="uptop">
-												<input type="file" value="上传图片" />
-											</div>
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-
-							<button class="btn02" type="button" onclick="upPassword()">立即提交</button>
 						</div>
+
+					</div>
+					<div class="form2" id="order_2">
+
+						<table class="tb-void tb-top tb-area">
+							<colgroup>
+								<col width="110px" />
+								<col />
+							</colgroup>
+							<tbdoy>
+								<tr>
+									<td>商品返回方式</td>
+									<td>
+										客户期望返件方式为“客户发货”
+									</td>
+								</tr>
+								<tr>
+									<td>商品处理方式</td>
+									<td>
+										客户期望处理方式为“换货”
+									</td>
+								</tr>
+								<tr>
+									<td>申请凭据</td>
+									<td>
+										有发票
+									</td>
+								</tr>
+								<tr>
+									<td>问题描述</td>
+									<td>
+										<div class="row6col2">评价的内容显示的具体文字：我不喜欢你家的商品，怀疑我是不是买了假的零食包。
+										</div>
+										<div class="img-list">
+											<a href="" target="_blank">
+												<img src="http://img30.360buyimg.com/asf/s60x60_jfs/t6025/139/4339095684/16098/5cd4bc89/5962dc2fN84aaa8f7.png" width="60px" height="60px" />
+											</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>收货地址</td>
+									<td>
+										<div class="row7col2">
+											河南郑州市郑东新区金水东路东风南路绿地新都会C座2008室
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>取件地址</td>
+									<td>
+										<div class="row7col2">
+											河南郑州市郑东新区金水东路东风南路绿地新都会C座2008室
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>联系信息</td>
+									<td>联系人：张小楠 &nbsp;&nbsp;手机：151****8586</td>
+								</tr>
+
+							</tbdoy>
+						</table>
 
 					</div>
 
 				</div>
 
 			</div>
+
 		</div>
+
 		<!--底部-->
 		<div>
 			<div class="footer">

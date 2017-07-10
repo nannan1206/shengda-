@@ -20,11 +20,12 @@
 .last_ul_sul>li:last-child:hover{cursor:pointer;}*/
 
 /*两种不同支付方式合并*/
-.pay-box{overflow:hidden;width:1050px;height:auto; color:#3e3e3e;font-weight:bold;margin-top:30px;background-color:#fff;margin-left:auto;margin-right:auto;}
-.alipaycss{width: 50%;float: left;}
+.pay-box{overflow:hidden;width:1050px;height:auto; color:#3e3e3e;font-weight:bold;margin:30px auto 0px ;background-color:#fff;}
+.alipaycss{width: 40%;float: left;padding-left: 100px;}
 .pay-box p{font:bold 14px/40px "微软雅黑";}
 .first_ul>li:first-child{float:left;margin: 10px;}
 .first_ul>li:last-child{margin-left: 100px;display: block;}
+.first_ul>li:last-child img{width:130px;height: 130px;}
 .first_ul_ful{margin:0 0 0 18px;}
 .first_ul_ful>li:first-child{font-size:25px;}
 .first_ul_ful>li:last-child{font-size:16px;}
@@ -35,7 +36,11 @@
 .last_ul>li{float:left;}
 .last_ul_sul{overflow: hidden;line-height:24px;}
 .last_ul_sul>li{float:left;}
-{color:#ff0000;font-size:24px;}
+/*{color:#ff0000;font-size:24px;}*/
 .last_ul_sul>li:nth-child(even) span{color:#ff0000;font-size:24px;}
 .last_ul_sul>li:last-child{color:#0094ec;font-size:16px;margin:5px 0 0 5px;}
 .last_ul_sul>li:last-child:hover{cursor:pointer;}
+#content dl{margin-top:10px;}
+#content dl span{font: 16px/30px "微软雅黑";}
+
+
