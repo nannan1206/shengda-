@@ -1,0 +1,47 @@
+a{cursor: pointer;text-decoration:none; }
+body{width:640px;/*min-height: 7000px;*/height: auto;  margin: 0 20px;padding: 0;margin: 0 auto;-webkit-appearance:none;}
+ul li{list-style: none;}
+/*会员中心*/
+.usertop{margin: 30px 40px;font: 24px/10px "微软雅黑";}
+.usertop p{line-height:10px;}
+/*按钮*/
+.userbutton{width: 100%;border-top: 1px solid #b7b7b7;padding-top: 40px;}
+.userbutton .buttona{width: 520px;height: 67px;background: url(../img/button.png);margin: 40px auto;text-align: center;}
+.userbutton .buttona a{display: block;width: 520px;height: 67px;}
+.userbutton .buttona span{color:#000000;font: 24px/67px "微软雅黑"; }
+
+/*员工登录*/
+.stafbody{width:640px;height:1134px;background: url(../img/userback.png);margin: 0;}
+.logostaf{width: 640pxpx;height: 210px;display: block;text-align: center;padding-top: 180px;}
+.logostaf img{width:202px;height: 178px;}
+.logostaf h3{font: 26px/40px "微软雅黑";color: #ffffff;}
+/*fform*/
+.formstaff{width: 476px;height: 160px;margin:100px auto 0px;position: relative;}
+.nStaff input::-webkit-input-placeholder{color:#eeecf5;}
+.nStaff{width:482px;height:70px;margin-left: 0px;/*margin-bottom: -18px;*/background:#2382c8;}
+.nStaff label img{margin: 15px 25px;z-index: -10px;position:absolute;}
+.inputStaff{width:410px;height:60px;z-index:-20px;background:#2382c8;border: 0;padding-left:70px ;font: 20px/76px "微软雅黑";margin: 0;color: #FFFFFF;}
+.line{border-top: 2px solid #a9cfea;}
+/*忘记密码*/
+.show{margin-left: 100px;margin-top:5px;width:150px;height: 30px;display: block;}
+.showa{float:left;font:18px/30px "微软雅黑";color: #FFFFFF;margin: -25px 0 0px 30px;}
+.showdiv{width: 25px;height: 25px; background:#4e97cd;text-align: center;color: #FFFFFF;line-height:30px;}
+
+.staupbutton{width: 436px;height: 60px;background: url(../img/uaseButton.png);text-align: center;margin:30px auto 20px;}
+.staupbutton a{display: block;width: 436px;height: 60px;}
+.staupbutton span{color: #FFFFFF;font:30px/60px "微软雅黑" ;}
+.staupafter{text-align: center;color: #FFFFFF;}
+.staupafter span{margin: 0 5px;}
+.fl{float: left;}
+.linwoo{margin-top: 60px;margin-left: 100px;}
+.liother{border-bottom: 1px solid #FFFFFF;width:150px;height:15px;}
+.linword{font:24px/30px "微软雅黑";color: #FFFFFF;margin:0px 15px;}
+/**/
+.weimg{margin:0px auto;width:250px;height:100px;text-align: center;color: #FFFFFF;}
+.weimg img{margin: 20px auto -10px;}
+
+
+
+
+
+ 
