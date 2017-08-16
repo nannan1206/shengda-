@@ -1,0 +1,173 @@
+.userback{width: 100%;height:auto;min-height: 1140px; background: #f5f5f5;margin-bottom: -100px;}
+.userbody{height: 1020px;width: 1200px;}
+/*会员中心位置样式*/
+.userpostion a{font: 16px/40px "微软雅黑";color: #626262;}
+.userpostion a:hover{color: #0195FF;}
+/*会员内容*/
+.userleft{width: 230px;height: auto;background: #FFFFFF;padding-top: 40px;padding-bottom: 200px;}
+/*右侧栏目列表*/
+.userleft dl dt{font: 18px/70px "微软雅黑";color:#2f2f2f ;padding-left: 60px;}
+.userleft dl dd { display: block; font: 16px/30px "微软雅黑";padding-left: 65px;margin-top: 5px;}
+.userleft dl dd a{color: #444444;}
+.userleft dl dd:hover,.userleft dl dd.active{background:#c8c8c8 ;}
+
+
+/*左侧栏目内容*/
+.userright{width: 890px;height:920px;background: #FFFFFF;padding: 70px 30px 0; }
+.userimg{width: 400px;height: 150px;}
+.userimg img{width: 150px; height: 150px;border-radius: 150px; float: left;}
+.username{margin-top:60px ;margin-left: 24px;}
+.username span{font:26px/30px "微软雅黑" ;color: #616161;}
+.username p{font:16px/20px "微软雅黑" ;color: #b0b0b0;}
+.userimg a{float: right;margin-top: 70px; margin-right: 50px;  width: 120px;height: 30px; font: 16px/30px "微软雅黑"; color: #FFFFFF;background: #00a0e9;text-align: center;}
+.usermssage{margin-top: 30px;}
+.usermssage p{font:16px/40px "微软雅黑" ;color: #b0b0b0;}
+.usermssage p i{font-style: normal;color:#ffac13 ;}
+
+/*登录表单*/
+.list-8{list-style:none;margin-left:18px;}
+.data{width:854px;margin-top:180px;}
+.data .personal{margin-top:15px;}
+label{font-size:15px;color:#333;}
+label .grend{ display:inline-table; filter: alpha(opacity=0);
+-moz-opacity:0;
+opacity: 0;
+}
+.personal input{width:285px;height:36px;line-height:36px;border:1px solid #dadada;margin-left:20px;padding: 0 10px;}
+.personal:first-child  input{margin-left:36px;}
+.personal:last-child  input{width:568px;}
+.personal select{width:120px;height:38px;font-size:14px;color:#333;border:1px solid #dadada;/*margin-left:15px;*/}
+.data .btn02{cursor:pointer;width:200px;height:53px;background-color:#0094ec;border:none;border-radius:5px;margin-top:90px;margin-left:135px;font-size:23px;color:#fff;}
+
+.data .personal-1{margin-top:15px;overflow:hidden;float: left;width: 100%;}
+.personal-1 input{width:265px;height:36px;line-height:36px;border:1px solid #dadada;margin-left:20px;padding: 0 10px;}
+.personal-1 select{width:60px;font-size:14px;color:#333;margin-left:17px;padding: 0 10px;}
+.personal-1 img{display:block; vertical-align:middle;width:68px;height:68px;margin-left:88px;margin-top: -20px;/*border: 1PX solid #CBCBCB; */   box-shadow: 0 0 5px #ccc;}
+.file-box{position:relative; float:right; margin-right:380px;line-height:35px;margin-top:15px;}
+.personal-1:last-child label{ float:left;}
+.personal-1 .text{ clear:both;font-size:12px;color:#999; padding-top:20px; margin-left:90px;}
+.file-box .txt{ margin-left:0;margin-right:10px;border:1px solid #cdcdcd; width:170px;}
+.file-box .btn{margin-left:0; margin-right:10px;background-color:#f3f3f3; border:1px solid #CDCDCD; width:80px;}
+.file-box .file{cursor:pointer;background-color:red;margin-right:10px;margin-left:0; position:absolute; top:0;left:0; filter:alpha(opacity:0);opacity: 0; width:264px;}
+
+/*修改密码*/
+.wordpass h3{ font:bold 18px/20px "微软雅黑";  color: #0094ec;padding-left:50px ;}
+.line{border-bottom:1px solid #dcdcdc ;height: 30px;}
+.wordpass .data{margin-top: 72px;}
+.list-9{list-style:none;margin-left:18px;}
+.list-9 .personal-2{margin-top:15px;}
+.list-9 label{margin-left:32px;}
+.personal-2:last-child label{margin-left:0;}
+.personal-2 input{width:285px;height:36px;line-height:36px;border:1px solid #dadada;margin-left:20px;padding: 0 10px;}
+
+/*修改地址*/
+.list-7{list-style:none;margin-left:18px;}
+/*城市列表三级联动*/
+.info select{/* border:1px #993300 solid;*/ background:#FFFFFF;}
+.info{ margin:2px; /*text-align:center;*/}
+.info #show{ color:#3399FF; }
+.info label{margin-right: 18px;}
+
+/*我的订单*/
+.wordpass span{font: 26px/20px "微软雅黑";color: #171717;}
+.ordertitle{width: 100%;height: 35px; border-bottom:2px solid #dcdcdc ;padding-top:45px ;}
+.ordertitle a{display: block;border-right: 1px solid #DCDCDC;width: 154px;height: 24px;float: left;text-align: center;}
+.ordertitle a:hover,.ordertitle a.active{color:#0094ec ;}
+
+.user-content{float:right;/*margin-top:60px;*/width:854px;}
+.content p{font-size:19px;color:#545454; font-weight:bold;}
+.list-5,.list-6{list-style:none;overflow:hidden;text-align:center;}
+
+.my-order-box-ipt{overflow:hidden;}
+.my-order-box-ipt label{display:block;float:left;font-size:15px;margin-top:17px;}
+.my-order-box-ipt label:first-child{margin-right:45px;}
+.my-order-box-ipt label select{width:200px;line-height:37px;height:37px;color:#666;border:1px solid #d5d5d5;margin-left:10px;padding:8px 3px;font-size:15px;}
+
+.my-order-box-ipt label select option:first-child{ color:#999898;}
+.my-order-box-ipt label .ipt-2{margin-left:14px;border:1px solid #d5d5d5;width:180px;line-height:35px;height:35px;}
+.my-order-box-ipt label img{display:inline;margin-left:10px;}
+.my-order-box-ipt label .ipt{margin-left:10px;border:1px solid #d5d5d5;width:365px;line-height:37px;height:37px;padding-left: 5px;}
+.my-order-box-ipt label .ipt-1{width:90px;background-color:#acacac;color:#f6f6f6;line-height:37px;height:37px;}
+.my-order-box-ipt label .search1{ display:inline-table; filter: alpha(opacity=0);
+-moz-opacity:0;
+opacity: 0;
+}
+.total-price{margin-top:27px;font-size:15px; font-weight:normal;}
+.total-price span{color:red;font-size:17px;}
+
+
+/*修改的表单内容*/
+.orderform{width: 100%; height: auto;min-height:200px;}
+.formtop{width: 100%;height: 36px;background:#acacac; margin-top: 40px; }
+.formtop span{font: 18px/36px "微软雅黑";color: #FFFFFF;text-align: center;height: 36px;display: block;float: left;}
+.spanwidth1{width: 200px;padding:0px 5px 10px;}
+.spanwidth2{width: 100px;}
+.spanwidth3{width: 100px;}
+.spanwidth4{width: 260px;}
+.listtop{background: #e4e4e4;width: 886px;height: 30px;}
+.listtop span{font: 14px/30px "微软雅黑";color: #000000; text-align: center; display: block;float: left;}
+.formlist{width: 100%;height: 110px;padding: 10px;}
+.formlist span{font: 12px/24px "微软雅黑";color: #000000; margin-top: 30px; text-align: center; display: block;float: left;}
+.formlist a{    text-decoration: none;   color: #0094ec;margin: 0 5px;   }
+
+/**/
+.changeformlist{width: 100%;height:auto;}
+.changeformlist span{margin-top:0px;}
+.listdetil{border: 1px dotted #999898;border-top: 0;}
+
+.page{overflow:hidden;margin:50px auto;}
+.page .home,.prve,.next,.last{margin-top:3px;}
+.page a{float:left; text-decoration:none;font-size:12px;color:#6a6a6a;margin-right:5px;}
+.page p{float:left;margin-right:5px;}
+.page .number{padding:1px 6px;border:1px solid #d7d7d7;}
+.page .bb{padding:1px 6px;color:#e74473;font-size:11px;border:none;}
+
+/*我的订单详情页*/
+/*.user-content{float:right;margin-top:60px;width:854px;}*/
+.order-details{background-color:#ececec; margin-top:45px;}
+.details-box{width:600px;margin-left:auto;margin-right:auto;overflow:hidden;}
+.details-box dl{overflow:hidden;padding-top:17px; font-size:14px;}
+.details-box dl dt{float:left; width:80px;text-align:right;}
+.details-box dl dd{float:left;}
+
+.order-aa{ clear:both;margin-top:17px;}
+.order-aa dd{width:500px;}
+.details{float:left;}
+.details-1{float:right;margin-left:50px;margin-right:70px;}
+.details-2{ clear:both; overflow:hidden;width:192px;margin-left:auto;margin-right:auto;padding-top:30px;padding-bottom:20px;}
+.details-2 a{display:block; text-decoration:none;float:left;width:90px;height:27px;line-height:27px;text-align:center;background-color:#fff;border:1px solid #ec0c0c;color:#ec0606;}
+.details-2 a:last-child{margin-left:6px;}
+
+.product{width:854px;text-align:center; border-collapse:collapse;margin-top:58px;}
+.product tr th,td{font-size:14px;color:#333;}
+.product tr th{height:35px;}
+.product tr td{height:100px;}
+.product tr .width-3{width:158px;}
+.product tr .width-4{width:133px;}
+.product tr .width-5{width:128px;}
+.product tr .width-6{width:206px;}
+.product tr .width-7{width:111px;}
+.product tr .width-8{width:112px;}
+.product tr a{color:#0094EC;}
+
+
+
+/*我的订单页面*/
+.orderform table {
+	display: table;
+	/*border: 1px solid grey;*/
+}
+table {	border-collapse: collapse;}
+tbody td{border: 1px solid #e5e5e5;text-align: center;}
+.colspanw{height: 15px;}
+.oledercol{width: 500px;}
+.hmomeycol{width: 100px;}
+.allmoncol{width: 100px;}
+.opreacol{width: 100px;}
+td a{font: 12px/30px "微软雅黑"}
+
+
+
+
+
+
