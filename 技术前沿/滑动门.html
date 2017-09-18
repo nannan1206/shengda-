@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta charset="UTF-8">
+
+		<title>CSS 选项卡</title>
+		<style>
+			* {
+				padding: 0px;
+				margin: 0px;
+				font-size: 12px
+			}
+			
+			.m {
+				width: 620px;
+				margin: 0 auto;
+			}
+			
+			.xx {
+				width: 500px;
+				border: 1px solid #ccc;
+				float: left
+			}
+			
+			.xx2 {
+				width: 300px;
+				border: 1px solid #ccc;
+				float: right
+			}
+			
+			.t {}
+			
+			ul {
+				list-style: none
+			}
+			
+			.t ul {
+				list-style: none;
+				border-bottom: 1px solid #ccc;
+				height: 25px;
+				line-height: 25px;
+				background: #eee;
+				padding-left: 5px;
+			}
+			
+			.t ul li {
+				float: left;
+				width: 80px;
+				text-align: center;
+			}
+			
+			.t ul li a {
+				display: block;
+				text-decoration: none;
+			}
+			
+			.b {
+				padding: 10px;
+			}
+			
+			.b ul {
+				display: none;
+			}
+			
+			.s5 {
+				height: 5px;
+			}
+			
+			.o {
+				background: #FFFFFF;
+				position: relative;
+				z-index: 1000;
+				border: 1px solid #ccc;
+				border-bottom: 0px;
+				font-weight: bold
+			}
+			
+			.block {
+				display: block;
+			}
+			
+			.cl {
+				clear: both
+			}
+		</style>
+		<script>
+			<!--
+			/*第一种形式 第二种形式 更换显示样式*/
+			function setTab(m, n) {
+				var tli = document.getElementById("menu" + m).getElementsByTagName("li");
+				var mli = document.getElementById("main" + m).getElementsByTagName("ul");
+				for (i = 0; i < tli.length; i++) {
+					tli[i].className = i == n ? "o" : "";
+					mli[i].style.display = i == n ? "block" : "none";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="m">
+			<div class="xx">
+				<div class="t">
+					<ul id="menu4">
+						<li class="o" onmousemove="setTab(4,0)">选项一</li>
+						<li onmousemove="setTab(4,1)">选项二</li>
+						<li onmousemove="setTab(4,2)">选项三</li>
+						<li onmousemove="setTab(4,3)">选项四</li>
+					</ul>
+				</div>
+				<div class="b" id="main4">
+					<ul style="display:block">
+						<li>内容1</li>
+					</ul>
+					<ul>
+						<li>内容2</li>
+					</ul>
+					<ul>
+						<li>内容3</li>
+					</ul>
+					<ul>
+						<li>内容4</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,487 @@
+@charset "utf-8";
+
+/*公用*/
+.caritem .active{
+	background: #fff6cc;
+	border-top: 2px dotted #fdd100;
+	border-bottom: 2px dotted #fdd100;
+}
+.car1{
+	width: 180px;
+	height: 40px;
+	font:24px/40px "微软雅黑" ;
+	color: #fff;
+	text-align: center;
+	background-color: #242D3A;
+	margin-bottom:20px ;
+}
+
+
+.cartop2{
+	height: 40px;
+	background-color:#EEEEEE ;
+	border-bottom: #dcdbdb;
+	margin: 25px 0;
+	padding-left: 40px;
+}
+/*修改新增套餐订单 */
+.caraddorder{
+	width: 260px;
+	height: 28px;
+	background-color:#af7c2a ;
+	margin-bottom: 15px;
+	padding: 0 40px;
+}
+.caraddorder span{
+	padding-left: 10px;
+	font:18px/28px "微软雅黑" ;
+	color: #fff;
+}
+
+
+.cartop2 span{
+	font: 14px/40px "微软雅黑";
+	
+}
+.caritem1{
+  	height: 130px;
+  	background-color:#fffbea ;
+  	margin-bottom: 10px;
+   font: 12px/25px "微软雅黑";
+   border-top: 2px dotted #fffbea;
+	border-bottom: 2px dotted #fffbea;
+	
+}
+
+.caritem1 .active{
+	/*background-color:#000 ;*/
+	border: ;
+}
+
+.inCk{
+	padding-top: 15px;
+	padding-left: 70px;
+
+}
+.inckimg{
+	padding: 7px 50px;
+	
+}
+.inckp{
+	
+	padding-top: 20px;
+	width: 170px;
+}
+
+.inckprice {
+	padding-top: 30px;
+	padding-left: 50px;
+	
+}
+
+
+.inckprice1{
+	color:#AF7C2A ;
+	border: #AF7C2A solid 1px;
+	line-height: 18px;
+	/*margin-left: 20px;*/
+
+}
+.addDelinck{
+	margin-left: 60px;
+}
+.inckprice2{
+	margin-top: 20px;
+	margin-right: 70px;
+	
+}
+.inckprice2  a ,.cartop3 a{
+	color: #000000;
+}
+.inckprice2 a:hover{
+	color: #AF7C2A;
+}
+
+
+.cartop3{
+	height: 58px;
+	background-color:#EEEEEE ;
+	border-bottom: #dcdbdb;
+	margin: 25px 0;
+	padding-left: 40px;
+	
+}
+.cartop3 span{
+	font: 14px/58px "微软雅黑";
+	
+}
+.cartop3 a:hover{
+	color: #AF7C2A;
+}
+
+.orderinck {
+	height: 58px;
+	width: 137px;
+	background-color: #A76F15;
+	
+	text-align: center;
+	
+}
+.orderinck a{
+	font: 24px/58px "微软雅黑"	;
+	color: #fff;
+} 
+.orderinck a:hover{
+color: #fff;
+}
+.cartop3 em{
+	font:bold 15px/58px "微软雅黑"	;
+	color: #A76F15;
+}
+.cartop3 i{
+	font:bold 24px/58px "微软雅黑"	;
+	color: #A76F15;
+}
+/*购物车地址页面*/
+.caritem2 span{
+	font:  18px/22px "微软雅黑";
+}
+.address1{
+	float: left;
+	width: 308px;
+	height: 133px;
+	background-color: #fff6cc;
+	
+	border: #fdd100 dotted 2px;
+	margin-top: 20px;
+	margin-right: 25px;
+	
+}
+.address1.active{
+	background-color: #e4cd95;
+}
+.address1 img{
+	width: 30px;
+	height: 20px;
+	margin-bottom: 0px;
+}
+.changeadd {
+	display: none;
+	width: 75px;
+	height: 25px;
+	text-align: center;
+	background-color: #faf6eb;
+	
+}
+.changeadd a{
+	font: 12px/25px "微软雅黑";
+	color: #666666;
+}
+.changeadd a:hover{
+	color:#fdd100 ;
+}
+.detailadd{
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 275px;
+	height: 30px;
+	font: 16px/30px "微软雅黑";
+	color: #333;
+	border-bottom: #fdd100 solid 2px; ;
+}
+.addimg{
+	display: none;
+}
+.address1.active .changeadd,.address1.active .addimg{
+	display: block;
+}
+.detailadd2{
+	margin-left: 20px;
+	font: 16px/30px "微软雅黑";
+	color: #666;
+}
+.comorder{
+	margin-top: 60px;
+	width: 1150px;
+	height: 650px;
+	
+}
+.comorder span{
+	font:  18px/22px "微软雅黑";
+}
+.comorder1{
+	
+	width: 1150px;
+	height: 30px;
+	margin-top: 30px;
+	border-bottom: #fdd100 dotted 2px;
+	padding-left: 480px;
+}
+.comorder1 span{
+	padding-right: 90px;
+	font:  14px/40px "微软雅黑";
+	color: #333;
+}
+.comorder2{
+	width: 1150px;
+	height: 108px;
+	background-color: #fffbea;
+	margin: 10px 0;
+	font: 12px/25px "微软雅黑";
+}
+.comorder2 img{
+	margin: 10px;
+	float: left;
+}
+.comorder21 {
+	padding-top: 20px;
+	width: 170px;
+}
+.comorder22{
+	padding-top: 40px;
+}
+
+/*底部输入框*/
+.orderbuttom{
+	margin-top:15px ;
+}
+.carCform4 {
+	height: 90px;
+	border: #ddd solid 1px;
+	padding:0 10px;
+	
+	}
+.carCform4 input{
+	font: 4px/18px "微软雅黑";
+	color: #A7A7A7;
+	width: 406px;
+	
+}
+.message{
+    margin: 0 10px;
+}
+.message p{
+	font: 12px/20px "微软雅黑";
+	color: #666;
+}
+
+.carorderbuttom{
+	
+} 
+.carorderbuttom p{
+	padding-right: 30px;
+    text-align: right;
+	font:  14px/20px "微软雅黑";
+	color: #666;
+}
+.carorderbuttom p span{
+	color: #A76F15;
+	font: 24px/30px "微软雅黑";
+	margin-left: 13px;
+}
+
+.carorderbuttom1{
+	width: 197px;
+	height: 45px;
+	background-color: #fdd100;
+	text-align: center;
+}
+.carorderbuttom1 a{
+	font: 20px/45px "微软雅黑";
+	color:#000 ; 
+}
+.carorderbuttom1 a:hover{
+	text-decoration: none;
+}
+/*新增收货地址*/
+
+.caraddaddress{
+	height: 290px;
+	border: #fdd100 dotted 1px;
+	margin-top: 20px;
+}
+
+.addaddress1{
+	width: 95px;
+	height: 35px;
+	margin-top: 20px;
+}
+.carCform5{
+	margin-top: 20px;
+	margin-left: 10px;
+	border: #d2b991 solid 1px;
+	padding:0 10px;
+	height: 35px;
+}
+
+.carCform5 input{
+	font: 4px/35px "微软雅黑";
+	color: #A7A7A7;
+	width: 157px;
+	
+}
+
+.carCform1{
+	margin-top: 20px;
+	margin-left: 10px;
+	border: #d2b991 solid 1px;
+	padding:0 10px;
+	height: 35px;
+}
+
+.carCform1 input{
+	font: 4px/35px "微软雅黑";
+	color: #A7A7A7;
+	width: 566px;
+	
+}
+
+.carCform2{
+	margin-top: 20px;
+	margin-left: 10px;
+	border: #d2b991 solid 1px;
+	padding:0 10px;
+	height: 35px;
+}
+
+.carCform2 input{
+	font: 4px/35px "微软雅黑";
+	color: #A7A7A7;
+	width: 220px;
+	
+}
+
+
+.addaddress1 span{
+	font: 14px/35px "微软雅黑";
+	color: #333;
+}
+.addaddress1 img{
+	margin-top: 15px;
+	margin-right: 5px;
+}
+.addaddress11{
+	width: 100%;
+	height: 50px;
+	
+}
+
+
+
+.carCform0{
+	margin-top: 20px;
+	margin-left: 10px;
+	border: #d2b991 solid 1px;
+	/*padding:0 10px;*/
+	padding-right: 20px;
+	height: 35px;
+}
+
+.carCform0 input{
+	font: 4px/35px "微软雅黑";
+	color: #A7A7A7;
+	width: 100px;
+	
+}
+
+
+/*下拉框*/
+.select{
+				width: 100px;height: 35px;
+				/*background:#f8f8f8 ;*/
+				border: none;
+				padding: 0 10px;
+				font:14px/35px "微软雅黑" ;
+	            color: #666;	
+			
+		
+			}
+			#sleid{
+				display: block;
+				width:56px;
+				overflow: hidden;
+				/*padding: 0 10px;*/
+			}
+			#slebg{
+				width: 78px;
+				height: 35px;
+				/*border:#dddddd solid 1px;*/
+				/*border-right: none;*/
+				/*background: url(img/Dprice/pricearrow.png)  #f8f8f8 no-repeat 55px 18px ;*/
+				display: block;
+				
+				
+				
+			}
+			#slebg img{
+				margin-top: 15px;
+			}
+
+
+/*新增地址底部*/
+.carbox{
+	margin-top: 10px;
+	margin-left: 105px;
+
+}
+.carbox span{
+	margin-left: 5px;
+	font: 12px/15px "微软雅黑";
+	color: #333;
+}
+
+/*修改地址*/
+body{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-family: '微软雅黑';
+}
+.modify_address{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.4);
+}
+.modify_wrap{
+	width: 995px;
+	height: 392px;
+	background: white;
+	border: 3px solid #d0cfc8;
+	position: fixed;
+	margin-top: -186px;
+	margin-left: -487px;
+	left: 50%;
+	top: 50%;
+	border-radius: 5px;
+	box-shadow: 0 0 10px 2px #d0cfc8;
+}
+.modify_wrap .comWidth1{
+	margin-left:115px;
+	width: 880px;
+	border: 0;
+}
+.drsele{
+	font-family: "微软雅黑";
+	appearance:none;
+  	-moz-appearance:none;
+  	-webkit-appearance:none;
+  	max-width: 200px;
+ 	height: 35px;
+ 	padding: 0 35px 0 10px;
+ 	border: 1px solid #d2b991;
+ 	background: url(../img/shopcar/bottom.png) 90% no-repeat;
+ }
+
+.drsele::-ms-expand { display: none; }
+.modify_wrap .carorderbuttom1 span{
+	font: 20px/45px "微软雅黑";
+	color:#000 ;
+	cursor: pointer;
+}
+.modify_wrap .carorderbuttom1 span:hover{
+	color: rgba(0,0,0,.7);
+}

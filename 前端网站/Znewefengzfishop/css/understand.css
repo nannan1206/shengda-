@@ -1,0 +1,105 @@
+.underbanner{
+	width: 1100px;
+	height: 318px;
+	margin: 10px auto 50px;
+}
+/*页面内容*/
+.undermain{
+	width: 880px;
+	margin: 0 auto;
+}
+/*公司简介*/
+.Comp{
+	height: 23px;
+}
+.Comp img{
+	float: left;
+  
+}
+.Comp h3{
+	font-size: 22px;
+    float: left;
+    padding-left: 10px;
+  
+}
+.Comp span{
+	font-size: 28px;
+	font-family: "times new roman";
+	color: #fdd100;
+    float: left;
+    padding-left: 10px;
+}
+.Comp1{
+	width: 880px;
+	height: 336px;
+	margin-top: 24px;
+	padding-left: 27px;
+}
+.Comp1word{
+	width: 542px;
+	font: 12px/22px "微软雅黑";
+	color: #000;
+}
+.Comp1 img{
+	float: right;
+}
+/*战略规划*/
+.Comp2{
+	width: 880px;
+	height: 550px;
+	margin-top: 24px;
+	padding-left: 27px;
+}
+.Comp2 img{
+	float: right;
+	padding-right: 105px;
+}
+.planning{
+	width: 416px;
+	height: 86px;
+	background-color: #fdd100;
+	margin-top: 50px;
+	padding: 10px 35px;
+}
+.planning h3{
+	font-size: 24px;
+	}
+.planning p{
+	font-size: 14px;
+}
+/*联系我们*/
+
+.underus{
+	margin: 0 auto;
+	width:750px;
+}
+.underustop{
+	
+	margin-left: 70px;
+	margin-bottom: 40px;
+	font-size: 18px;
+	color: #000;
+	
+}
+
+
+
+.underaddress{
+	width: 748px;
+	height: 280px;
+	border-radius: 2px;
+	border: #EEEEEE solid 2px;
+	padding: 10px;
+}
+.underaddword{
+	width: 280px;
+	height: 200px;
+	margin-right: 40px;
+}
+.underaddword h3{
+	font-size: 14px;
+	margin-top: 20px;
+}
+.underaddword p{
+	     margin: 0 0 10px;
+}

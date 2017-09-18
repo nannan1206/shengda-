@@ -1,0 +1,266 @@
+@charset "utf-8";
+.banneritem img{
+	width: 100%;
+	height: 200px;
+	margin: 20px auto;
+}
+.itembanner{
+	height: 50px;
+		border-bottom: #d3d3d3 solid 1px;
+}
+.itembanner span{
+	
+	margin: 0 5px;
+}
+
+.i1 a{
+	font-family: "微软雅黑";
+	font-size: 20px;
+	color: #333;
+	font-weight: bold;
+}
+.i2 a{
+	border: #999 solid 1px;
+	padding: 5px;
+	font-size: 12px;
+   color: #666;
+}
+.i1 a:hover{
+	text-decoration: none;
+	color: #A76F15;
+}
+.i2 a:hover{
+	text-decoration: none;
+	color: #A76F15;
+}
+.banneritem1{
+
+	height: 120px;
+	margin-top: 25px;
+	border-bottom: #d3d3d3 solid 1px;
+}
+.banneritem1  span{
+	font: 12px\25px "微软雅黑";
+	font-size: 12px;
+	color: #666;
+}
+.i3{
+	
+	height: 20px;
+	border: #999 solid 1px;
+	padding: 5px;
+	font-size: 12px;
+   color: #666;
+}
+.i3{
+	font: 12px/20px "微软雅黑";
+	
+}
+
+.i4{
+	border: #999 solid 1px;
+	padding: 1px;
+}
+
+.i5{
+   	font: 12px\25px "微软雅黑";
+   margin-left: 10px;
+   margin-right: 920px;
+  
+}
+.banneritem11{
+	width: 910px;
+	height: 80px;
+	border-top: #999 solid 1px;
+	border-left: #999 solid 1px;
+	margin-left: 120px;
+	
+}
+.bi11{
+	width: 112px;
+	height: 40px;
+	border-right: #999 solid 1px;
+	border-bottom: #999 solid 1px;
+	float: left;
+	text-align: center;
+	
+	padding-top: 10px;
+	overflow: hidden;
+}
+.bi11 img{
+	width: 90px;
+	height: 20px;
+}
+.banneritem2  span{
+	font: 12px\25px "微软雅黑";
+	color: #666;
+	font-size: 12px;
+	
+}
+.banneritem2{
+	margin-top: 10px;
+	border-bottom: #d3d3d3 solid 1px;
+	height: 40px;
+} 
+
+
+.i6{
+	 margin-left: 10px;
+	 padding-right: 40px;
+	 width: 80px;
+}
+.i7{
+	 margin-left: 10px;
+	padding-right: 15px;
+	 width: 80px;
+}
+
+.banneritem2 a{
+	font: 12px\25px "微软雅黑";
+    
+	color: #A76F15;
+	padding-left: 40px;
+	/*margin-left:10px ;*/
+}
+
+.topitem{
+	height: 60px;
+	background-color: #eeeeee;
+	margin: 20px auto;
+	padding: 20px;
+}
+.topitem a{
+	font: 14px\60px "微软雅黑";
+	color: #333333;
+	margin: 0px 10px;
+	
+	
+	
+}
+
+.topitem a:hover{
+	color: #a76f15;
+	
+}
+.itemshop1{
+	width: 223px;
+	height: 319px;
+	border: #d3d3d3 solid 1px;
+	padding: 5px;
+	float: left;
+	margin: 3px;
+}
+
+.shop-img1  {
+	width: 211px;
+	height:220px;
+	text-align: center;
+	/*padding: 10px;*/
+	border-bottom: #d3d3d3 solid 1px;
+}
+
+.itemshop1 h3{
+	font: 11px/10px "微软雅黑";
+	color: #333333;
+	font-weight: bolder;
+	margin-top: 20px;
+}
+.priceitem{
+	float: right;
+	margin-right: 10px;
+	margin-top: 25px;
+}
+.priceitem1{
+	font: 14px/10px "微软雅黑";
+	color: #E50452;
+	font-weight: bolder;
+}
+.priceitem2{
+	font: 12px/20px "微软雅黑";
+	color: #888888;
+	
+}
+
+.buttonitem1{
+	width: 70px;
+	height: 20px;
+	border: #d3d3d3 solid 1px;
+	text-align: center;
+	background-color:#004098 ;
+	margin: 20px 5px;
+	float: left;
+}
+.buttonitem1 a{
+	font:10px/0px "微软雅黑";
+	color: #fff;
+	line-height: 20px;
+}
+.buttonitem1 a:hover{
+	color: yellow;
+}
+.buttonitem2{
+	width: 70px;
+	height: 20px;
+	border: #d3d3d3 solid 1px;
+	text-align: center;
+	background-color:#A76F15 ;
+	margin: 20px 0px;
+	float: left;
+}
+.buttonitem2 a{
+	font:10px/0px "微软雅黑";
+	color: #fff;
+	line-height: 20px;
+}
+
+.buttonitem2 a:hover{
+	color: #000;
+}
+/*分页*/
+.page_number .number7:hover{border:#fdd100 1px solid;}
+.page_number .number83:hover{border:#fdd100 1px solid;}
+.page_number .page_last:hover{border:#fdd100 1px solid;}
+.page_number .number8{background-color:#fdd100; width:23px; height:21px;}
+.page_number .number8 a{color:#fff;}
+.page_number .number7 a{color:#666;}
+.page_number .number83 a{color:#666;}
+.page_number .page_last a{color:#666;}
+/*页码*/
+.page{
+	height: 150px;
+	text-align: center;
+}
+.page_number{margin: 80px auto; display: inline-block; overflow: hidden;}
+.page_number li{border:1px solid #dddddd; color:#979797; margin-right:10px; float:left; text-align:center; position:relative; left:10px;}
+.page_number .number7{width:23px; height:21px; }
+.page_number .dotted{width:19px; height:21px; border:none;}
+.page_number .number83{width:30px; height:21px;}
+.page_number .page_last{width:52px; height:21px;}
+
+
+
+
+/*修改的样式*/
+
+.additemleft{
+	width: 83px;
+	/*height: 26px;*/
+	border-radius:0 20px 20px 0 ;
+	/*background-color: #e50452;*/
+	background-image: url(../img/item/itempback.png);
+	margin-top: 5px;
+	margin-left: -5px;
+}
+.additemleft span{
+	font: 12px/26px "微软雅黑";
+	color: white;
+}
+.additemprice{
+	margin-top: 5px;
+	margin-right: 8px;
+}
+.additemprice span{
+	
+	font: 18px/26px "微软雅黑";
+	/*color: #E50452;*/
+}

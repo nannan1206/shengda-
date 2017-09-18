@@ -1,0 +1,216 @@
+/*浏览记录*/
+.like{
+      
+	padding-top:10px ;
+}
+
+.like1{
+	width:210px ;
+	height: 330px;
+	background-color: #fff;
+	text-align: center;
+	font-family: "微软雅黑";
+	float: left;
+	margin:0 5px;
+}
+.like1 img{
+	width: 210px;
+	height: 230px;
+}
+.like1 p{
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #333333;
+}
+.like1 h2{
+	color: #E50452;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+
+.buy{
+	width: 90px;
+	border:#E50452 solid 1px ;
+	color:#E50452 ;
+	margin: 0 auto;
+	
+}
+.buy a{
+	color:#E50452 ;
+}
+.buy a:hover{
+	color: #000;
+	text-decoration: none;
+}
+
+/*栏目位置*/
+.pricepos{
+	height:40px ;
+	background-color:#eee ;
+	margin: 10px auto;
+	padding-left: 10px;
+}
+.pricepos a {
+	font: 14px/40px "微软雅黑";
+	color: #666;
+	margin: 2px;
+}
+/*顶部图片 */
+.pricebanner{
+	height: 90px;
+	
+}
+/*报价表单*/
+.priceform{
+	height: 610px;
+	background-color: #f8f8f8;
+	border-bottom: #eee solid  5px;
+}
+.form{
+	width: 600px;
+	height:500px ;
+	margin-left: 308px;
+	/*border: #000 solid 1px;*/
+}
+.formtitle{
+	
+	padding-top: 25px;
+	padding-left: 180px;
+	margin: 0 auto;
+	font: bold 24px/26px "微软雅黑";
+	color: #A76F15;
+}
+.formtitle img{
+	margin-left: 26px;
+	margin-right: 9px;
+}
+.formtitle span{
+	font: 14px/18px "微软雅黑";
+	color: #333;
+}
+/*表单详情*/
+.formtitle2{
+	margin-top: 40px;
+}
+.formitem{
+	font:14px/20px "微软雅黑" ;
+	margin-top: 20px;
+	height: 40px;
+	width: 100%;
+}
+
+.formitem1 span{
+	font:14px/40px "微软雅黑" ;
+	color: #555;
+	
+}
+.formitem2 span{
+	font:14px/60px "微软雅黑" ;
+	color: #555;
+	
+}
+.Cform{
+	height: 40px;
+	border: #ddd solid 1px;
+	padding:0 10px;
+	margin-right: 10px;
+
+}
+.drsele{
+				appearance:none;
+			  -moz-appearance:none;
+			  -webkit-appearance:none;
+			  max-width: 200px;
+			 	height: 40px;
+			 	padding: 0 35px 0 10px;
+			 	border: 1px solid #DDDDDD;
+			 	background: url(../img/Dprice/pricearrow.png) 90% no-repeat;
+			 }
+.drsele::-ms-expand { display: none; }
+.Cform select{
+	font:14px/40px "微软雅黑" ;
+	color: #666;
+	padding-right: 25px;
+	background: url(../img/Dprice/pricearrow.png) no-repeat right center ;
+}
+.Cform span{
+	font:14px/40px "微软雅黑" ;
+	color: #666;
+	padding-right: 25px;
+}
+.Cform input{
+	font: 14px/40px "微软雅黑";
+	color: #9D9D9D;
+	width: 365px;
+}
+.Cform2 {
+	height: 40px;
+	border: #ddd solid 1px;
+	padding:0 10px;
+	}
+.Cform2 span{
+	font:14px/40px "微软雅黑" ;
+	color: #666;
+	padding-left: 100px;
+}
+.Cform3{
+	height: 40px;
+	/*padding:0 5px;*/
+	padding-right: 10px;
+	
+	
+}
+/*修改单选框按钮样式*/
+.Cform3 input{
+	display: none;
+}
+.Cform3 label{
+	font:14px/40px "微软雅黑" ;
+	color: #666;
+	padding-left: 18px;
+	background: url(../img/Dprice/noCkeked.png) no-repeat left;
+}
+.Cform3 .checked{
+	background-image: url(../img/Dprice/checked.png);
+}
+
+
+.Cform2 input{
+  
+	font: 14px/40px "微软雅黑";
+	color: #9D9D9D;
+	width: 50px;
+}
+.Cform4 {
+	height: 40px;
+	border: #ddd solid 1px;
+	padding:0 10px;
+	margin-right: 10px;
+	}
+.Cform4 input{
+	font: 14px/40px "微软雅黑";
+	color: #9D9D9D;
+	width: 90px;
+	
+}
+.Cform5 button{
+	font: 14px/34px "微软雅黑";
+	color: #a76f15;
+	width: 90px;
+	border: #a76f15 solid 1px;
+	background-color:#fdd100 ;
+	
+}
+
+.post{
+	width:210px ;
+	height: 40px;
+	background-color:#fdd100 ;
+	margin: 20px auto;
+	text-align: center;
+}
+.post h3{
+	font: 18px/40px "微软雅黑";
+	color:#fff;
+}

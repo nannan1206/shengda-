@@ -1,0 +1,85 @@
+/*精装套餐页面展示*/
+.hardcover1{
+	width: 266px;
+	height: 450px;
+	background-image: url(../img/case/package3.png);
+}
+.hardcoverword{
+	position: relative;
+	top: 140px;
+	left: 70px;
+	color: #fff;
+	width: 130px;
+	height: 100px;
+	text-align: center;
+}
+.hardcoverword h3{
+	font: 30px/40px "微软雅黑";
+}
+.hardcoverword p{
+	font: 16px/90px "微软雅黑";
+}
+/*右边详情展示*/
+.hardcover_rigt{
+	width: 834px;
+	height: 450px;
+	border: #eee solid 1px;
+	
+}
+.hardcover2{
+	position: relative;
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	width: 267px;
+	height:220px ;
+	overflow: hidden;
+}
+.hardcover2:hover .hover{
+	transform: translateY(0);
+}
+.hardcover2 .hover{
+	transition: all .5s;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 220px;
+	padding-top: 80px;
+	background: rgba(253,209,0,.7);
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	transform: translateY(220px);
+}
+.hardcover2 .hover p{
+	height: 34px;
+	line-height: 34px;
+}
+/*主题*/
+.hardcover3{
+	margin-top: 20px;
+	width: 1100px;
+	text-align: center;
+	width: 360px;
+	height: 520px;
+	border: #eee solid 1px;
+	float: left;
+}
+.hardcover4{
+	width: 360px;
+	height: 400px;
+	position: relative;
+    overflow: hidden;
+}
+.hardcover5{
+	width: 360px;
+	height: 124px;
+	background-color: #eee;
+}
+.hardcover5 h3{
+	font: 18px/40px "微软雅黑";
+}
+.hardcover5 p{
+	font:14px/30px "微软雅黑" ;
+}

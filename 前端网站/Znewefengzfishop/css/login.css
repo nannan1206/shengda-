@@ -1,0 +1,124 @@
+.comlogin{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	
+}
+.logintop{
+	width: 100%;
+	height: 110px;
+
+	padding-top: 25px;
+}
+.logintop img{
+	margin-right: 30px;
+	float: left;
+}
+.logintop h3{
+	font: 24px/28px "微软雅黑";
+	color: #000;
+	padding-top: 10px;
+	
+}
+.loginmain{
+	
+	width: 100%;
+	min-width: 1220px;
+	height: 494px;
+	background: url(../img/login/login.png) no-repeat;
+	background-size: 100% 100%;
+	
+}
+/*表单*/
+.formlogin{
+	width: 400px;
+	height: 366px;
+	/*margin-top:64px;*/
+	margin-right: 120px;
+	background-color: #ECF7F4;
+}
+/*表单头部*/
+.formtop{
+	text-align: center;
+	height: 54px;
+	width: 100%;
+	border-bottom: #fff solid 1px;
+	font: 18px/54px "微软雅黑" ;
+	
+}
+
+.Accountlogin ,.wechat {
+  width: 200px; 
+  height: 54px;
+  
+	
+}
+/*账户登录*/
+.formtop .active{
+	border-bottom: #A76F15 solid 2px;
+	font-weight: bold;
+}
+.active a{
+	color: #A76F15;
+	text-decoration: none;
+}
+
+.formbody1{
+	padding: 40px;
+}
+.forminput{
+	border: #e5e5e5 solid 1px;
+	padding:0 20px;
+	
+}
+.forminput input {
+   
+    width: 280px;
+    font: 14px/40px 微软雅黑;
+}
+
+.formcheck span{
+	 font: 12px/40px 微软雅黑;
+	 color: #666;
+}
+.loginbutton{
+	width: 100%;
+	height: 36px;
+	background-color: #fdd100;
+	font: 18px/36px "微软雅黑";
+	color: #fff;
+	text-align: center;
+	border-radius: 1px;
+	margin-top: 10px;
+	
+}
+.newuser a {
+	font:12px/36px "微软雅黑" ;
+	color: #a76f15;
+}
+
+
+
+/*微信登录*/
+
+.formbody{
+	text-align: center;
+}
+.formbody img {
+	text-align: center;
+	margin: 30px auto 20px;
+}
+.formbody a{
+	font: 12px/28px "微软雅黑";
+	color: #666666;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+.formbody a:hover{
+	color:  #A76F15;
+}
+.help{
+	color: #8F8F8F;
+	font: 10px/28px "微软雅黑";
+}

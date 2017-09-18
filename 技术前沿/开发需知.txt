@@ -1,0 +1,36 @@
+熟练掌握HTML5，Javascript，CSS3，Ajax等前端技术，具备跨浏览器开发经验；
+
+2、熟悉Vue，或者至少熟悉一种前端MVC/MVVM框架，Angular/React等；
+
+3、熟悉nodejs；
+
+4、Web App互动网页应用开发经验。
+
+
+
+加分项：
+
+1、对前端工程化与模块化开发有一定了解；
+
+2、大型Web应用系统开发经验；
+
+3、沟通良好，有前端团队管理经验。
+
+bootstrap的定制字体图标库
+http://www.runoob.com/try/demo_source/bootstrap-glyph-customization.htm
+
+在线自助设计
+http://www.yinshuashua.cn/
+
+Oops! Page not found
+哎呀！ 找不到网页
+We could not find the page you were looking for. Meanwhile, you may return to dashboard or try using the search form.
+我们找不到您要寻找的页面。 同时，您可以返回信息中心或尝试使用搜索表单。
+
+
+Oops! Something went wrong.
+哎呀！ 出了些问题。
+
+We will work on fixing that right away. Meanwhile, you may return to dashboard or try using the search form.
+我们将马上解决这个问题。 同时，您可以返回信息中心或尝试使用搜索表单。
+

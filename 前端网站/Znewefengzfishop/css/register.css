@@ -1,0 +1,189 @@
+.comlogin{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	
+}
+.logintop{
+	width: 100%;
+	height: 110px;
+
+	padding-top: 25px;
+}
+.logintop img{
+	margin-right: 30px;
+	float: left;
+}
+.logintop h3{
+	font: 24px/28px "微软雅黑";
+	color: #000;
+	padding-top: 10px;
+	
+}
+.loginmain{
+	text-align: center;
+	width: 100%;
+	min-width: 1220px;
+	height: 497px;
+	background: url(../img/login/register.png) no-repeat;
+	background-size: 100% 100%;
+	
+}
+/*表单*/
+.formlogin{
+	width: 400px;
+	height: 430px;
+	margin-top:30px;
+	margin-right: 100px;
+	background-color: #f8f3f0;
+}
+/*表单头部*/
+.formtop{
+	text-align: center;
+	height: 54px;
+	width: 100%;
+	border-bottom: #fff solid 1px;
+	font: 18px/54px "微软雅黑" ;
+	
+}
+
+.Accountlogin ,.wechat {
+  width: 200px; 
+  height: 54px;
+  
+	
+}
+/*账户登录*/
+.formtop .active{
+	border-bottom: #A76F15 solid 2px;
+	font-weight: bold;
+}
+.active a{
+	color: #A76F15;
+	text-decoration: none;
+}
+
+
+
+/*个人用户账单*/
+.personform{
+	width: 400px;
+	text-align: center;
+}
+.persontop{
+	
+	width: 400px;
+	height: 40px;
+    padding-left: 85px;
+}
+.persontop2{
+	
+	width: 400px;
+	height: 40px;
+    padding-left: 55px;
+}
+/*单选框样式*/
+.Cform3{
+	width: 77px;
+    height: 40px;
+    padding-right: 10px;	
+   
+}
+.Cform3 label{
+	font: 12px/40px "微软雅黑" ;
+	font-weight: 2;
+	color: #a76f15;
+	height: 40px;
+	line-height: 40px;
+	}
+.Cform3 label input{
+	height: 40px;
+	margin: 0;
+}
+.Cform3 label span{
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+}	
+.personinput{
+	width: 400px;
+	padding: 0 40px;
+	
+}
+.forminput1 ,.forminput2{
+	height: 45px;
+	border: #e5e5e5 solid 1px;
+	padding:0 20px;
+	
+}
+.cell{
+	height: 45px;
+	
+}
+.forminput2{
+	width: 200px;
+}
+.postcell{
+	width: 120px;
+	height: 45px;
+	border: #e5e5e5 solid 1px;
+	background-color: #eee;
+	
+}
+.postcell a {
+	 font: 12px/45px 微软雅黑;
+}
+.postcell a:hover{
+	color: #A76F15;
+	text-decoration: none;
+}
+.forminput1 input {
+   height: 45px;
+    width: 280px;
+    font: 14px/45px 微软雅黑;
+}
+.forminput2 input {
+   height: 45px;
+    width: 160px;
+    font: 14px/45px 微软雅黑;
+}
+
+
+
+
+.formcheck span{
+	 font: 12px/40px 微软雅黑;
+	 color: #666;
+}
+.formcheck a{
+	font: 12px/40px 微软雅黑;
+	color: #a76f15;
+	padding-right: 100px;
+}
+
+.loginbutton{
+	width: 100%;
+	height: 36px;
+	background-color: #fdd100;
+	font: 18px/36px "微软雅黑";
+	color: #fff;
+	text-align: center;
+	border-radius: 1px;
+	margin-top: 10px;
+	/*margin-bottom: 30px;*/
+	
+}
+.personinput p{
+	float: right;
+	height:30px;
+	line-height: 30px;
+	color: #333333;
+}
+.personinput p a{
+	color: #a76f15;
+	padding-left: 5px;
+}
+.personinput p a:hover{
+	color: #F58310;
+}

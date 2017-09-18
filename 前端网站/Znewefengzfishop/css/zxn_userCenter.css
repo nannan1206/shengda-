@@ -1,0 +1,360 @@
+/*****************************************商品咨询***************************************/
+
+
+/*栏目位置*/
+.userposition{
+	font:12px/40px "微软雅黑" ;
+	}
+.userposition a{
+	color: #999;
+}
+
+.advise1{
+    border: 1px solid #EEEEEE;	
+    width: 920px;
+    height:70px;
+    padding:20px 40px ;
+}
+.advise1span{
+	/*width: 200px;*/
+	height: 30px;
+	border-left: 2px solid #C1995A;
+	padding:0 10px ;
+}
+.advise1span a{
+	font: 18px/30px "微软雅黑";
+	padding-right:30px ;
+	color: #999;
+}
+.advise1span  .active a:hover{
+	text-decoration: none;
+}
+.advise1span  .active a{
+	color: #000;
+	text-decoration: none;
+}
+
+
+
+.advise2{
+	width: 920px;
+	height: 66px;
+	background-color:#f9f9f9 ;
+	padding:0 48px ;
+}
+.advise2 input{
+	font:16px/66px "微软雅黑" ;
+	width: 900px;
+	height: 60px;
+}
+.advise3{
+	width: 920px;
+	height: 180px;
+	background-color:#f9f9f9 ;
+	padding:0 48px ;
+}
+.advise3 input{
+  font:14px/66px "微软雅黑" ;
+  width: 900px;
+}
+
+.post1{
+	width:150px;
+	height: 54px;
+	background-color: #bd9350;
+	text-align: center;
+	margin-left: 900px;
+	margin-top: 30px;
+}
+.post1 span{
+	color: #fff;
+	font:18px/54px "微软雅黑" ;
+}
+
+.advise2 p{
+	font:16px/30px "微软雅黑" ;
+	color: #999;
+}
+
+/*客服解答 */
+.advise4{
+	height: 98px;
+	width: 920px;
+	background-color:#f9f9f9;
+	margin-bottom: 16px;
+	padding:10px 50px ;
+}
+.advise4 span{
+	font:14px/40px "微软雅黑" ;
+	color: #999;
+} 
+.advise4ask ,.advise4ans{
+	width: 20px;
+	height: 20px;
+	border-radius: 2px;
+	padding: 0 3px;
+	text-align: center;
+	font:14px/20px "微软雅黑" ;
+	color: #fff;
+	margin-right:20px ;
+}
+.advise4ask{
+	background-color: #f39800;
+}
+.advise4ans{
+	background-color: #159fff;
+}
+
+/*****************************************交易投诉***************************************/
+.person_center_right1{
+	width: 920px;
+	height: 600px;
+	border: 1px solid #eee;
+}
+.complaint a{
+	color:#c1995a ;
+	text-decoration: none;
+}
+.complaint a:hover{
+	text-decoration: none;
+}
+/*我发起的投诉列表*/
+.comask_top{
+	width: 920px;
+	height: 40px;
+	border: 1px solid #eee;
+	background-color:#f8f8f8 ;
+	padding-left: 35px;
+}
+.comask_top span{
+	font:12px/40px "微软雅黑" ;
+	color: #666;
+	margin-right: 75px;
+}
+
+.comask_item{
+	width: 920px;
+	height: 100px;
+	border-bottom:  1px solid #eee;
+	padding: 16px  0px 0px 30px;
+}
+.comask_item1{
+	float: left;
+	width: 126px;
+	padding: 0  10px ;
+}
+.comask_item1 a{
+	color: #bd9350;
+}
+
+/*提交投诉表单*/
+.userform3{
+	padding-left: 82px;
+}
+
+.userform31 span{
+	font:12px/30px "微软雅黑" ;
+	color: #333;
+}
+.userform32 ,.userform320,.userform321,.userform322 {
+	height: 30px;
+	/*width:150px ;*/
+	border:1px solid #eee ;
+	padding:0px 8px ;
+	margin-left: 5px;
+	
+}
+.userform32{
+	width: 150px;
+}
+.userform32 input,.userform320 input,.userform321 input{
+	font:12px/30px "微软雅黑" ;
+	color: #333;
+}
+
+.userform320 input{
+	width: 450px;
+}
+.userform321 input{
+	width: 248px;
+}
+.userform322 textarea{
+	font:12px/20px "微软雅黑" ;
+	color: #333;
+	padding-left: 5px;
+	width: 240px ;
+	height: 70px;
+}
+
+
+
+
+.userform3-list{
+	width: 522px;
+	height: auto;
+	padding-top: 16px;
+	/*border:1px solid #eee ;*/
+}
+
+.userform-sub{
+	width:88px ;
+	height: 36px;
+	background-color: #a76f15;
+	text-align: center;
+	margin-right: 600px;
+	margin-top:50px ;
+	margin-left:60px ;
+}
+.userform-sub input{
+	color: #fff;
+	font: 12px/36px "微软雅黑";
+}
+/*****************************************交易评价***************************************/
+.tradeadvise1{
+	
+    width: 920px;
+    height:70px;
+    padding:20px 40px ;
+}
+.tradetop{
+	height: 40px;
+	border-bottom: 1px solid #eee;
+	margin:0 10px ;
+}
+.tradetop a{
+	font: 18px/30px "微软雅黑";
+	padding-bottom: 10px;
+	margin-right:30px ;
+	color: #999;
+}
+.tradetop  .active a:hover{
+	text-decoration: none;
+}
+.tradetop  .active a{
+	border-bottom: 2px solid #C1995A;
+	color: #000;
+	text-decoration: none;
+}
+
+/*交易评价表单1*/
+.tradeform{
+	width: 850px;
+	height: 190px;
+	border: 1px solid #b2e2f8;
+	margin-left:30px ;
+}
+.tradeformtop{
+	border: 1px solid #b2e2f8;
+	height: 40px;
+	background-color:#eef7fc;
+}
+.tradeformtop span{
+	font: 12px/40px "微软雅黑";
+	color: #333;
+	
+}
+.tradedrown{
+	width: 110px;
+	padding-left:10px ;
+}
+.tradedrown1{
+	width:55px ;
+	height: 20px;
+	margin-top: 10px;
+	line-height: 20px;
+	text-align: center;
+	border:1px solid #dfdfdf ;
+}
+/*表单内容*/
+.tradeitem{
+	width: 110px;
+	height:148px ;
+	/*border:1px solid #dfdfdf ;*/
+	padding:20px ;
+}
+.tradeitem .iconfont{
+  font-family:"iconfont" !important;
+  font-size:23px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  color: red;
+}
+.tradeitem1{
+	padding-top: 20px;
+	padding-right: 24px;
+	width: 214px;
+	height:148px ;
+}
+.tradeitem1 p{
+	line-height: 20px;
+}
+.tradeitem1 label{
+	font-weight: normal;
+	line-height: 20px;
+	color:#bd9350 ;
+}
+.tradeitem1 i{
+	color: #35a4e2;
+	font-style: normal;
+}
+.tradeitem2{
+	width: 46px;
+	height: 24px;
+	background-color: #bd9350;
+	text-align: center;
+	margin-top: 30px;
+	
+}
+.tradeitem2 a{
+	font: 12px/24px "微软雅黑";
+	color: #fff;
+}
+/*****************************************我的收藏***************************************/
+.colltop{
+	width:850px ;
+	height:50px ;
+	margin-left:30px ;
+	padding: 10px;
+		
+}
+.colltop0{
+	width:100px ;
+	height: 30px;
+	background-color: #bd9350;
+	border-radius: 3px;
+	text-align: center;
+
+}
+.colltop0 a{
+	color: #fff;
+	font:14px/30px "微软雅黑" ;
+}
+/*图集列表*/
+.collitem0{
+	width: 250px;
+	height: 236px;
+	margin-top: 10px;
+	margin-left: 40px;
+	border:1px solid #eee ;
+}
+.collitem0 img{
+	margin: 10px;
+}
+.collitem0 span{
+	font: 12px/30px "微软雅黑";
+	margin:0 10px;
+}
+.collitem01{
+	width: 248px;
+	height: 30px;
+	border-top:1px solid #eee ;
+	padding: 0 10px;
+}
+.collitem01 a{
+	font: 12px/30px "微软雅黑";
+	color: #999;
+}
+.collitem01 a:hover{
+	color: #bd9350;
+}

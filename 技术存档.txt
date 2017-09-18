@@ -1,9 +1,48 @@
+后台管理系统
+http://192.168.0.75:20000/#!/
+dev
+123qwe
+看板路径
+http://kanban.sdprint.tech 
+
+/*AdminLTE添加*/
+.sidebar-mini.sidebar-collapse:not(.sidebar-mini-expand-feature) .sidebar-menu > li:hover > .treeview-menu {
+    top: 40px;
+    margin-left: 0;
+}
+.main-header .sidebar-toggle {
+       padding: 17px 15px;  
+}
+git仓库链接
+http://git.sdprint.tech:8082/users/sign_in
+
+github盛大文件备注
+https://github.com/nannan1206/shengda-.git
+
+众包平台
+像解放号、云沃客、码市、程序员客栈等平台
+
+响应式插件库
+http://www.jq22.com/
+懒人图库
+http://tool.lanrentuku.com/cssformat/
+
+前端网
+http://www.qdfuns.com/
+
+
+《特别推荐》10套精美的免费网站后台管理系统模板
+http://www.cnblogs.com/lhb25/archive/2012/10/15/10-free-html-admin-templates.html
+博客网址
+http://blog.sina.com.cn/u/5318071401
+
+
 盛大账户：3528048610
     密码： 123456
 
 迪思彩印
-账户 13903834970   密码624970
-http://www.jdxsb.net/files/article/html/158/158643/25415130.html   叶宋小说
+账户 13903834970   密码624
+
  D:\用户目录\我的文档\HBuilderProjects\shengdaprint我写的首页位置
    http://www.shengdaprint.com/  盛大印刷首页
    www.zzdazheng.com       正大印刷首页   
@@ -12,9 +51,8 @@ http://www.jdxsb.net/files/article/html/158/158643/25415130.html   叶宋小说
   http://www.yifutu.com/
   https://www.0757p.com/
   http://www.caihongguang.com/     彩虹
- 
-免费查重网站
-http://xueshu.baidu.com/u/biye/?tag=check&upload=1
+
+
 
 代码优化
 https://wenku.baidu.com/view/ac6757c1172ded630b1cb6ce.html?re=view
@@ -23,29 +61,6 @@ https://wenku.baidu.com/view/ac6757c1172ded630b1cb6ce.html?re=view
 1）学生登陆入口：http://check.cnki.net/user/
 2）学生登录：用户名和初始密码均为学号，及时修改自己的密码
 4）论文检测时间：首次2017年5月18日开始至2017年25日；第2次检测时间2017年5月26日开始至2017年26日，仅有一天，首次检测不合格学生进行第二次检测，二检不合格学生不得参加毕业答辩。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  
 
 中工：
