@@ -273,10 +273,9 @@ $(document).ready(function() {
 	});
 	$(".hideAnswer").click(function() {
 		$(this).parent().parent().next().hide();
-		$(".hideAnswer").hide();
+		$(this).hide();
 		$(".ansButton").show();
-	});
-
+	});  
 });
 
 //下单页面全选按钮的选中

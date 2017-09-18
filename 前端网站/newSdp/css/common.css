@@ -39,7 +39,7 @@ body{height:auto; padding-bottom: 30px;min-width: 1200px;}
 .search .btn01{float:left;background-color:#27adf4;color:#fff;font-size:18px;width:74px;height:46px;cursor: pointer;}
 .search .iconfont{font-size: 24px; position: absolute; top: 12px;left: 9px;color: #949494;}
 .spaword{width:500px;   font: 14px/26px "微软雅黑"; color: #898989;padding: 0 10px;}
-.spaword a{margin: 0 4px;}
+.spaword a{margin: 0 4px;color: #898989;}
 .spaword a:hover{color:#de2827;}
 /*添加字体颜色*/
 .spaword a:nth-child(4){color:#de2827;}
