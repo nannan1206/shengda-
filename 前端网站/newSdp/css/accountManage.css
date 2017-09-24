@@ -1,0 +1,6 @@
+.dataAccount{margin-top: 20px;}
+.dataAccount .personal-1{margin-top: 15px;overflow: hidden;float: left;width: 100%;line-height: 38px;}
+.dataAccount label{display: block;float: left;text-align: right;width: 144px;height: 38px;margin-left: 0;}
+.dataAccount select{margin-left: 20px;}
+.dataAccount .btn02{cursor: pointer;width: 200px;height: 53px;background-color: #0094ec;border: none;border-radius: 5px;margin-top: 40px;margin-left: 135px;font-size: 23px;color: #fff;}
+.form2 td,.form2 td a{font: 13px/30px "微软雅黑";}
