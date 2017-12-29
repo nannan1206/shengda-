@@ -1,0 +1,25 @@
+.top {position:fixed;top:0;left:0;}
+/*查询输入*/
+.proSelect {width:640px;border-bottom:1px dotted #9F9F9F;background:#FFFFFF;position:fixed;top:86px;left:0;box-shadow:0px 2px 2px #E5E5E5;}
+.proSelect li {margin:15px 5px;}
+.proSelect li label {font:24px/54px "微软雅黑";width:130px;display:block;float:left;}
+.proSelect li select,.proSelect li input {height:50px;color:#000;background:#F7F5ED;padding-left:20px;}
+.proSelect li select {width:410px;border:0;font:20px/54px "微软雅黑";}
+.proSelect li input {width:177px;margin-right:10px;font-size:20px;}
+.proSelect li:last-child input {width:390px;}
+.proSelect a {display:block;width:540px;height:50px;border:1px solid #ffc64c;color:#FFC64C;text-align:center;font:24px/50px "微软雅黑";margin:20px auto;}
+/*订单列表*/
+.orderTolList {margin-top:410px;}
+.orderList {width:640px;height:300px;border:1px solid #FFC64C;border-left:0;border-right:0;margin:20px auto;box-shadow:0px 2px 2px #E5E5E5;}
+.ordername {margin:0 30px;font:20px/50px "微软雅黑";}
+.ordername span {width:390px;float:left;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;word-break:break-all;overflow:hidden;}
+.ordername a {display:block;float:right;margin-top:5px;width:100px;height:40px;background:#E5E5E5;color:#7A7A7A;text-align:center;line-height:40px;}
+.orderArea {width:640px;height:160px;border:1px dotted #FFC64C;border-left:0;border-right:0;margin-top:50px;}
+.orderADetail {float:left;margin-left:30px;}
+.orderADetail,.orderTime {font:20px/26px "微软雅黑";color:#9F9F9F;}
+.orderTime {float:right;width:130px;text-align:right;margin-right:30px;}
+.orderTime p:last-child {margin-top:40px;}
+.orderpay {width:630px;height:86px;padding-left:10px;}
+.orderpay a {display:block;float:left;width:168px;height:56px;background:#FFC64C;color:#FFFFFF;text-align:center;font:22px/56px "微软雅黑";margin:16px 20px;}
+/*点击加载更多*/
+.clickMore {display:block;width:580px;height:66px;text-align:center;background:#FFC64C;color:#FFFFFF;font:24px/66px "微软雅黑";margin:30px auto;}

@@ -1,0 +1,19 @@
+/*产品进度*/
+.progress {width:520px;height:auto;min-height:60px;padding:10px 60px 20px;border-bottom:1px dotted #ffc64c;}
+.progress h3 {font:bold 28px/10px "微软雅黑";}
+.progress span {font:24px/34px "微软雅黑";margin-right:15px;color:#757575;}
+/*产品详情*/
+.proDetail {font:24px/40px "微软雅黑";margin-bottom:50px;}
+.detailMess li {display:block;min-height:55px;}
+.detailMess label {display:block;width:120px;float:left;color:#565656;}
+.detailMess span {float:left;width:450px;color:#989898;}
+.payButton {width:496px;padding:0 72px;height:90px;border-top:1px dotted #ffc64c;border-bottom:1px dotted #9f9f9f;box-shadow:0px 2px 2px #E5E5E5;}
+.payButton a {display:block;width:168px;height:56px;font:24px/56px "微软雅黑";color:#FFFFFF;background:#FFC64C;float:left;text-align:center;margin:20px 40px;}
+.proList {width:640px;height:220px;border:1px solid #ffca58;border-left:0;border-right:0;margin-top:36px;box-shadow:0px 2px 2px #E5E5E5;}
+.protitle {width:640px;height:60px;}
+.protitle span {float:left;margin-left:40px;font:bold 24px/60px "微软雅黑";}
+.protitle a {float:right;width:136px;height:40px;color:#7a7a7a;background:#e5e5e5;text-align:center;margin:10px 30px;}
+.pDetails {display:block;width:640px;height:160px;border-top:1px dotted #FFC64C;}
+.proarea {width:380px;float:left;margin:20px 40px;}
+.proarea span {font:24px/40px "微软雅黑";color:#787878;min-width:90px;max-width:260px;float:left;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;word-break:break-all;overflow:hidden;}
+.pDetails a {display:block;float:right;margin:24px 30px;width:50px;height:70px;padding:20px 30px;color:#7a7a7a;background:#e5e5e5;font:24px/30px "微软雅黑";}

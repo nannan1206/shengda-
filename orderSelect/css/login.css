@@ -1,0 +1,12 @@
+.loginBody{width: 540px;height:380px;margin:90px auto 0;}
+.phoneinput input,.codeinput input{width: 500px;height: 70px;background:#f7f5ed;margin: 15px 0;padding: 0 20px;font-size:24px;color: #292929;}
+.loginButton{display:block;width: 540px;height:70px;border: 1px solid #fbb00f;color: #fbb00f;font:24px/70px "微软雅黑";text-align:center;margin:26px 0;}
+.Forgetpass{float:right;color: #fbb00f;font: 20px/30px "微软雅黑";}
+.weChat{width: 100%;border-top: 1px dotted #a2db9a;text-align:center;margin-top:100px;}
+.weChat a{display: block;margin:30px auto;}
+.weChat span{color:#a2db9a;font:28px/20px "微软雅黑";}
+/*密码重置*/
+.codeinput input{width:320px;float: left;}
+.codeimg a{display:block;float:right;border:1px solid #f7f5ed;width: 166px;height: 68px;margin-top: 15px;font-size: 22px;}
+.codeimg a img{width: 138px;height: 46px;margin:15px;}
+.codeimg .loginButton{border: 1px solid #fbb00f;}
