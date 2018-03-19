@@ -1,0 +1,52 @@
+.ad,.sTel,.tel,.pass,.adress,.qq,.qqgray{background:url(../img/iconimg.png) no-repeat;float:left;margin:12px 15px 10px 25px;}
+.ad{height:35px;width:24px;background-position:0 0;margin: 19px 15px 10px 20px;}
+.sTel{height:34px;width:26px;background-position:-24px 0;margin-top: 18px;}
+.tel{height:43px;width:29px;background-position:-50px 0;}
+.adress{height:32px;width:32px;background-position:-80px 0;margin: 19px 15px 10px 20px;}
+.pass{height:42px;width:31px;background-position:-112px 0;}
+.qq{height:37px;width:35px;background-position:-144px 0;margin: 16px 15px 10px 18px;}
+.qqgray{height:40px;width:38px;background-position:-180px 0;}
+/*登录页头部*/
+.top{width: 640px;height:364px;background:url(../img/backTop.png);text-align: center;}
+.top img{margin-top:40px;}
+.top h3{font:bolder 36px/0px "微软雅黑";color:#FFFFFF;}
+/*finish*/
+.finish{width: 640px;height:504px;background:url(../img/finishBck.png);text-align: center;}
+.finish img{margin-top:170px;}
+/*登录表单*/
+.loginbody,.finishArea{width:500px;height: 400px;margin: 0 auto;font:28px/80px "微软雅黑";}
+.loginstyle{width:500px;height:auto;overflow: auto;}
+.telLogin,.qqLogin{float: left;margin-right: 34px;color: #989898;}
+.line{border-bottom:3px solid #efefef;margin-top: 80px;}
+.loginstyle .active,.qqLogin .active{border-bottom:3px solid #fed100;color:#000;}
+.telARea,.qqStyLogin,.userForm{width:500px;height:198px;margin-top: 40px;}
+.phone,.passWord{height:66px;background-color: #EFEFEF;margin-bottom: 30px;}
+.phone input,.passWord input,.picBorder input{height:66px;float: right;font:24px/36px "微软雅黑";color:#333333;}
+.phone{width:500px;}
+.phone input{width: 430px;}
+.passWord{width:286px;float: left;}
+.passWord input{width: 214px;}
+.imgNum{width: 186px;height: 66px;float: right;border: 1px solid #c4c4c4;text-align:center;font:24px/66px "微软雅黑";cursor: pointer;}
+.imgNum.active span{color:#B5B5B6;}
+.loginButton{display:block; width:500px;height:62px;background:#fdd000;text-align:center;color:#000000;font: 30px/62px "微软雅黑";}
+.qqStyLogin .phone input{width:420px;}
+.qqTips{width:478px;height:50px;padding:10px;   text-align: center; border: 1px solid #c4c4c4;font: 21px/26px "微软雅黑";color:#727171;}
+.loginfooter{margin: 320px auto 20px;text-align: center; font:18px/20px "微软雅黑";color:#9fa0a0;}
+/*完善会员信息*/
+.topimg{width:640px;height:146px;background: url(../img/secBack.png);}
+.topimgTit h3{margin-top:20px;text-align: center;color:#FDD000;font:bolder 36px/80px "微软雅黑" ;}
+.userForm{margin: 0 auto;}
+.userForm .phone{border: 1px solid #b5b5b5;background: none;}
+.picnum{width: 500px;height: 66px;margin-bottom: 26px;}
+.picBorder{width:294px;height: 66px;border: 1px solid #b5b5b5;float: left;}
+.picBorder input{width:280px ;}
+.picnum a{float: right;display: block;width: 180px;height: 60px;border: 1px solid #b5b5b5;padding: 3px;}
+ .finishArea{text-align: center;font:24px/30px "微软雅黑";margin-top:90px;}
+
+
+
+
+
+
+
+
