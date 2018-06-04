@@ -1,0 +1,22 @@
+.serviceCustom{width: 810px;margin: 0 36px;}
+.orderAderss th{background: #f6f6f6;border: 1px solid #efefef;font: bold 14px/50px "微软雅黑";}
+.orderAderss td{padding:5px;height:30px;font:14px/20px "微软雅黑";}
+.orderAderss tr td:first-child{color:#2598d2;}
+/*服务类型*/
+.cs{overflow: auto;padding: 20px 0;}
+.cSitem{width: 100%;}
+.cSitem span,.cSitem,.citem,.citem li,.citemS,.citemS li{float: left;}
+.cSitem span{font:700 14px/40px "微软雅黑";}
+.cSitem span em{color: #e5433e;margin:0 5px;font-style: normal;}
+.citem li ,.citemS li{display: block; width:70px; height: 30px; font: 14px/30px "微软雅黑"; margin: 5px; overflow: auto;}
+.citemS li label{cursor: pointer;}
+.citem li{border: 2px solid #E6E6E6;text-align:center;width: 100px;}
+.citem li.active{border: 2px solid #e5433e;}
+.citem input{border: 1px solid #c1c1c1;border-radius: 2px;width:220px;height: 30px;margin: 5px;padding:0 5px;color:#e5433e ;}
+.citem p,.word{color: #898989;font: 12px/20px "微软雅黑";margin-left: 15px;}
+.textarea{margin-top: 10px; width:600px; font-size: 14px; font-weight: normal; color: #666; min-height:100px; word-wrap:break-word;/*为了在ie和FF顺利换行，加上word-wrap*/ overflow-x:hidden; overflow-y: auto; /*visible (默认), hidden, scroll, 和auto*/ padding: 5px; line-height: 20px; white-space:normal;/*换行*/ outline: 0;} div[contenteditable]{border:1px solid #ddd;}
+.word{float:left;margin-top:100px;}
+/*上传图片*/
+.citem .upphoto{border: 0;}
+.upphoto{width: 76px;height:26px;color:#000000;text-align: center;font:bold 12px/26px "微软雅黑";display: block;}
+.upbutton{float:left;width: 140px;height: 30px;font: 16px/30px "微软雅黑";text-align: center;margin:20px 350px;   color: #FFFFFF;background:#e5433e;border-radius:5px;}

@@ -1,0 +1,20 @@
+.orderpay{width: 1150px;height: auto;min-height:336px;border: 1px solid #CCCCCC;padding:70px 0;overflow: auto;}
+.wechatPay{width: 190px;height:310px;float: left;margin-left:100px;}
+.wechatPay img,.wechatPay h3{float: left;margin: 0 10px;}
+.wechatPay img:last-child{margin:20px 0px;width: 189px;height: 188px;}
+.wechatPay h3{font: 25px/44px "微软雅黑";color: #434343;}
+.orderDetiA{width:370px;height:auto;float: left;font: 16px/30px "微软雅黑";color: #434343;padding:80px 80px 0;}
+.orderDetiAB{display: block;width:370px;height: 30px;}
+.orderDetiAB li,.orderDetiA h4{float: left;}
+.orderDetiAB li span{color: #e5433e;font-weight:bold;}
+.orderDetiAB li a{color:#1D8CC5;font: 14px/20px "微软雅黑";}
+.color{color: #e5433e;font: 14px/20px "微软雅黑";margin-top:16px;}
+.ordAdisp{display: none;}
+/*支付成功*/
+.paySuccess{width:480px;height:30px;font: 20px/30px "微软雅黑";color: #434343;margin:86px auto;}
+.paySuccess span:first-child{width: 40px;height: 40px;display: block;background: url(../img/logo/finish.png)no-repeat;float: left;margin-top:4px;}
+/*微信支付*/
+.WechatPage{margin: 0 auto;}
+.WechatPage .wechatPay{margin-left: 264px;}
+.payicon{width: 210px;height:44px;background:#08aaeb;float: left;font: 12px/20px "微软雅黑";color: #FFFFFF;padding-top:6px;margin-left: -9px;}
+.payicon img{width: 33px;height: 33px;margin:2px 12px;}

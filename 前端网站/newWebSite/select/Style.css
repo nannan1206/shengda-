@@ -1,0 +1,39 @@
+@media (min-width: 768px){
+	.col-sm-6 { width:240px;height: 30px;border-radius: 4px;padding: 0 6px 0 0;}
+	.col-sm-6.smallBig  { width: 150px;}
+}
+.form-control{height:30px; font: 13px/17px "微软雅黑"; }
+.form-control:focus {
+	
+    border: 1px solid #e5433e;
+    outline: 0;
+     -webkit-box-shadow:none; 
+     box-shadow:none; 
+}
+.btn-default-focus { 
+  box-shadow:none;
+  list-style: none;
+  outline: none;  
+}
+.ui-select-bootstrap .ui-select-choices-row.active>span {
+    color: #333333;
+    background-color:#F3F3F3;}
+ .ui-select-bootstrap .ui-select-choices-row>span:hover, .ui-select-bootstrap .ui-select-choices-row>span:focus {
+    color: #FFFFFF;
+    background-color:#e5433e;   }
+    
+.dropdown-menu {   
+	min-width: 120px;  
+    border: 1px solid  #e5433e;
+     border-radius: 4px; 
+     border-top-right-radius:2px ;
+     border-bottom-right-radius:2px ;
+     -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175); 
+     box-shadow: 0 6px 12px rgba(0, 0, 0, .175); 
+}
+/*选框三角*/
+.caret {  
+    border-top: 6px solid;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}

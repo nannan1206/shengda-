@@ -1,0 +1,131 @@
+body{background:#F6F6F6;}
+.loginhead{width: 100%;height:100px;border-bottom: 4px solid #e5433e;}
+.loginComWidth{margin: 0 auto;width:1056px;}
+.logintop span,.logintop img,.logintop h3{float: left;}
+.logintop img{margin:10px 0;}
+.logintop span{margin:46px 18px 32px;color:#b0b0b0;}
+.logintop h3{font:bold 16px/40px "微软雅黑";margin-top:38px;}
+/*主体*/
+.loginBody{height: auto;min-height: 522px;margin:16px auto 40px;background: #FFFFFF;border: 1px solid #c0c0c0;}
+.goRegister{height:104px;width:1000px;text-align: right;}
+.goRegister span{font:13px/80px "微软雅黑";color:#8a8a8a;}
+.goRegister a{font:16px/80px "微软雅黑";color:#E5433E;margin-left: 16px;}
+/*登录表单*/
+.leftimg{float: left;}
+.loginForm{width:288px;height: 360px;float:left;margin-left: 48px;}
+/*单选*/
+/*.radio_label{background: url(../img/logo/radioButton.png) no-repeat;display: inline-block;line-height: 1rem;height: 1rem;text-indent:1rem;margin-right:2rem;}
+.checked{background: url(../img/logo/radio.png) no-repeat;}
+input[type='radio']{display:none;}*/
+/*添加单选变tab样式*/
+.loginstyle{width:288px;height:auto;overflow: auto;font: 16px/40px "微软雅黑";}
+.telLogin,.qqLogin{float: left;margin-right: 34px;color: #989898;}
+.line{border-bottom:2px solid #efefef;margin-top: 40px;}
+.loginstyle .active,.qqLogin .active{border-bottom:2px solid #E5433E;color:#000;}
+/*添加提示语句*/			
+.addtip{width: 288px;height: 30px;font: 12px/30px "微软雅黑";margin-bottom: -20px;}
+.addtip span img{float: left;margin: 7px 5px;}
+.addtip a{text-decoration: underline; font-style: italic;color:#E51C23;}
+/*表单*/
+.phoneLogin{display:none;}
+label{font: 13px/30px "微软雅黑";cursor: pointer;}
+.name,.numimg,.imgNum{margin-top:20px;height:40px;border: 1px solid #d1d1d1;border-radius: 5px;}
+.userimg{width: 40px;height: 40px;float: left;}
+.userimg img{margin: 9px;width: 24px;height: 24px;}
+.name input{width:240px;height:40px;float: left;}
+.numimg{width:150px;height:40px;float: left;}
+.numimg input{width: 120px;padding: 0 15px;height:40px;border-radius: 5px;}
+.imgNum{width:124px;float:right;border: 0;border-radius:5px;  cursor: pointer;text-align: center;background:#EEEEEE;text-align: center;}
+.imgNum img{width: 124px;height: 42px;}
+.imgNum span{font:13px/42px "微软雅黑";}
+.imgNum.active span{color: #999999;}
+.forPass{font: 12px/40px "微软雅黑";margin-left:10px;overflow: auto;width: 270px;}
+.forPass label{font-size: 12px;}
+.forPass a{margin-left:110px;color:#E5433E;}
+.updateForm{display: block;margin: 15px 0 20px;width:290px;height: 40px;background:#E5433E;color: #FFFFFF;text-align:center;font:16px/40px "微软雅黑";border-radius: 5px;}
+.loginThird a span{font: 12px/20px "微软雅黑";color: #000000;float: left;display:block;margin: 0 2px;}
+.loginThird a span:hover{color:#E5433E;}
+.loginThird a:first-child span:first-child{width: 25px;height: 20px;background: url(../img/logo/qq.png);}
+.loginThird a:last-child span:first-child{margin-left: 15px; width: 25px;height: 20px;background:url(../img/logo/weChat.png);}
+/*注册页面*/
+.registerForm{width: 300px;height:420px;margin:28px;float: left;margin:40px 140px;}
+.registerForm li{display: block;width: 100%;height:auto;}
+.registerForm .personal{margin:15px 0;overflow:auto;font: 14px/40px "微软雅黑";color: #404040;}
+.registerForm .personal label,.registerForm .loginForm label{display: block;width:130px;height:40px;text-align: right;float: left;margin-right:13px;line-height:40px;}
+.registerForm .personal input{width:266px;height:40px;line-height:40px;border:1px solid #dadada;border-radius:5px;padding: 0 10px;}
+.registerForm .loginForm{width: 426px;margin-left: 0;padding-bottom: 15px;}
+.registerForm .numimg,.registerForm .imgNum{margin: 0 12px 15px 0;float: left;}
+.registerForm .forPass a{margin-left: -6px;}
+.registerForm .registerButton{ margin:10px 0 20px 0px;  display: block; width: 290px;height: 40px;background:#E5433E;border-radius: 5px;color: #FFFFFF;text-align: center;font: 16px/40px "微软雅黑";}
+.registerForm .name{margin: 10px 0;width: 288px;}
+/*注册页面弹出框*/
+.sucessRegiterArea,.fileRegiterArea{display: none; position: absolute; left: 0; top: 0;/* margin-top: -100px;*/ min-height: 1500px; width: 100%; height: 100%; background: rgba(0,0,0,.4); z-index: 9999;}
+.sucessRegiter,.fileRegiter{ overflow-y: auto; background: white; position: fixed; margin-top: -340px; margin-left: -410px; left: 50%; top: 50%;box-shadow: 0 0 5px 2px #d0cfc8;}
+.sucessRegiter{width:700px;min-height:400px;height: auto;margin-top:-300px;margin-left: -316px; } 
+.succeTilte{width: 180px; margin: 60px auto 30px;}
+.succeTilte img,.succeTilterandonpass h3{float: left;margin:0 20px;}
+.randonpass{width: 550px;  font:12px/26px "微软雅黑" ;color: #666666;margin: 0 auto;}
+.randonpass .sucessWord{width:480px;height: auto;font: 16px/40px "微软雅黑";color:#101010;margin: 20px auto;}
+.suuesbutton{width: 400px; height: 140px; margin: 0 auto; overflow: auto;}
+.suuesbutton a{display: block; float: left; text-align: center; width: 130px; height: 40px; color: rgb(255, 255, 255); font: 16px/40px 微软雅黑; border-radius: 5px; background: rgb(229, 67, 62); margin: 50px 30px;}
+.suuesbutton a:last-child{background: #EFEFEF; color: #000000;}
+/*注册失败弹出框*/
+.fileRegiter{width:550px;min-height:230px;height: auto;margin-top:-300px;margin-left: -256px; } 
+.fileRegiter .sucessWord{width: 370px;line-height: 30px;}
+.fileRegiter .succeTilte{width: 100px; margin: 60px auto 30px;}
+/*二维码*/
+.rWechat{width: 420px;height: 436px;border-left:1px solid #afafaf;float:left;margin:40px 0;}
+.rWechat .goRegister{width: auto;}
+.rWechat .goRegister a{ font-size: 14px;}
+.rWechat p{text-align: center;font: 16px/30px "微软雅黑";}
+.rWechat img{width: 220px;height: 220px;margin-left:100px;}
+/*找回密码*/
+.forpassTitl{width:100%;height:60px;background:#F6F6F6;}
+.forpassTitl h3{font:500 20px/60px "微软雅黑";color: #000000;margin-left:34px;}
+/*忘记密码内容表单*/
+.forpassArea .registerForm{margin-left: 100px;}
+.forpassArea .registerForm,.forpassArea .loginForm{width:500px;height:40px;}
+.forpassArea{width: 710px;height: 360px;margin:50px 200px;display: none;}
+.circle{margin: 0 auto;width: 50px;height: 50px;border-radius:50%;border: 1px solid #dcdcdc;background:#FFFFFF;color:#dcdcdc;text-align: center;font:23px/50px "微软雅黑";}
+.forpassArea li p,.forpassArea:nth-child(4) li:last-child p{color:#dcdcdc;}
+/*重设密码1选择重设方式*/
+.addSuccestip span{font: 12px/20px "微软雅黑";color:#E5433E;}
+.addSuccestip span img{float: left;margin: 4px;}
+.chengestyle{width: 690px;height: 60px;border: 1px solid #bbbbbb;margin:18px 0 ;}
+.chengestyle a{float: right;margin:16px 46px; width: 100px;height: 30px;display: block;color:#FFFFFF;background: #E5433E;border-radius: 3px;text-align: center;font: 14px/30px "微软雅黑";}
+.chengestyle span{float: left;margin:18px 30px 15px 34px;font: 16px/26px "微软雅黑";}
+.usertips{float: right;margin:16px 20px;font: 14px/30px "微软雅黑";}
+/*邮箱验证*/
+.succemail{font: 14px/20px "微软雅黑";margin-bottom: -50px;display:none;}
+.succemail img{float: left;margin: 0 10px 0 140px;}
+.succemail a{text-decoration: underline; font-style: italic;}
+#step5 .registerForm a{margin-top: 80px;}
+
+/*第一部第一个圆*/
+.forpassArea li:first-child .circle{background:#E5433E;border: 1px solid #E5433E;color:#FFFFFF;}
+.forpassArea li:first-child p{color: #000000;}
+.forpassArea li{min-width: 76px;width: auto;  height: 86px;font: 14px/30px "微软雅黑";text-align: center;float: left;}
+.grayLine,.forpassArea:nth-child(4) li:nth-child(6) .grayLine{border-top: 2px solid #dcdcdc;display: block; width: 120px;height: 50px;margin-top: 25px;}
+.passButton{width: 140px;height: 40px;display: block;color:#FFFFFF;background: #E5433E;border-radius: 5px;margin:128px auto 0;text-align: center;font: 16px/40px "微软雅黑";}
+/*第二步*/
+.forpassArea:nth-child(3) li .circle,.forpassArea:nth-child(6) li .circle{background:#E5433E;border: 1px solid #E5433E;color:#FFFFFF;}
+.forpassArea:nth-child(3) li:nth-child(3) p,.forpassArea:nth-child(6) li:nth-child(3) p{color: #000000;}
+.forpassArea:nth-child(3) li:nth-child(5) .circle,.forpassArea:nth-child(3) li:nth-child(7) .circle,.forpassArea:nth-child(6) li:nth-child(5) .circle,.forpassArea:nth-child(6) li:nth-child(7) .circle{border: 1px solid #dcdcdc;background:#FFFFFF;color:#dcdcdc;}
+.forpassArea:nth-child(3) .grayLine,.forpassArea:nth-child(6) .grayLine{border-top: 2px solid #E5433E;}
+.forpassArea:nth-child(3) li:nth-child(4) .grayLine,.forpassArea:nth-child(3) li:nth-child(6) .grayLine,.forpassArea:nth-child(6) li:nth-child(4) .grayLine,.forpassArea:nth-child(6) li:nth-child(6) .grayLine{border-top: 2px solid #dcdcdc;}
+/*忘记密码第3布*/
+.forpassArea:nth-child(4) li .circle{background:#E5433E;border: 1px solid #E5433E;color:#FFFFFF;}
+.forpassArea:nth-child(4) li:nth-child(7) .circle{border: 1px solid #dcdcdc;background:#FFFFFF;color:#dcdcdc;}
+.forpassArea:nth-child(4) .grayLine{border-top: 2px solid #E5433E;}
+.forpassArea:nth-child(4) li:nth-child(6) .grayLine{border-top: 2px solid #dcdcdc;}
+.forpassArea:nth-child(4) .passButton{margin:38px auto 0;}
+/*忘记密码第4布*/
+.forpassArea:nth-child(5) li .circle{background:#E5433E;border: 1px solid #E5433E;color:#FFFFFF;}
+.forpassArea:nth-child(5) li p,.forpassArea:nth-child(4) li p{color:#000000;}
+.forpassArea:nth-child(5) .grayLine{border-top: 2px solid #E5433E;}
+/*完成修改密码提示*/
+.passFinish{width:340px;height: 120px;margin:0px auto;padding-top: 150px;   font: 16px/30px "微软雅黑";}
+.passFinish span:first-child{width: 40px;height: 40px;display: block;background: url(../img/logo/finish.png)no-repeat;float: left;}
+.passFinish span font{color: #E5433E;margin: 0 3px;font-size: 18px;}
+.passFinish a,.passFinish span{float:left;}
+.passFinish a{color:#1c8bc6;margin:2px 3px;}

@@ -1,0 +1,47 @@
+.bannerNews{min-width: 1200px; height:420px;overflow:hidden;position:relative;}
+.bannerNews img{width: 100%;height: 420px;}
+/*新闻列表右侧*/
+.rightFix{overflow: auto;}
+.newsAreaRight{float: right; width: 996px;height: auto;min-height: 300px;border-left: 1px solid #b8b8b8;overflow: -webkit-paged-x;}
+.newsAreaRight .newsaddClass,.newsArticle{margin:0px 70px 0px 20px ;}
+.newsAreaRight .newsaddClass li{width: 904px;height:158px;padding: 26px 0; border-bottom: 1px dotted #b8b8b8;position: relative;}
+.newsAreaRight .newsaddClass li:last-child{border: 0;}
+.newsAreaRight .newsaddClass li img{width:260px;height: 160px;float: left;}
+.newsListDetail .newButton{width: 904px;height:158px;display: block;position: absolute;top:26px;left: 0;}
+.nDetil{float: right;width: 610px;height:160px ;font: 12px/24px "微软雅黑";color:#828282;overflow: hidden;}
+.nDetil h3{font:bold 18px/48px "微软雅黑";color: #000000; width:600px; white-space:nowrap; word-break:keep-all; overflow:hidden; text-overflow:ellipsis;}
+.nDetil p{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;word-break: break-all;overflow: hidden;}
+.nDetil span{float: right;}
+.nDetil a{float: right;color:#e5433e;margin-top: 20px;}
+/*新网详情页*/
+.newsArticle{font: 14px/24px "微软雅黑";color:#000000;}
+.line{border-bottom: 1px dotted #b8b8b8;padding: 5px 0;}
+.newsArticle a{color: #000000;margin: 0 5px;}
+.newsArticle a:hover,.readtitle a:hover{color:#e5433e;}
+.breadcrumb h3{font: 26px/54px "微软雅黑";}
+.newsArticle b{font: 14px/50px "微软雅黑"; color: #595959;}
+.newsArticleDetail{padding-bottom: 40px;}
+/*推荐阅读*/
+.recommendedRead{margin:30px 70px 50px 20px;}
+.readtitle a{float: right;color: #000000;font: 13px/20px "微软雅黑";}
+.recommendedRead dl dt{float: left;width: 292px;height: 326px;border:1px solid #EFEFEF;margin: 20px 12px 50px 0;position: relative;}
+.recommendedRead dl dt:last-child{margin-right: 0;}
+.recommendedRead dl dt a{width: 292px;height: 326px;position:absolute;top: 0;left: 0;}
+.recommendedRead dl dt img{width:292px;height: 221px;}
+.wordRem{margin:16px ;}
+.wordRem h3{font:bold 16px/30px "微软雅黑";width:290px; white-space:nowrap; word-break:keep-all; overflow:hidden; text-overflow:ellipsis;}
+.wordRem p{font:13px/24px "微软雅黑" ;color: #797979;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;word-break: break-all;overflow: hidden;}
+/*公司简介*/
+.profile .breadcrumb,.profile .newsArticleDetail{border: 0;}
+.profile h4{font: bold 16px/50px "微软雅黑";text-align: center;}
+/*联系我们*/
+.newsArticleDetail h5{font:bold 16px/50px "微软雅黑" ;}
+/*加入我们*/
+.formtop{width: 100%;height: 50px;background:#efefef;margin-top:40px;border:1px solid #efefef;font:16px/50px "微软雅黑";}
+.joinus h6{font:bold 16px/30px "微软雅黑";margin-top: 18px;}
+.joinus p a{color:#1d8cc5;}
+/*物流配送*/
+.maplogistics{margin: 50px 0 0 30px;}
+
+
+

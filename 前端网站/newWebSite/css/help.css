@@ -1,0 +1,33 @@
+/*帮助中心-客户留言*/
+.lemeeaDiv{display: block;width: 100%;height: auto;overflow: auto;margin-top:20px;}
+.messClass{width: 100%;height:44px;background:#efefef;}
+.messClass li{width: 106px;height: 42px;float: left;padding: 0;border-bottom: 0;border-top:2px solid #EFEFEF;font: 14px/44px "微软雅黑";text-align: center;cursor: pointer;}
+.messClass li:hover,.messClass li.active{background: #FFFFFF;border-top:2px solid #e5433e;}
+.textedit span{float: left;}
+.textedit span i{color: #ff0000;font-style: normal;line-height: 40px;}
+.textedit{display: block;width:820px;min-height: 220px;height:auto;margin: 30px 0 0px 40px;overflow: auto;}
+.texteditArea{width:740px;height: auto;min-height: 110px;float:left;display: block;}
+.newsArticle .lmButton{overflow: auto; width: 132px;height: 40px;display:block;font:14px/40px "微软雅黑";background:#E5433E;border-radius: 5px;text-align: center;margin:56px auto 30px;}
+.newsArticle .lmButton a,.newsArticle .lmButton a:hover{color: #FFFFEE;}
+/*富文本框样式修改*/
+.simditor{border: 1px solid #c5c5c5;}
+.simditor .simditor-body{min-height: 170px;height: auto;overflow: hidden;}
+.simditor .simditor-toolbar > ul > li > .toolbar-item{display: inline-block;margin-left: 10px;width: 20px; height: 20px; outline: none; color: #333333; font-size: 15px; line-height: 20px; vertical-align: middle; text-align: center; text-decoration: none;}
+.newsArticle a{color: #000000; margin: 0 0px;}
+.simditor .simditor-toolbar > ul > li{font-size: 70px;}
+.simditor .simditor-body,.simditor .simditor-wrapper .simditor-placeholder{padding: 10px;}
+.simditor p span{width:720px;height: auto;}
+.simditor .simditor-toolbar > ul {height: 30px;}
+/*帮助中心-常见问题*/
+.comProm ul li{margin-bottom:24px;}
+.comProm span{width:20px;height: 20px;border-radius: 3px;float: left;background:#E5433E;color: #FFFFEE;text-align: center;margin: 0 10px 0 6px;}
+.comProm h4{font:bold 16px/20px "微软雅黑";}
+.triangle{border: 9px solid transparent;width: 0;height: 0;margin-left:58px;}
+.v-bottom{border-bottom-color: #efefef;}
+.comPanswer{width:814px;height: auto;min-height: 50px;background:#EFEFEF;padding: 24px;font: 14px/28px "微软雅黑";margin-left: 30px;border-radius: 10px;}
+.comPadvise{border-top: 1px solid #dcdcdc;width:860px;height:90px;margin:50px 30px;line-height:90px;}
+.comPadvise p a{color:#E5433E;}
+/*服务支持-印刷知识*/
+.newsArticleDetail .knowledge{width: 100%;height: auto;overflow: auto;}
+.knowledge a{float:left;width: 100%;line-height: 34px;}
+.knowledge a:hover{color:#E5433E;}

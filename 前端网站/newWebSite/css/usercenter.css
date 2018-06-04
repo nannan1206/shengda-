@@ -1,0 +1,68 @@
+.data{overflow: auto;}
+.data .personal{margin:15px 0;overflow:auto;font: 14px/30px "微软雅黑";color: #404040;}
+.data .personal label{display: block;width:100px;height:30px;text-align: right;float: left;margin-right:13px;}
+.personal input,.accountMoney input{width:180px;height:30px;line-height:30px;border:1px solid #dadada;border-radius:5px;padding: 0 10px;}
+input[type="text"]:focus{border:1px solid #ff7496;}
+.userDetail .personal:last-child input{width:390px;}
+.btn02{outline: none;cursor:pointer;width:130px;height:40px;background-color:#e5433e;border:none;border-radius:5px;margin:50px 0 60px 200px;font:16px/40px "微软雅黑";color:#fff;}
+/*下拉框的样式*/
+select{display: none;}
+.select_box{float: left;font-family: "宋体"; font-size: 12px;color: #999999;width: 146px;line-height: 30px;background:url(../img/user/tangle.png)no-repeat 114px 13px;}
+.select_showbox{position: relative;  width:130px;height:30px;color:#333;border:1px solid #dadada;border-radius:5px;padding-left:5px;}
+.select_showbox:hover,.select_showbox.active{border:1px solid #ff7496;}
+.select_option{margin-top:2px;position: absolute;  width: auto;background: #FFFFFF;  border: 1px solid red;/*border-top: none;*/display: none;width:136px;z-index: 999;  height:150px;overflow: auto;}
+.select_option li{padding-left: 5px;}
+.select_option li.selected{background-color: #F3F3F3;color: #999;}
+.select_option li.hover{background:#E5433E; color: #fff;}
+/*修改密码*/
+.listproDetail{width: 1000px;padding: 0;height: auto;}
+.password .btn02{margin-left:94px;}
+.warmTips{width:auto;height: auto;min-height:14px;padding:10px;background:#EFEFEF;font: 12px/20px "微软雅黑";}
+.warmTips span{float: left;font-weight: bold;}
+.warmTips span img{margin: 4px 5px 0 20px;}
+.tipsWord{overflow: auto; width: auto;height: auto;margin-left:100px;}
+/*第三方登录*/
+.trlogin{width: auto;height: auto;margin:24px;overflow: auto;}
+.trloginQ{border-bottom: 1px solid #dcdcdc;overflow: auto;font: 13px/40px "微软雅黑";margin-top: 16px;}
+.trloginQ:last-child,.accountMoney:last-child{border-bottom: 0;}
+.trloginQ img{float: left;margin: 0 10px 14px 0;}
+.trloginQ a{float: right;width: 80px;height: 24px;line-height: 24px;border-radius:5px;margin: 10px 50px 0 0;  text-align: center;color: #FFFFEE;background:#e5433e;}
+/*地址管理*/
+.aderss{width: 100%;height: auto;}
+.aderss table{width:auto;padding-left: 20px;}
+.aderss th{background:#EFEFEF;font: bold 14px/56px "微软雅黑";text-align:left;padding:0 25px;}
+.aderss table td{height: 40px;border: 0;font:14px/26px "微软雅黑";border-bottom:1px solid #efefef;text-align:left;padding:0 25px;}
+.aderss table tr:last-child td{border-bottom: 0;}
+.aderss table td img,.aderss table td span{width: 13px;height:13px;float: left;margin-top: 6px;}
+.aderss table td a{float: left;margin: 0 16px 0 4px;color: #000000;}
+.aderss table td a:hover,.aderss table td a.active,.addadress:hover a,.addadress.active a{color:#E5433E;}
+.addadress span{display: block;background: url(../img/user/circle.png);}
+.addadress:hover span,.addadress.active span{background: url(../img/user/onclick.png);}
+.addArea{width:140px;height: auto; margin:30px auto 40px;font: 16px/36px "微软雅黑";color:#1D8CC5;cursor: pointer;}
+.addArea img{float: left;margin: 10px;}
+.data h3{font: bold 16px/20px "微软雅黑";margin:0 0 40px 30px;}
+/*账户管理-=账户充值*/
+.accountMoney{border-bottom: 1px solid #dcdcdc;}
+.accountMoney:first-child{margin-top: -20px;}
+.accountMoney label{color: #404040;font:700 16px/80px "微软雅黑";}
+.accountMoney input{margin: 0 10px;border-radius:3px;}
+.accountMoney span{font-size:12px;}
+.accountMoney span i{color:#E5433E;font-style: normal;}
+/*选择支付方式*/
+.changButton{margin: 10px 72px;}
+.changButton a{margin: 0 20px;  width: 209px;height: 109px;border:2px solid #faf9f8;display: block;float: left;background:url(../img/logo/payChang.png) no-repeat;}
+.changButton a:hover{height: 107px;border:2px solid #b9b9b9;}
+.changButton a:first-child{background-position:-209px 0;}
+.changButton a:last-child{background-position:0 0;}
+/*支付成功*/
+.paySuccess{width:480px;height:30px;margin:66px auto;}
+.paySuccess span{font:20px/30px "微软雅黑";color: #434343;}
+.paySuccess span:first-child{width: 40px;height: 40px;display: block;background: url(../img/logo/finish.png)no-repeat;float: left;margin-top:4px;}
+
+
+
+
+
+
+
+
