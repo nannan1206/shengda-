@@ -1,0 +1,60 @@
+.peopleCenterArea{padding-top:30px;}
+.carAreabody{margin:0px auto; width: 1140px; padding: 30px; height: auto; min-height: 700px; background: #FFFFFF;overflow: auto;}
+.cartitle h4{font: 20px/36px "微软雅黑";color:#333333;}
+.cartitle{border-bottom:1px solid #000000;}
+.cartable{margin-top:10px;}
+.cartable tr{border:1px solid #ececec;border-left: 0;border-right: 0;font: 14px/30px "微软雅黑";color: #333333;}
+.cartable thead tr,table tr td{border:0 ;}
+.cartable thead th{color: #333333;}
+.cartable tr td{border: 0;font: 14px/22px "微软雅黑";color:#666666;}
+.cartable thead th:first-child,table tr td input{float:left;}
+.cartable img{float: left;margin: 10px 6px;width: 66px;height: 66px;}
+.cartable .proname{float: left;color: #666666;margin-top: 10px;}
+.cartable p{text-align: center;}
+.cartable i,.carSum .carRight i{color: #E5433E;font-style: normal;}
+.cartable a{color: #1681EE;}
+.carSum{overflow: auto;font: 14px/36px "微软雅黑";}
+.carleft{float: left;}
+.carleft a{color: #1681EE;margin-right: 24px;}
+.carRight{float: right;}
+.carbutton a{display: block;border: 1px solid #B0B0B0;border-radius: 4px;width: 140px;height:44px;font: 16px/44px "微软雅黑";color: #000000;margin: 30px 0 0 24px; text-align: center;float: right;}
+.first-child{background-color: #FDD000;border: 1px solid #FDD000 !important}
+.disabled {cursor: not-allowed;background-color: #B0B0B0;}
+.peopleMessage h5{font:bold 14px/30px "微软雅黑";color: #333333;margin-top:20px;}
+.haveMeaasge,.haveMeaasgeaa{border-top: 1px solid #ececec;font: 14px/30px "微软雅黑";color: #666666;overflow: auto;}
+.haveMeaasge ul li .nameactive{float: left;border: 1px solid #FDD000;width:auto;height:28px;padding: 0 15px;margin-right: 10px;background: url(../img/right.png) no-repeat right bottom;}
+.haveMeaasge ul li .nameactive span{margin: 0;}
+.haveMeaasge ul li span{margin-right: 10px;}
+.haveMeaasge ul li{margin: 10px 0;}
+.orderMessage .cartable{background: #f7f7f7;}
+.orderMessage .cartable th{padding: 8px;}
+.totalMoney{color: #666666;font: 14px/30px "微软雅黑";width: 100%;text-align: right;margin-top:60px;}
+.totalMoney span i{font-style: normal;color: #E40011;font-size: 18px;}
+/*输入信息弹框*/
+.haveMeaasge{padding: 10px 0;}
+.haveMeaasge.active ul li span{margin-right: 0px;}
+.haveMeaasge .el-input--suffix .el-input__inner{width: 206px;}
+.haveMeaasge .el-input,.addinput{margin-right: 10px !important; width: auto;}
+.nameinput,.nameinput input{width: 110px !important;}
+.addinput,.addinput input{width: 280px !important;}
+/*订单提交成功*/
+.ordersussTIps{font:20px/40px "微软雅黑";color: #333333;margin-top: 30px;}
+.ordersussTIps i{color: #FDD000;font-size:30px;margin:10px;margin-left: 0;}
+.odetailmessage,.odetailmessage i{font: 14px/30px "微软雅黑";margin-left:40px;color: #666666;}
+.odetailmessage i{margin: 0 10px;cursor: pointer;}
+.ahreforder a{color:#1f8af8;}
+/*购物车为空*/
+.cartempty{min-height:400px;}
+.btn-round{display:inline-block;height: 26px;padding:0 30px;text-align:center;line-height: 26px;letter-spacing:1px;color:#515151;font-size:14px;border:2px solid #d1d1d1;border-radius:17px;transition-duration: .3s;}/*0509åŽŸ  color:#666;border:2px solid #c5c5c5;*/
+.btn-round:hover{color: #e40011;border-color:#e40011;}
+.btn-red{display:inline-block;height: 38px;padding:0 20px;text-align:center;line-height: 38px;letter-spacing:1px;color:#fff;background-color:#e40011;font-size:14px;transition-duration: .3s;}
+.btn-red:hover{background-color: #c50011;}
+.cart-empty{margin:30px 0;background-color: #fff;padding:100px 0;text-align: center;}
+.cart-empty .icon-cart-empty{display: inline-block;width: 54px;height:54px;font-size:54px;vertical-align:middle;margin-right: 20px;color: #333333;}
+.cart-empty .btn-round{border-width: 1px;margin-top: 10px;}
+.cart-empty .text-box{display: inline-block;vertical-align: middle;text-align: left;color: #727272;font-size: 14px;}
+
+
+
+
+

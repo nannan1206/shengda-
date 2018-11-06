@@ -1,0 +1,12 @@
+/*轮播图按钮*/
+.bannertop{width:100%;height: 560px;}
+.bannertop img{ position:relative; left:50%; margin-left:-960px; width:1920px;height:560px;}
+.bannertop .el-carousel__button{height:4px;background-color: #d1ac06;}
+.bannertop .el-carousel__indicators{margin-bottom: 80px;}
+.bannertop .el-carousel__arrow{height: 60px; width: 60px; border-radius: 2px; background-color: #282725; opacity:0.5; font-size: 26px;}
+/*按钮*/
+.orderButton{width:1200px;height:20px;margin: 0 auto; }
+.orderButton .el-row{width: 1200px;height: 80px;border-radius:4px;background-color: #fdd000;margin:-50px auto 0;position: absolute;z-index:2;}
+.orderButton a{display: block;margin: 0 auto; width: 136px;height: 80px;}
+.orderButton a span{color: #000000;font: 20px/80px "微软雅黑";}
+.orderButton i{color: #333333;font-size:38px;display: block;float: left;margin-top: 20px;} .el-col{border-right: 1px solid #edc401; border-radius: 4px;}
