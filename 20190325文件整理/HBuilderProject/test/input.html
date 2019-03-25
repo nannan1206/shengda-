@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function len(s) { //获取输入文本长度，字符占一位，汉字两位
+		        var l = 0; 
+		        var a = s.split(""); 
+		        for (var i=0;i<a.length;i++) { 
+		            if (a[i].charCodeAt(0)<299) { 
+		                l++;
+		            } else { 
+		                l+=2; 
+		            } 
+		        } 
+		        return l; 
+		    }
+		</script>
+	</head>
+
+	<body>
+		<input type="text" onkeydown="this.onkeyup();" onkeyup="this.size=(this.value.length>4?this.value.length:4);" size="4">
+	</body>
+
+</html>

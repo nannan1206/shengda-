@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>title1</title>
+  </head>
+  <body>
+    <script>
+
+      document.setTitle = function(t) {
+        document.title = t;
+        var i = document.createElement('iframe');
+        i.src = '//m.baidu.com/favicon.ico';
+        i.style.display = 'none';
+        i.onload = function() {
+          setTimeout(function(){
+            i.remove();
+          }, 9)
+        }
+        document.body.appendChild(i);
+      }
+
+      setTimeout(function(){
+        document.setTitle('hello')
+      }, 1000)
+
+    </script>
+    
+   <select>
+						<option>全部</option>
+						<option>已付款</option>
+						<option>未付款</option>						
+					</select>
+    
+  </body>
+</html>

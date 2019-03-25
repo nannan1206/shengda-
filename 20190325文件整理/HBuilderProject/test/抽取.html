@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>无标题文档</title>
+		<style type="text/css">
+			.box{width:500px; height:200px; background:#D4D4D4; padding:100px;position: absolute;top: 0;left: 0;right: 0;bottom: 0; margin:auto;}
+			.screen{width:100px; height:50px; margin:0 auto; background:#fff; line-height:50px; text-align:center;}
+			.btn{width:100px; height:30px; margin:30px auto; background:red;}
+			.btn2{width:100px; height:30px; margin:30px auto; background:greend;}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="screen"></div>
+			<button class="btn">点击开始</button>
+			<button class="btn2">点击停止</button>
+		</div>
+		<script>
+			var aList=['1吕布','2刘备','3貂蝉','4海瑞','5无崖子','6段誉','7奥特曼','8小怪兽','9孙悟空'];
+			var Src=document.getElementsByClassName('screen')[0];
+			var oBtn=document.getElementsByClassName('btn')[0];
+			var oBtn2=document.getElementsByClassName('btn2')[0];
+			var timer=null;
+			var i=0;
+			//抽奖之前根据html标签的disabled属性先让停止按钮不能点击，开始按钮能点击
+			
+			
+			oBtn.disabled=false;
+			oBtn2.disabled=true;
+			
+			//抽人名即是依次改变Src的innerHTML，所以这里可以用到setInterval;
+			
+			oBtn.onclick=function(){
+			timer=setInterval(function(){
+			Src.innerHTML=aList[i];
+			i++;
+			if(i==aList.length){
+			i=0;
+			}
+			},50)
+			
+			
+			//点击开始之后改变两个按钮的disabled属性
+			
+			oBtn.disabled=true;
+			oBtn2.disabled=false;
+			}
+			oBtn2.onclick=function(){
+			clearInterval(timer);
+			
+			
+			//点击开始之后改变两个按钮的disabled属性
+			
+			
+			oBtn.disabled=false;
+			oBtn2.disabled=true;
+			}
+		</script>
+	</body>
+
+</html>

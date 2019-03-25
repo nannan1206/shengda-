@@ -1,0 +1,101 @@
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>档案袋</title>
+	    <style type="text/css">
+	    	#canvas{border: 1px solid #333333;}
+			#a0,#a,#a1,#a2,#a3{fill:white;stroke-width:2;stroke:rgb(0,0,0)	}
+	    </style>
+
+	</head>
+
+	<body>
+		<h3>档案袋</h3>
+		<form>			
+			<span>
+				<label>高()mm</label>
+				<input id="h" type="number" min="0" max="400" value="285" />
+			</span>
+			<span>
+				<label>宽()mm</label>
+				<input id="w" type="number" min="0" max="400" value="210" />
+			</span>
+
+			<span>
+				<label>厚()mm</label>
+				<input id="n" type="number" min="0" max="200" value="45" />
+			</span>
+			<span>
+				<label>舌头()mm</label>
+				<input id="m" type="number" min="0" max="200" value="60" />
+			</span>
+			<input type="button" name="button" value="测试" onclick="print()">
+		</form>
+
+		<svg id="canvas" width="900" height="900">	 		  
+		    <rect id="a0" x="45" y="0" rx="40" ry="40" width="210" height="100"/>
+			<rect id="a" x="0" y="60" width="45" height="285" />	
+			<rect id="a1" x="45" y="60" width="210" height="285" />
+			<rect id="a2" x="255" y="60" width="45" height="285" />		
+			<rect id="a3" x="300" y="60" width="210" height="285" />				
+			<!-- text tips -->
+			<g font-size="20" font="sans-serif" fill="black" stroke="none" text-anchor="middle">
+				<text id="b1" x="127.5" y="60" dx="20" dy="30">宽</text>
+				<text id="b2" x="45" y="172.5" dx="20" dy="20" >高</text>
+				<text id="b3" x="0" y="345" dy="30" dx="20">厚度</text>
+				<text id="b31" x="255" y="345" dy="30" dx="20">厚度</text>
+				<text id="b4" x="255" y="0" dy="30" dx="20">舌头</text>
+			</g>
+		</svg>
+		<script>
+			function print() {				
+				var a = h.value;
+				var b = w.value;
+				var c = n.value;
+				var d = m.value;
+//	            console.log(a+","+b+","+c+",舌头"+d);
+	            var rect0 = document.getElementById('a0');
+	            rect0.setAttribute('x', c)
+				rect0.setAttribute('height',parseInt(d)+40)
+				rect0.setAttribute('width', b)           
+	            var rect = document.getElementById('a');
+	            rect.setAttribute('y', d)
+				rect.setAttribute('height', a)
+				rect.setAttribute('width', c)
+				var rect1 = document.getElementById('a1');
+				rect1.setAttribute('x', c)
+			    rect1.setAttribute('y', d)
+				rect1.setAttribute('height', a)
+				rect1.setAttribute('width', b)
+				var rect2 = document.getElementById('a2');
+				rect2.setAttribute('x',parseInt(b)+ parseInt(c))
+			    rect2.setAttribute('y', d)
+				rect2.setAttribute('height', a)
+				rect2.setAttribute('width', c)
+	            var rect3 = document.getElementById('a3');
+				rect3.setAttribute('x',parseInt(b)+2*c)
+			    rect3.setAttribute('y', d)
+				rect3.setAttribute('height', a)
+				rect3.setAttribute('width', b)	           
+				 //text tips				
+				var text=document.getElementById('b1');
+				text.setAttribute('x',(parseInt(b)+ parseInt(c))/2)
+				text.setAttribute('y',d)
+				var text1=document.getElementById('b2');
+				text1.setAttribute('x',c)
+				text1.setAttribute('y',(parseInt(a)+ parseInt(d))/2)
+				var text2=document.getElementById('b3');
+				text2.setAttribute('y',parseInt(a)+ parseInt(d))	
+				var text3=document.getElementById('b31');
+				text3.setAttribute('x',parseInt(c)+ parseInt(b))
+				text3.setAttribute('y',parseInt(a)+ parseInt(d))	
+				var text4=document.getElementById('b4');
+				text4.setAttribute('x',parseInt(c)+ parseInt(b))		
+				
+			}
+		</script>
+
+	</body>
+
+</html>

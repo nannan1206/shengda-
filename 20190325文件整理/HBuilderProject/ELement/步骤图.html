@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	</head>
+
+	<body>
+		<div id="app">
+			<el-steps :active="active" finish-status="success" align-center>
+				<el-step title="步骤 1"></el-step>
+				<el-step title="步骤 2"></el-step>
+				<el-step title="步骤 3"></el-step>
+				<el-step title="步骤 4"></el-step>
+			</el-steps>
+			
+			
+			
+			
+
+			<el-button style="margin-top: 12px;" @click="next">下一步</el-button>
+		</div>
+
+	</body>
+	<!-- import Vue before Element -->
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<!-- import JavaScript -->
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	<script>
+		var Main = {
+			data() {
+					return {
+						active: 0
+					};
+				},
+				methods: {
+					next() {
+						if (this.active++ > 3) this.active = 0;
+					}
+				}
+		}
+		var Ctor = Vue.extend(Main)
+		new Ctor().$mount('#app')
+	</script>
+
+</html>

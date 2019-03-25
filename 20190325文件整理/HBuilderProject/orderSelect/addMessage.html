@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>完善会员信息</title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="keywords" content="盛大印刷，郑州印刷厂，盛大彩印，数码印刷，不干胶印刷，郑州名片印刷，盛大印刷厂，海报印刷，单页印刷，河南印刷厂，名片印刷">
+		<meta name="description" content="河南盛大彩色印刷有限公司是河南地区知名的印刷服务企业，成立于2000年。主营商务印刷（DM单页、海报、画册、手提袋等）、拼版名片、不干胶标签、骑马钉、覆膜、数码彩印为主要业务范围，面向广大广告公司、设计公司、文印店、图文店等业内同行提供服务。">
+		<!--网页导航图标-->
+		<link rel="shortcut icon" type="image/x-icon" href="css/shengda.ico" />
+		<link rel="stylesheet" href="css/commo.css" />
+		<link rel="stylesheet" href="css/login.css" />
+		<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+
+	<body>
+		<!--头部标题-->
+		<div class="topimg"></div>
+		<div class="topimgTit">
+			<h3>客户注册</h3>
+		</div>
+		<!--会员注册表单内容-->
+		<div class="userForm">
+			<!--填写住址-->
+			<span class="addsp">*</span>
+			<div class="phone">
+				<div class="adress"></div>
+				<input name="adress" type="text" id="pass4"  placeholder="请输入客户名称">
+				<i class="urog-regclose iconfont" data-close="pass4" >&#xe65a;</i>		
+			</div>
+			<span class="addsp">*</span>
+			<!--填写住址-->
+			<div class="phone">
+				<div class="qq"></div>
+				<input name="qq" type="email" maxlength="10" id="pass5" placeholder="请输入QQ号">
+				<i class="urog-regclose iconfont" data-close="pass5" >&#xe65a;</i>	
+			</div>
+			<!--填写住址-->
+			<span class="addsp">*</span>
+			<div class="phone">
+				<div class="ad"></div>
+				<input name="ad" type="text" id="pass6" placeholder="请输入地址">
+				<i class="urog-regclose iconfont" data-close="pass6" >&#xe65a;</i>	
+			</div>
+			<span class="addsp">*</span>
+			<div class="phone">
+				<div class="sTel"></div>
+				<input name="iphone" type="tel" id="pass7" maxlength="11" placeholder="请输入手机号">
+				<i class="urog-regclose iconfont" data-close="pass7" >&#xe65a;</i>	
+			</div>
+			<!--填写验证码-->
+			<div class="picnum">
+				<div class="picBorder">
+					<input name="numpic" type="text" maxlength="4" placeholder="请输入图形验证码">
+				</div>
+				<a href="###"><img src="img/eg.png" /> </a>
+			</div>
+			<!--填写验证码-->
+			<div class="picnum">
+				<div class="picBorder">
+					<input name="numpic" type="tel" maxlength="4" placeholder="请输入图形验证码">
+				</div>
+				<!--点击添加active-->
+				<div class="imgNum">
+					<span>获取验证码</span>
+				</div>
+			</div>
+
+			<!--登陆-->
+			<a class="loginButton" onclick="Show('.succRightArea')">提交</a>
+		</div>
+
+		<!--注册成功弹框-->
+		<div class="succRightArea">
+			<!--注册成功提示框-->
+			<div class="succRight">
+				<!--注册成功-->
+				<div class="randonpass">
+					<div class="succeTilte">
+						<i class="iconfont">&#xe61a;</i>
+						<h2>注册成功</h2>
+					</div>
+					<div class="sucessWord">
+						<span>客户账号：您注册填写的客户名称、QQ号、手机号均可以登录</span><br />
+						<span>客户密码：<b>154545</b></span> <a href="###">复制</a>
+					</div>
+					<p>* 注册成功后，由系统直接创建客户资料，然后生成随机密码，为确保账户安全性，密码最好在登录页重新设置</p>
+					<p>* 注册成功后，仍需要人工审核，才能正常下单</p>
+
+				</div>
+
+				<div class="suuesbutton">
+					<a onclick="Show('.fileRegiterArea')"> 直接登录</a>
+					<a onclick="Hide('.succRightArea')"> 返回首页</a>
+				</div>
+
+			</div>
+		</div>
+        <!--注册失败弹窗-->
+        <div class="fileRegiterArea">
+			<div class="fileRegiter">
+				<!--注册成功-->
+				<div class="randonpass">
+					<div class="succeTilte">
+						<h2>注册失败</h2>
+					</div>
+					<div class="sucessWord">
+						<p><b>手机号17839908073</b>已经注册了账号，可直接使用该手机号登陆</p>
+					</div>
+
+				</div>
+
+				<div class="suuesbutton">
+					<a href="###">登录该账号</a>
+					<a onclick="Hide('.fileRegiterArea')">取消</a>
+				</div>
+			</div>
+		</div>
+
+        
+        
+	</body>
+
+</html>

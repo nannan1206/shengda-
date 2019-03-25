@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+	<style>
+		select {
+
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+
+  /*border: solid 1px #000;*/
+
+  /*很关键：将默认的select选择框样式清除*/
+
+  appearance:none;
+
+  -moz-appearance:none;
+
+  -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+
+  /*background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;*/
+            background:url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center #8B8B8B;
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+
+  padding-right: 14px;
+
+}
+
+ 
+
+ 
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+
+select::-ms-expand { display: none; }
+		
+	</style>
+
+<div ng-app="">
+  <p>名字 :   
+  	<select ng-model="name">
+  		<option>1</option>
+  		<option>2</option>
+  		<option>3</option>
+  	</select>
+  	<inpung-model="name"t type="text" ng-model="name"></p>
+  <h1>Hello {{name}}</h1>
+</div>
+<input TYPE="text" id="myDate"> 
+ <script langguage="JavaScript"> 
+
+ var now = new Date(); 
+ myDate.value=new Date().getFullYear() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getDate(); 
+
+</script> 
+</body>
+</html>

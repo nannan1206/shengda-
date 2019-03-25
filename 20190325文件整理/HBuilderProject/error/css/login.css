@@ -1,0 +1,35 @@
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+.loginbody, .finishArea {
+    width: 90%;
+    max-width: 500px;
+    height:auto;
+    margin: 0 auto;
+    font: 28px/80px "微软雅黑";
+}
+.loginButton {
+    display: block;
+    margin-bottom: 16%;
+    width: 100%;
+    height: 50px;
+    background: #fdd000;
+    text-align: center;
+    color: #000000;
+    font: 1.3em/50px "微软雅黑";
+}
+.finishArea {
+    text-align: center;
+    font: 1.05em/30px "微软雅黑";
+    margin-top: 100px;
+}
+.logoimg{
+	width:252px;
+	height: 68px;
+	margin: 100px auto 0;
+}
+.jump{
+	color:red;
+}
+.jump span{color: #FF0000;}

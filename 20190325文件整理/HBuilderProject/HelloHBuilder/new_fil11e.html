@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">	
+<title>js获取上一页url,js获取前一页地址,javascripts获取上一页url,javascript获取前一页地址1</title>
+
+<meta http-equiv="keywords" content="" />
+
+</head>
+
+<body>
+	<script language="javascript">
+function goUrl(){
+window.location.href=document.referrer;
+}
+</script>
+<a href="javascript:goUrl();">返回上一页</a>
+<a href="复制 new_fil11e.html">去下一页</a>
+<span>第一</span>
+<script language="javascript">
+
+document.write("js获取当前域名"+window.location.host+"或者"+document.domain+"<br>");
+
+document.write("js获取当前url"+window.location.href+"<br>");
+
+document.write("js获取上(前)一页url"+document.referrer);
+
+</script>
+
+</body>
+
+</html>

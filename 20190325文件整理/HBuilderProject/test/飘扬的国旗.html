@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>飘扬的旗帜</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 280px;
+            margin: 100px auto;
+            background: url(https://cdn.files.qdfuns.com/article/cover/201803/06/090248oe1senkb1razeenk.png) no-repeat 0px 0px;
+            overflow: hidden;
+            position: relative;
+        }
+        .img {
+            width: 90px;
+            position: absolute;
+            top: 14%;
+            left: 14%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img" src="https://cdn.files.qdfuns.com/article/content/picture/201803/06/090015vzevheuk18lrxs81.png" title="随风飘扬">
+    </div>
+    <script>
+        var position = 0;
+        var container = document.getElementsByClassName('container')[0];
+        function positionn(k){
+            setInterval(function(){
+                k-=400;
+                if(k==-18000){
+                    k=0;
+                    return k;
+                }
+                container.style.backgroundPosition = k+"px"
+            },100)
+
+        } 
+        positionn(position);
+    </script>
+</body>
+</html>

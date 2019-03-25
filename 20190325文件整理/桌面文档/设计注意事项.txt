@@ -1,0 +1,52 @@
+移动端页面设计尺寸
+苹果750*1334  安卓720*1280
+前端书写规范文档http://materliu.github.io/code-guide/
+
+填充网站：
+
+网站填充后台地址：
+http://192.168.0.75:20000/#!/webinfo/news/info
+账号：张销男  sd123456
+旧网站地址：
+http://www.shengdaprint.com/news/LatestNews/list/
+填充好的新网站展示：
+http://www1.shengdaprint.com/news/
+
+常用网址记录
+如何切图
+https://www.cnblogs.com/padding1015/p/7085539.html
+
+懒人图库
+http://tool.lanrentuku.com/cssformat/
+
+移动端页面布局
+https://www.cnblogs.com/qijunjun/p/7152236.html#undefined
+
+微信小程序开发文档官网
+https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html?t=1514856943
+
+看板路径{三个}
+http://kanban.sdprint.tech/b/Q5GmgdPDWTZzPo5CQ/board
+
+
+http://localhost:15322/CalculatePriceWeb/CalculatePriceweb/BusinessCard?id=47&ts=2018122114058269&
+
+
+判断页面路径再body添加类
+ <script>
+        window.onload = function () {
+            var strUrl = window.location.href;
+            //var reg = /.com\/[a-zA-Z]+/; 
+            var reg = /:52992\/[a-zA-Z]+/;
+            var r = strUrl.match(reg);
+            if (r == null) {
+                $("body").addClass("sidebar-open");
+            }
+        }
+    </script>
+
+
+
+
+
+

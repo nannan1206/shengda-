@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>无标题文档</title>
+		<style>
+			#div1 {
+			  width:180px;
+			  height:180px;
+			  overflow:hidden; 
+			  position:relative; /* 黄色遮罩相对于#div1进行绝对定位 */
+			}
+			
+			#div1 span {
+			  width:100px; 
+			  height:100px; 
+			  background:yellow; 
+			  opacity:0.5; 
+			  filter:alpha(opacity=50); 
+			  position:absolute; /* 黄色遮罩绝对定位才能跟随鼠标移动 */
+			  left:0; 
+			  top:0; 
+			  display:none; /* 鼠标移入图片后才显示黄色遮罩 */
+			  cursor: move;
+			}
+			
+			/* 
+			消除mouseover和mouseout事件子级对父级的影响
+			(阻止事件冒泡不能消除子级对父级的影响，所以在黄色遮罩和图片之间加个透明的隔离层)
+			*/
+			#mark { 
+			  width:180px; 
+			  height:180px; 
+			  background:red; 
+			  position:absolute; 
+			  left:0; 
+			  top:0;
+			  opacity:0; 
+			  filter:alpha(opacity=0);
+			}
+			
+			#div2 {
+			  width:500px; 
+			  height:500px; 
+			  position:absolute; 
+			  left:250px; 
+			  top:50px; 
+			  overflow:hidden;
+			}
+			
+			#div2 img {
+			  position:absolute; 
+			  left:0; 
+			  top:0;
+			}
+			/*#div1:hover{width: 300px;}*/
+		</style>
+		<script>
+			window.onload = function() {
+				var oDiv = document.getElementById('div1');
+				var oSpan = oDiv.getElementsByTagName('span')[0];
+				var oDiv2 = document.getElementById('div2');
+				var img2 = oDiv2.getElementsByTagName('img')[0];
+				/*
+				    mouseenter和mouseleave事件子级不会影响到父级，
+				    所以也可以用此方法消除子级对父级的影响
+				*/
+				oDiv.onmouseenter = function() {
+					oSpan.style.display = 'block';
+				};
+				oDiv.onmouseleave = function() {
+					oSpan.style.display = 'none';
+				};
+				// 要想元素跟着鼠标移动要绑定mousemove事件
+				oDiv.onmousemove = function(ev) {
+					var ev = ev || window.event;
+					/*
+					    ev.clientX、ev.clientY获取鼠标坐标
+					    oDiv.offsetLeft: oDiv距离屏幕左侧的距离
+					    oDiv.offsetTop: oDiv距离屏幕顶部的距离
+					    oSpan.offsetWidth: offsetWidth返回对象的padding+border+width属性值之和
+					*/
+					var L = ev.clientX - oDiv.offsetLeft - oSpan.offsetWidth / 2; // 将黄色遮罩中部移到鼠标位置
+					var T = ev.clientY - oDiv.offsetTop - oSpan.offsetHeight / 2; // 将黄色遮罩中部移到鼠标位置
+					/* 限制黄色遮罩层的移动范围START */
+					if (L < 0) {
+						L = 0;
+					} else if (L > oDiv.offsetWidth - oSpan.offsetWidth) {
+						L = oDiv.offsetWidth - oSpan.offsetWidth;
+					}
+					if (T < 0) {
+						T = 0;
+					} else if (T > oDiv.offsetHeight - oSpan.offsetHeight) {
+						T = oDiv.offsetHeight - oSpan.offsetHeight;
+					}
+					oSpan.style.left = L + 'px';
+					oSpan.style.top = T + 'px';
+					/* 限制黄色遮罩层的移动范围END */
+					var scaleX = L / (oDiv.offsetWidth - oSpan.offsetWidth); // 移动的比例 0 ~ 1
+					var scaleY = T / (oDiv.offsetHeight - oSpan.offsetHeight); // 移动的比例 0 ~ 1
+					/*
+					    大图的移动方向要和黄色遮罩(鼠标)移动方向相反
+					    img2.offsetWidth - oDiv2.offsetWidth 大图能够移动的最大宽度
+					    img2.offsetHeight - oDiv2.offsetHeight 大图能够移动的最大高度
+					*/
+					img2.style.left = -scaleX * (img2.offsetWidth - oDiv2.offsetWidth) + 'px';
+					img2.style.top = -scaleY * (img2.offsetHeight - oDiv2.offsetHeight) + 'px';
+				};
+			};
+		</script>
+	</head>
+
+	<body>
+		<div id="div1">
+			<img src="img/1.jpg" width="180" height="180">
+			<!-- 小图 -->
+			<span></span>
+			<!-- 黄色遮罩 -->
+			<!-- <div id="mark"></div> -->
+		</div>
+		<div id="div2">
+			<img src="img/3.jpg">
+			<!-- 大图 -->
+		</div>
+	</body>
+
+</html>
+--------------------- 作者：Handsome_code 来源：CSDN 原文：https://blog.csdn.net/Handsome_fan/article/details/80874500 版权声明：本文为博主原创文章，转载请附上博文链接！

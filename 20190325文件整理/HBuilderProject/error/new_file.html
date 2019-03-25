@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>js禁用鼠标右键</title> 
+    <script>
+      //禁用右键
+document.oncontextmenu = function () { return false; };
+//禁用开发者工具F12
+document.onkeydown = function () {
+    if (window.event && window.event.keyCode == 123) {
+        event.keyCode = 0;
+        event.returnValue = false;
+        return false;
+    }
+};
+
+    </script>
+</head>
+<body>
+   这是一个空白的页面，用于测试禁止鼠标右键功能的！
+</body>
+</html>

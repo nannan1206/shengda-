@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+</html>
+<!doctype html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>无标题文档</title>
+		<style>
+			body,p,div,ul,li{margin:0px;padding:0px;}
+			p{text-align:center;}
+			.nav{position:relative;height:30px; background-color: #333;}
+			.fixednav{position:fixed;top:0px;left:0px;width:100%; background-color: #aaa;}
+			.content {height: 2000px;}
+		</style>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script>
+			$(function(){
+			var nav=$(".nav"); //得到导航对象
+			var win=$(window); //得到窗口对象
+			var sc=$(document);//得到document文档对象。
+			win.scroll(function(){
+			if(sc.scrollTop()>=60){
+			nav.addClass("fixednav"); 
+			$(".navTmp").fadeIn(); 
+			}else{
+			nav.removeClass("fixednav");
+			$(".navTmp").fadeOut();
+			}
+			})  
+			})
+		</script>
+	</head>
+
+	<body>
+		<div class="nav"></div>
+		<div class="content"></div>
+	</body>
+
+</html>

@@ -1,0 +1,147 @@
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>信封</title>
+		<script type="text/javascript" src="js/jquery-1.11.2.js" ></script>
+	    <style type="text/css">
+	    	svg{border: 1px solid #333333;}
+			rect{fill:white;stroke-width:2;stroke:rgb(0,0,0)	}
+	    </style>
+	</head>
+
+	<body>
+		<h3 id="Cstyle">中式信封</h3> <h3 id="Estyle">西式信封</h3>
+		<p>点击点击标题切换中西样式信封</p>
+		<form>			
+			<span>
+				<label>长()mm</label>
+				<input id="h" type="number" min="0" max="400" value="210" />
+			</span>
+			<span>
+				<label>宽()mm</label>
+				<input id="w" type="number" min="0" max="400" value="120" />
+			</span>
+			<span>
+				<label>舌头()mm</label>
+				<input id="n" type="number" min="0" max="100" value="30" />
+			</span>
+			<input type="button" name="button" value="测试" onclick="print()">
+		</form>
+
+		<svg id="canvas" width="900" height="900">	 			
+		    <rect id="a0" x="60" y="0" rx="20" ry="20" width="120" height="70"/>
+			<rect id="a" x="0" y="30" width="60" height="210" />	
+			<rect id="a1" x="60" y="30" width="120" height="210" />
+			<rect id="a2" x="180" y="30" width="75" height="210" />		
+			<rect id="a3" x="60" y="240" width="120" height="15" />			
+			<g font-size="20" font="sans-serif" fill="black" stroke="none" text-anchor="middle">
+				<text id="b1" x="120" y="30" dx="0" dy="30">宽</text>
+				<text id="b2" x="60" y="135" dx="20" dy="20" >高</text>			
+				<text id="b3" x="120" y="240" dy="30" dx="0">粘口</text>
+				<text id="b4" x="180" y="0" dy="20" dx="20">舌头</text>					
+				<text x="360" y="60" >中式信封   </text>
+			</g>
+		</svg>
+		<svg id="canvas1" width="900" height="900">	 		  
+		    <rect id="ab0" x="15" y="0" rx="40" ry="40" width="210" height="70"/>
+			<rect id="ab" x="0" y="30" width="15" height="120" />	
+			<rect id="ab1" x="15" y="30" width="210" height="120" />
+			<rect id="ab2" x="225" y="30" width="15" height="120" />		
+			<rect id="ab3" x="15" y="150" width="210" height="120" />			
+			<g font-size="20" font="sans-serif" fill="black" stroke="none" text-anchor="middle">
+				<text id="bc1" x="120" y="30" dx="0" dy="20">宽</text>
+				<text id="bc2" x="15" y="90" dx="20" dy="0" >高</text>			
+				<text id="bc3" x="0" y="150" dy="20" dx="20">粘口</text>
+				<text id="bc5" x="225" y="150" dy="20" dx="20">粘口</text>
+				<text id="bc4" x="225" y="0" dy="20" dx="20">舌头</text>				
+				<text x="360" y="60" >西式信封   </text>
+			</g>
+		</svg>
+	<script>	
+			function print() {						
+				var a = h.value;
+				var b = w.value;
+				var c = n.value;				
+//	            console.log(a+","+b+",舌头"+c);
+	            //中式信封
+	            var rect0 = document.getElementById('a0');
+	            rect0.setAttribute('x', b/2)
+				rect0.setAttribute('height',parseInt(c)+40)
+				rect0.setAttribute('width', b)           
+	            var rect = document.getElementById('a');
+	            rect.setAttribute('y',c)
+				rect.setAttribute('height', a)
+				rect.setAttribute('width', b/2)
+				var rect1 = document.getElementById('a1');
+				rect1.setAttribute('x', b/2)
+			    rect1.setAttribute('y', c)
+				rect1.setAttribute('height', a)
+				rect1.setAttribute('width', b)
+				var rect2 = document.getElementById('a2');
+				rect2.setAttribute('x',(parseInt(b))/2+ parseInt(b))
+			    rect2.setAttribute('y', c)
+				rect2.setAttribute('height', a)
+				rect2.setAttribute('width',parseInt(b)/2+15)
+	            var rect3 = document.getElementById('a3');
+				rect3.setAttribute('x',b/2)
+			    rect3.setAttribute('y', parseInt(a)+ parseInt(c))				
+				rect3.setAttribute('width', b)	        
+				var text=document.getElementById('b1');
+				text.setAttribute('x',b)
+				text.setAttribute('y',c)
+				var text1=document.getElementById('b2');
+				text1.setAttribute('x',b/2)
+				text1.setAttribute('y',parseInt(a)/2+ parseInt(c))
+				var text2=document.getElementById('b3');
+				text2.setAttribute('x',b)
+				text2.setAttribute('y',parseInt(a)+ parseInt(c))						
+				var text4=document.getElementById('b4');
+				text4.setAttribute('x',b*1.5)
+				//西式信封
+				var re0 =document.getElementById('ab0');
+	            re0.setAttribute('width',a)
+	            re0.setAttribute('height',parseInt(c)+40)
+	            var re =document.getElementById('ab');
+	            re.setAttribute('y',c)	        
+	            re.setAttribute('height',b)
+	            var re1 =document.getElementById('ab1');
+	            re1.setAttribute('y',c)	
+	            re1.setAttribute('width',a)
+	            re1.setAttribute('height',b)
+	            var re2 =document.getElementById('ab2');
+	            re2.setAttribute('x',parseInt(a)+15)	
+	            re2.setAttribute('y',c)		          
+	            re2.setAttribute('height',b)
+	            var re3=document.getElementById('ab3');	          
+	            re3.setAttribute('y',parseInt(b)+parseInt(c))	
+	            re3.setAttribute('width',a)
+	            re3.setAttribute('height',b)
+	            var text=document.getElementById('bc1');
+				text.setAttribute('x',a/2+15)
+				text.setAttribute('y',c)
+				var t1=document.getElementById('bc2');				
+				t1.setAttribute('y',parseInt(b)/2+parseInt(c))
+				var t2=document.getElementById('bc3');				
+				t2.setAttribute('y',parseInt(b)+parseInt(c))
+				var t21=document.getElementById('bc5');		
+				t21.setAttribute('x',parseInt(a)+15)
+				t21.setAttribute('y',parseInt(b)+parseInt(c))
+				var t3=document.getElementById('bc4');		
+				t3.setAttribute('x',parseInt(a)+15)				
+			}
+			//点击切换显示隐藏		   
+			$(function() {
+			 	$("#canvas1").hide();
+				$("#Cstyle").click(function() {				
+					$("#canvas").show();
+					$("#canvas1").hide();				
+				});
+					$("#Estyle").click(function() {				
+					$("#canvas1").show();
+					$("#canvas").hide();				
+				});
+			})
+</script>
+
+</body></html>

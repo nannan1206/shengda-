@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>填空得抽奖机会</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<meta name="keywords" content="盛大印刷，郑州印刷厂，盛大彩印，数码印刷，不干胶印刷，郑州名片印刷，盛大印刷厂，海报印刷，单页印刷，河南印刷厂，名片印刷">
+		<meta name="description" content="河南盛大彩色印刷有限公司是河南地区知名的印刷服务企业，成立于2000年。主营商务印刷（DM单页、海报、画册、手提袋等）、拼版名片、不干胶标签、骑马钉、覆膜、数码彩印为主要业务范围，面向广大广告公司、设计公司、文印店、图文店等业内同行提供服务。">
+		<!--网页导航图标-->
+		<link rel="shortcut icon" type="image/x-icon" href="css/shengda.ico" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>	
+	</head>
+
+	<body>
+		<div class="redenve">
+			<img src="img/SecBack.png" />
+		</div>
+		<!--主题-->
+		<div class="itemAnswer">
+			<img src="img/logo.png" />
+		</div>
+		<div class="anSQution">
+			<div class="AnsWord">盛大印刷的广告语是</div>
+			<div class="inputWord">
+				<!--<input type="text" maxlength="5" />-->
+			    <input type="text" maxlength="5"  onkeydown="this.onkeyup();" onkeyup="this.size=(this.value.length>3?this.value.length:3);" size="2">
+			</div>
+			<div class="AnsWord">您忠实的印刷工。</div>
+			<div class="qans">
+				<p>（答案：大崔）</p>
+			</div>
+			<a class="upAnswer" onclick="Show('.rightPass')"><img src="img/upbutton.png"></a>
+		</div>
+		<!--提交成功-->
+		<div class="rightPass">
+			<div class="rightGo">
+				<a class="cloButton" onclick="Hide('.rightPass')">
+					<img src="img/close.png" />
+				</a>
+				<div class="rightTips">
+					<span>恭喜您获得一次<br /> 抽奖机会！</span>
+				</div>
+				<a class="rightNow"onclick="Hideme('.rightPass')">
+					<img src="img/right.png" />
+				</a>
+			</div>
+		</div>
+		<!--哇哦，坏菜-->
+		<div class="noPass">
+			<div class="norightGo">
+				<a class="cloButton" onclick="Hide('.noPass')">
+					<img src="img/close.png" />
+				</a>
+				<div class="norightTips">
+					<span>哇哦，今天的红包已经用完，<br />请明天再试！</span>
+				</div>
+				<a class="norightNow" onclick="Hide('.noPass')">确定</a>
+			</div>
+		</div>
+	</body>
+
+</html>

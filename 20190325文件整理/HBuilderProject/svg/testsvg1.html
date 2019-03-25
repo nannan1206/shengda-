@@ -1,0 +1,67 @@
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>手提袋</title>
+	    <style type="text/css">
+	    	#canvas{border: 1px solid #333333;}
+			#a1,#a2,#a3{fill:white;stroke-width:2;stroke:rgb(0,0,0)	}
+	    </style>
+
+	</head>
+
+	<body>
+		<h3>手提袋</h3>
+		<form>			
+			<span>
+				<label>高()mm</label>
+				<input id="h" type="number" min="0" max="400" value="285" />
+			</span>
+			<span>
+				<label>宽()mm</label>
+				<input id="w" type="number" min="0" max="400" value="210" />
+			</span>
+
+			<span>
+				<label>厚()mm</label>
+				<input id="n" type="number" min="0" max="200" value="45" />
+			</span>
+			<input type="button" name="button" value="测试" onclick="print()">
+		</form>
+
+		<svg id="canvas" width="500" height="500">
+			<rect id="a1" x="0" y="0" width="210" height="285" />
+			<rect id="a2" x="210" y="0" width="45" height="285" />			
+			<!-- text tips -->
+			<g font-size="18" font="sans-serif" fill="black" stroke="none" text-anchor="middle">
+				<text id="b1" x="105" y="0" dy="30">宽</text>
+				<text id="b2" x="0" y="140" dx="20">高</text>
+				<text id="b3" x="210" y="0" dy="30" dx="20">厚度</text>
+			</g>
+		</svg>
+		<script>
+			function print() {
+				var a = h.value;
+				var b = w.value;
+				var c = n.value;			
+//	            console.log(a+","+b+","+c);
+				var rect = document.getElementById('a1');
+				rect.setAttribute('height', a)
+				rect.setAttribute('width', b)
+				var rect1 = document.getElementById('a2');
+				rect1.setAttribute('x', b)
+				rect1.setAttribute('height', a)
+				rect1.setAttribute('width', c)		
+				var text=document.getElementById('b1');
+				text.setAttribute('x',b/2)
+				var text1=document.getElementById('b2');
+				text1.setAttribute('y',a/2)
+				var text2=document.getElementById('b3');
+				text2.setAttribute('x',b)			
+				
+			}
+		</script>
+
+	</body>
+
+</html>

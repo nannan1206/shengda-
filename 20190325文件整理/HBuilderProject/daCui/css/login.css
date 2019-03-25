@@ -1,0 +1,53 @@
+﻿/*登录内容区域*/.loginbody{width: 1000px;height:530px;margin: 40px auto  60px;border: 1px solid #dddddd;}
+.loginbleft{float: left;margin: 40px 26px 30px;}
+.loginbright{width:350px;height:310px;float:right;margin: 100px 24px 0 0;}
+.loginbright .el-tabs__item.is-active,.loginbright .el-tabs__item:hover{color: #000;font-weight: 600;}
+.name{width: 328px;height:30px;border: 1px solid #DDDDDD;margin:0px auto 16px;border-radius: 4px;padding: 10px;}
+.icon{width:30px;height: 30px;line-height: 30px;border-right:1px solid #e6e6e6;float: left;}
+.name input{width: 268px;height: 30px; font: 14px/30px "微软雅黑";padding:0 10px;}
+.remember .rebbutton{float: right;}
+.rebbutton:hover{color: #ffc400;}
+/*记住我*/.remember .el-checkbox__input.is-checked+.el-checkbox__label{color: #ffc400;border-color: #ffc400;}
+.remember .el-checkbox__input.is-checked .el-checkbox__inner,.remember .el-checkbox__input.is-indeterminate .el-checkbox__inner{background-color: #ffc400;border-color: #ffc400;}
+.remember .el-checkbox__input.is-focus .el-checkbox__inner,.remember .el-checkbox__inner:hover{border-color: #ffc400;}
+.rebbutton{font: 14px/27px "微软雅黑";color: #999999;}
+.loginbutton{width:350px;height: 50px;margin: 10px auto;display: block;font:18px/50px "微软雅黑";color: #333333;text-align: center;background-color: #ffc400;border-radius: 4px;}
+.phonenum{width: 100%;height: auto;overflow: auto;}
+.phonenum .name{width:206px !important;margin-left: 0;float: left;}
+.phonenum .name input{width: 148px;}
+.phonenum .el-button--warning{width: 110px;height: 50px;margin:0 6px;background:#ffc400 ;border: 0;color: #000000;}
+/*注册页面*/.registerBody{width: 1000px;height:650px;background-color: #FFFFFF;margin: 0 auto;}
+.titleArea{width: 100%;height:70px;background-color:#ffc400;text-align: center;font:24px/70px "微软雅黑";color: #333333;}
+.reForm{width: 350px;height: auto;margin:30px auto;}
+.regbut{width: 110px;height: 50px;display: block;float: right;text-align: center;font: 14px/50px "微软雅黑";background:#ffc400 ;border: 0;color: #000000;border-radius: 4px;}
+.active{background:#CCCCCC ;}
+.rebbutton span{color: #FF5C33;}
+.addsp{float: right;margin-top: 18px;margin-right: -14px;color: #FF5C33;}
+/*重设密码*/.repassForm{width:870px;height: 450px;margin:50px auto;}
+/*重设密码步骤条*/.repassForm .el-step__head.is-finish{color: #ff5c33;border-color: #ff5c33;}
+.repassForm .el-step__title.is-finish{color: #ff5c33;}
+/*重设密码1选择重设方式*/.wordtips{margin: 20px auto 30px;margin-left: 30px;}
+.wordtips span{font: 12px/20px "微软雅黑";color:#ff5c33;}
+.wordtips i{float: left;margin:6px;color:#ff5c33;font-size: 12px;}
+.chengestyle{width: 556px;height: 60px;border: 1px solid #bbbbbb;margin:18px auto ;}
+.chengestyle a{float: right;margin:16px 46px;width: 100px;height: 30px;display: block;color:#000;background: #ffc400;border-radius: 3px;text-align: center;font: 14px/30px "微软雅黑";}
+.chengestyle span{float: left;margin:18px 30px 15px 34px;font: 16px/26px "微软雅黑";}
+/*第二步*/.rebuilForm{width: 450px;height:260px;margin:60px auto 0;}
+.personal,.loginForm{width: 100%;height: 40px;margin: 16px auto;font: 14px/40px "微软雅黑";}
+.personal label,.loginForm label{width: 100px;height: 40px;color: #666666;float: left;text-align: right;}
+.addimgCss{padding: 0 10px;}
+.addimgCss,.numimg{width:322px;height: 40px;line-height:38px;margin-left: 6px;border: 1px solid #DDDDDD;border-radius: 4px;float: left;}
+.numimg{width: 214px;float: left;}
+.imgNum,.passButton{width: 124px;height: 40px;background:#ffc400;float:right;text-align: center;border-radius: 4px;cursor: pointer;}
+.numimg input{width:194px;height:39px;padding: 0 10px;border-radius: 4px;}
+.passButton{width: 350px;height: 50px;font: 18px/50px "微软雅黑";margin-top: 16px;}
+/*邮箱验证*/.succemail{font: 14px/20px "微软雅黑";display:block;}
+.succemail i{float: left;margin: 0 10px 0 140px;color: #4CAE4C;}
+.succemail a{color:#ff5c33;text-decoration: underline;font-style: italic;}
+.personal span{float:right;margin-right: -70px;}
+/*完成修改密码提示*/.passFinish{width:314px;height: 120px;margin:0px auto;padding-top: 150px;font: 16px/30px "微软雅黑";}
+.passFinish span:first-child i{display: block;width: 40px;color: #4CAE4C;}
+.passFinish span font{color: #E5433E;margin: 0 3px;font-size: 18px;}
+.passFinish a,.passFinish span{float:left;}
+.passFinish a{color:#ff5c33;margin:2px 3px;}
+.hideActive{ display:none;}

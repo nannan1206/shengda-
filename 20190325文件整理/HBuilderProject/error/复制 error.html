@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>新报价登录</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="css/复制 login.css " />
+		<!--<link rel="stylesheet" href="css/login.css " media="screen and (min-width:300px) and (max-width:1024px)"/>-->
+		<script type="text/javascript">
+			function jump_url(url){
+			            var time=20;
+			            setInterval(function(){ 
+			                document.getElementById("time").innerHTML=time;
+			                time--;
+			                if(time<0){
+			                    window.location.href=url
+			                }
+			            }, 1000);
+			        };
+			        window.onload=jump_url("https://baojia.shengdaprint.com/");
+		</script>
+		<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</head>
+
+	<body>
+		<div class="logoimg">
+			<img src="img/logo1.png" alt="大崔图标展示" />
+		</div>
+		<!--登录表单内容区域-->
+		<div class="finishArea">
+			<p>盛大印刷提醒您：此报价网址已经失效，点击按钮进入新报价页面</p>
+			<a class="loginButton" href="https://baojia.shengdaprint.com/">点击进入新报价页面</a>
+			<a class="jump"><span id="time">  </span>秒后自动进入首页</a>
+
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>漫天飞舞的雪花</title>
+	<style type="text/css">
+	*{
+		padding: 0;
+		margin:0;
+	}
+	html{
+		height: 100%;
+	}
+	body{
+		height: 100%;
+		position: relative;
+		background: yellowgreen;
+		/*background: url(http://cdn.attach.w3cfuns.com/notes/pics/201607/20/201203uy055uq820q55ryb.jpg) no-repeat center / cover;*/
+	}
+	a {
+		color: #fff;
+		font-size: 24px;
+		text-decoration: none;
+	}
+	
+	</style>
+</head>
+<body>
+	<a href="###">开启</a>
+	<script type="text/javascript">
+	var isOpen = false;
+	function snow() {
+		if(isOpen) {//是否开启过
+            return false;
+        }
+        isOpen = true;
+		var snowflake = [//雪花类型
+	        '❉',
+	        '❈',
+	        '*',
+	        '✲',
+	        '❀',
+	        '❃'
+	    ],
+	    maxleft = (document.body.clientWidth || document.documentElement.clientWidth) - 80,
+	    maxTop = document.documentElement.clientHeight,
+	    all = [],
+	    length = 0;
+		function createSnow() {
+			var singleSnow = document.createElement('div');
+			var snowType =	snowflake[randomSnow(1,5)];
+			singleSnow.innerHTML = snowType;
+			singleSnow.setAttribute('id' , 'a');
+			singleSnow.setAttribute('data-v' ,randomSnow(0 , 300) + 3 );
+			singleSnow.setAttribute('data-t' , 0);
+			css(singleSnow,{
+				'color' : '#fff',
+				'left' : randomSnow(0 , maxleft) + 'px',
+				'top' : 0,
+				'position' : 'absolute'
+			});
+			document.body.appendChild(singleSnow);
+			return singleSnow;
+		}
+		function moveSnow(singleSnow) { 
+			var left = parseInt(singleSnow.style.left) + randomSnow(-1,1);
+			var top = parseInt(singleSnow.style.top) + randomSnow(5,30);
+			left > maxleft ? left = 0 : '';
+			top > maxTop - 50 ? top = 0 : '';
+			css(singleSnow , {
+				'left' : left + 'px',
+				'top' : top + 'px'
+			});
+		}
+		var createS = setInterval(function(){//雪花运动
+            //创建很多雪花
+            var length = all.length,
+                l =  length + 10;
+            for(; i <  l ; i++){
+                all.push(createSnow());
+            }
+            if( all.length >100 ){
+                clearInterval(createS);
+            }
+        }, 1000)
+        setInterval(function(){//雪花运动
+            var ll = all.length;
+            for(i = 0 ; i < ll ; i++){
+                moveSnow(all[i]);
+            }
+        }, 75);
+		function randomSnow(min , max) {
+			return min + Math.floor((max - min) * Math.random()) + 1;
+		}
+		function css(obj ,style) {
+			for(var i in  style) {
+				obj.style[i] = style[i];
+			}
+		}
+	}
+	var start = document.getElementsByTagName('a')[0];
+	start.onclick = function() {
+		snow();
+	}
+	</script>
+</body>
+</html>

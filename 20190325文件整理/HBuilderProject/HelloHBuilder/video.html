@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 视频 -->
+    <div class="profile-video">
+        <div class="video-content fr">
+            <!-- 播放按钮图片 -->
+            <a data-toggle="modal" data-target=".bs-example-modal-lg" href=""><img src="private/img/mine/play.png" class="img-responsive playbtn"></a>
+            <!-- 播放视频链接 -->
+            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <video  id="movie" src="http://cloud.video.taobao.com/play/u/2554695624/p/1/e/6/t/1/fv/102/28552077.mp4"
+                        height="500"  controls="controls"  preload="metadata"  onclick="toggleSound()"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+//    function toggleSound(){
+//        var video = document.getElementById('movie');
+//        if(video.paused){ //如果已暂停则播放
+//            video.play(); //播放控制
+//        }else{ // 已播放点击则暂停
+//            video.pause(); //暂停控制
+//        }
+//    }
+    $(".playbtn").click(function () {
+        console.log($('#movie').get(0).paused);
+        $('#movie').get(0).play();
+    });
+    function toggleSound(){
+        if ($('#movie').get(0).paused) {
+            $('#movie').get(0).play();
+        }
+        else {
+            $('#movie').get(0).pause();
+        }
+    };
+</script>
+	</body>
+</html>

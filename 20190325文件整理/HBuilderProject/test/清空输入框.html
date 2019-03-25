@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$(function() {
+				$(".urog-form-role").click(function(event) {
+						//得到点击事件的dom结构
+						var click_node = getEventTrigger(event);
+						//得到点击close图片的data-close
+						//data-close的值是input框的id
+						var clickName = click_node.getAttribute("data-close");
+						//得到点击事件的属性（INPUT）
+						var clickInput = click_node.nodeName;
+						//判断点击的是close图片，则清空相应id输入框的值，并隐藏该close图片
+						if (clickName == 'phone' || clickName == 'pass' || clickName == 'pass2'|| clickName == 'pass3'|| clickName == 'pass4') {
+							$("#" + clickName).val(null);
+							$("#" + clickName).next().css("display", "none");
+						}
+						//判断点击事件的元素是input框
+						if (clickInput == "INPUT") {
+							//获取INPUT的id
+							var next_closeId = click_node.id;
+							//绑定获取焦点和输入值-函数
+							$("#" + next_closeId).bind("focus keyup", function() {
+								//判断当前输入框的值不为空时
+								if ($("#" + next_closeId).val() != '') {
+									$(".urog-regclose").css("display", "none");
+									//当前输入框的下一个同袍节点样式显示
+									$("#" + next_closeId).next().css("display", "inline-block");
+								}
+							})
+						}
+					})
+					//得到点击事件的dom结构
+				function getEventTrigger(event) {
+					//ie 火狐 event兼容
+					//参考资料： http://www.cnblogs.com/quanhai/archive/2010/04/20/1716149.html
+					event = event ? event : window.event　　
+					var x = event.srcElement ? event.srcElement : event.target;
+					return x;
+				}
+			})
+		</script>
+	</head>
+
+	<body>
+	
+		<style>
+		 ::-ms-clear, ::-ms-reveal{display: none;}
+		input{outline:none;border:none; vertical-align:middle;cursor: pointer;}
+		.urog-form-role{border: 1px solid #000000; width: 200px;height:30px;margin: 10px;}
+		.urog-form-role input{border: 0; width:180px;height:28px;}
+			.urog-regclose{display: none;float: right;margin: 5px auto;}
+		</style>
+		<div class="urog-form-role urog-phone">
+			<!--<img src="images/tel.png" class="form-label-img" />-->
+			<input name="phone" id="phone" class="form-input" value="" type="text" placeholder="请输入您的手机号" maxlength="16" />
+			<img src="img/redicon.png" class="urog-regclose" data-close="phone" />
+		</div>
+		<div class="urog-form-role">
+			<!--<img src="images/pass.png" class="form-label-img" />-->
+			<input name="pass" value="" id='pass' type="password" placeholder="请输入密码" maxlength="11" />
+			<img src="img/redicon.png" class="urog-regclose" data-close="pass" />
+		</div>
+		<div class="urog-form-role">
+			<!--<img src="images/pass.png" class="form-label-img" />-->
+			<input name="pass" value="" id='pass2' type="text" placeholder="请输入密码" maxlength="11" />
+			<img src="img/redicon.png" class="urog-regclose" data-close="pass2" />
+		</div>
+		<div class="urog-form-role">
+			<!--<img src="images/pass.png" class="form-label-img" />-->
+			<input name="pass" value="" id='pass3' type="password" placeholder="请输入密码" maxlength="11" />
+			<img src="img/redicon.png" class="urog-regclose" data-close="pass3" />
+		</div>
+		<div class="urog-form-role">
+			<!--<img src="images/pass.png" class="form-label-img" />-->
+			<input name="pass" value="" id='pass4' type="text" placeholder="请输入密码" maxlength="11" />
+			<img src="img/redicon.png" class="urog-regclose" data-close="pass4" />
+		</div>
+
+	</body>
+
+</html>

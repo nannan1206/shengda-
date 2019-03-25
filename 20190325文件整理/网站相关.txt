@@ -1,0 +1,54 @@
+
+微信小程序：
+
+绑定邮箱： 3428514672@qq.com
+小男孩与姐姐
+原始ID：gh_47794548b4a6
+pass: nannan123456
+
+微信公众号：
+1419133864@qq.com
+pass:zhang121121
+
+
+api 接口：
+http://192.168.100.102:20001/swagger/ui/index
+api api123qwe
+
+为了便于对需求文档、流程文档、开发文档的维护，现在在git上面开了3个仓库。
+
+需求文档仓库：主要是为了维护主要需求的文档记录以及变更历史。地址：http://git.sdprint.tech/pm/requirement
+流程文档仓库：主要是为了维护各个系统的流程设计文档。地址：http://git.sdprint.tech/pm/process
+开发文档仓库：主要是为了维护各个系统的开发技术文档。地址：http://git.sdprint.tech/PIS/PISDoc
+
+三个仓库与jira、禅道并不冲突， jira主要是用于公司其他各个部门提交零碎的需求以及问题处理，禅道主要是为了开发流程管理。jira和禅道上的需求以及关联文档，可能过于琐碎，而这三个仓库是为了更系统和规范的整理留存相关文档。
+
+盛大所有网站
+http://192.168.100.100/
+
+http://192.168.100.102:20011/MyOrder/ErpDepositOrderList?origin=recheck   账户：测试1  sd123456
+
+web网站原型图
+https://pro.modao.cc/app/B2B5Fhq7INllcs5Zlr8ryqYivdFO2gY#screen=s6B561082591527573980021
+
+微信端原型图
+
+
+微信测试账号
+1477631640@qq.com    shengda2000
+
+盛大网站后台
+admin   123qwe!@#
+
+
+网站登录账户
+账号：261967945    密码：lvna7254545    （大电商客户）
+
+captainwu1   skwsc1990  世纪开元、
+
+禅道 账户
+ zhangxiaonan  sd123456
+
+盛大网站
+用户名 1005806275   密码 654321    这是一个电商客户的账号
+

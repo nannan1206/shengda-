@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<script src="//unpkg.com/vue/dist/vue.js"></script>
+		<script src="//unpkg.com/element-ui@2.4.11/lib/index.js"></script>
+        <style>
+        	#app{width: 500px;margin:100px auto;overflow: hidden;}
+        </style>
+		<body>
+			<div id="app">
+				<template>
+					<el-checkbox-group v-model="checkedCities1" :min="1" :max="2">
+						<el-checkbox v-for="city in cities" :label="city" :key="city">{{city}}</el-checkbox>
+					</el-checkbox-group>
+				</template>
+			</div>
+		</body>
+		<script>
+			const cityOptions = ['上海', '北京', '广州',  '北京', '广州', '北京', '广州', '北京', '广州', '北京', '广州', '北京', '广州', '北京', '广州', '北京', '广州', '北京', '广州', '北京', '广州', '北京', '广州', '北京', '广州', '北京', '广州', '北京', '广州', '北京', '广州', '北京', '广州', '北京', '广州','深圳'];
+		  var Main = {
+		    data() {
+		      return {
+		        checkedCities1: ['上海', '北京'],
+		        cities: cityOptions
+		      };
+		    }
+		  };
+		var Ctor = Vue.extend(Main)
+		new Ctor().$mount('#app')
+		</script>
+
+</html>
