@@ -19,9 +19,22 @@
 
 	<body>
 		<!--头部-->
-		<div class="top">
-			<a href="###"><img src="img/right.png" /> </a>
+		<div class="topbind">
+			<a href="###"><i class="iconfont">&#xe61f;</i></a>
 			<span>订单查询</span>
+			<!--添加按钮-->
+			<a class="addbutton">					
+				<span>退出</span>
+			</a>			
+		</div>
+		<!--添加去重设密码提示-->
+		<div class="addfixed">
+			<a href="###" class="iconclose">			
+				<i class="iconfont">&#xe679;</i>
+			</a>
+			<div class="comWidth">
+				<span>为了确保安全，请重新</span><a href="addchangpass.html">修改密码</a>
+			</div>
 		</div>
 		<!--查询-->
 		<div class="proSelect">
@@ -29,7 +42,14 @@
 				<li>
 					<label>业务类型:</label>
 					<select>
-						<option>请选择</option>
+						<option>请选择类型</option>
+						<option>不干胶</option>
+						<option>画册</option>
+						<option>pvc</option>
+						<option>单页</option>
+					</select>
+					<select>
+						<option>请选择产品类型</option>
 						<option>不干胶</option>
 						<option>画册</option>
 						<option>pvc</option>
@@ -38,12 +58,25 @@
 				</li>
 				<li>
 					<label>下单时间:</label>
-					<input placeholder="年/月/" />
-					<input placeholder="年/月/" />
+					<input type="date" placeholder="开始时间"  datatype="*" nullmsg="开始时间" placeholder="开始时间" onfocus="this.removeAttribute('placeholder')" />
+					<input type="date" placeholder="结束时间" datatype="*" nullmsg="结束时间" placeholder="结束时间" onfocus="this.removeAttribute('placeholder')" />
+				</li>
+				<li class="addactive">
+					<label>付款状态：</label>
+					<select>
+						<option>全部</option>
+						<option>已付款</option>
+						<option>未付款</option>						
+					</select>
+					<label>发货时间：</label>
+					<select>
+						<option>由远到近</option>
+						<option>由远到近</option>						
+					</select>
 				</li>
 				<li>
 					<label>关键词:</label>
-					<input placeholder="请输入搜索关键词" />
+					<input placeholder="请输入搜索关键词" type="search" />
 				</li>
 			</ul>
 			<a href="###">查询</a>
@@ -67,7 +100,7 @@
 					</div>
 				</div>
 				<div class="orderpay">
-					<a href="###">付余款</a><a href="###">付定金</a><a href="productDetail.html">查看详情</a>
+					<!--<a href="###">付余款</a>--><a href="###">付定金</a><a href="productDetail.html">查看详情</a>
 				</div>
 			</div>
 			<div class="orderList">
@@ -87,7 +120,7 @@
 					</div>
 				</div>
 				<div class="orderpay">
-					<a href="###">付余款</a><a href="###">付定金</a><a href="productDetail.html">查看详情</a>
+					<!--<a href="###">付余款</a>--><a href="###">付定金</a><a href="productDetail.html">查看详情</a>
 				</div>
 			</div>
 			<div class="orderList">
@@ -152,9 +185,8 @@
 			</div>
 			<!--点击加载更多-->
 			<a href="###" class="clickMore">点击加载更多...</a>
-
+			<p class="noMore">没有更多了</p>
 		</div>
-
 	</body>
-
+	
 </html>

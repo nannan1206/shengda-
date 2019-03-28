@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.2.js" ></script>
+	<body>
+	</body>
+	<script>
+		var result = window.matchMedia('(min-width:1200px)');
+	    var result2 = window.matchMedia('(min-width:992px)');
+	    var result3 = window.matchMedia('(min-width:768px)');
+	      if(result.matches) {
+	            console.log("大屏幕(>=1200)");
+	        }else if(result2.matches){
+	            console.log("中等屏幕(>=992&<=1200)");
+	        }else if(result3.matches){
+	            console.log("小屏幕(>=768&<=992)");
+	        }else{
+	            console.log("超小屏幕(<=768)");
+	        }
+		</script>
+
+</html>
