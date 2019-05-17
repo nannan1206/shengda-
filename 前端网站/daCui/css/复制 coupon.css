@@ -1,0 +1,54 @@
+/*优惠卷区域*/
+.intersoupon{display: block;width:120px;height: 30px;border: 1px solid #e0e0e0;border-radius:3px;color:#000000 ;font: 14px/30px "微软雅黑";text-align: center;float: right;}
+.intersoupon:hover{border-color: #FDD100;}
+.intersoupon img{float: left;margin: 7px 7px 0 20px;}
+.intersoupon span{float: left;}
+.couponArea{width: 100%;height: auto;}
+.cardCoupon{width: 280px;height: 410px;margin: 30px 34px 0px 0;  border: 1px solid #e7bb84;float: left;}
+.cardCoupon:nth-child(3n+3){margin: 30px 0 0 0;}
+.c-type{width:280px;height: 150px;text-align: center;color: #FFFFFF !important;}
+.c-type-top{width: 40px;height: 40px;border-radius: 40px;background: #FFFFFF;position: relative;top: -20px;margin: 0px auto 6px;}
+.c-price strong{font: 50px/50px "微软雅黑";}
+.c-price span{font: 20px/30px "微软雅黑";}
+.c-limit{font: 16px/30px "微软雅黑";}
+.c-msg{width: 280px;height: 156px;background: #f9f9f9;border:3px dotted #e7bb84;border-left:0 ;border-right: 0;}
+/*.circle{float: left;margin: -1px 2px; width: 4px;height: 4px;border-radius: 6px;background: #e7bb84;}*/
+.c-range{margin:40px 20px;font: 14px/30px "微软雅黑";}
+.c-range .label{color:#666666 ;}
+.c-range .txt{color:#999999;}
+.c-time{width:280px;height: 70px;padding-top:30px;text-align: center;font: 14px/24px "微软雅黑";color:#59370e;}
+/*多产品优惠卷*/
+.morePro .c-type,.morePro .c-time{background:#e7bb84;}
+.morePro .cardCoupon,.morePro .c-msg{border-color:#e7bb84;}
+/*全国*/
+.moreAddr .c-type,.moreAddr .c-time{background:#c196da;color:#54276e;}
+.moreAddr.cardCoupon,.moreAddr .c-msg{border-color:#c196da;}
+/*单产品*/
+.singlepro .c-type,.singlepro .c-time{background:#7fc9db;color:#175e6f;}
+.singlepro.cardCoupon,.singlepro .c-msg{border-color:#7fc9db;}
+/*逾期{已使用和失效}*/
+.overdue .c-type,.overdue .c-time{background:#b0b0b0;color:#FFFFFF;}
+.overdue.cardCoupon,.overdue .c-msg{border-color:#b0b0b0;}
+/*领劵中心*/
+.couponItem img{width: 1200px;height:200px;margin: 30px auto;}
+.cate-heading{margin: 0 auto; width:179px;height: 30px;font-size: 28px;line-height: 1;text-align: center;}
+.diamond{float: left;width: 10px;height: 10px;background: #CCCCCC; float: left;margin:15px;  transform:rotate(45deg);   -ms-transform:rotate(45deg); /* Internet Explorer */   -moz-transform:rotate(45deg); /* Firefox */   -webkit-transform:rotate(45deg); /* Safari 和 Chrome */   -o-transform:rotate(45deg); /* Opera */ }
+.cate-heading h3{float: left;color: #333333;}
+.diamond:last-child{float: right;}
+.commonCenter{overflow: hidden;min-height:400px;}
+.couCenterCard{width:590px;height: 190px;margin-top:30px; background:url(../img/backCard.png);float: left;}
+.couCenterCard:nth-child(2n+2){float: right;}
+.q-img{float: left;margin: 60px 18px 0 33px;}
+.q-type{float: left;margin: 16px 0;}
+.q-price strong{font: 40px/60px "微软雅黑";color: #FF4400;}
+.q-range span{font: bold 16px/26px "微软雅黑";color: #333333;}
+.q-read span{color: #999999;font: 14px/18px "微软雅黑";}
+.q-ops-box{float:right;width: 180px;height:106px;margin: 50px 12px 0px 0;  border-left: 1px solid #f7f2e3;}
+.q-pross{width: 150px;height:36px;margin: 0px auto 20px;text-align: center;color: #666666;font: 16px/20px "微软雅黑";}
+.q-pross .el-progress__text{display: none;}
+.el-progress-bar__outer{height:8px !important;}
+.q-opbtns{display: block; width: 100px;height:30px;text-align: center;margin: 20px auto 0;font: 16px/30px "微软雅黑"; border-radius: 3px;background: #ffc400;}
+.emptyCoupon{width: 300px;height: 200px;text-align: center;margin: 120px auto;}
+.emptyCoupon img{margin: 0 auto;}
+.emptyCoupon p{color:#666666 ;font: 14px/50px "微软雅黑";}
+.emptyCoupon .q-opbtns{margin-top: 0;}

@@ -158,7 +158,20 @@
 
 			</div>
 		</div>
-		<div class="peopleCenterArea">
+		<div class="commonCenterArea">
+			<!--广告页面-->
+			<div class="advertisement">
+
+				<div id="appbanner">
+					<template>
+						<el-carousel :interval="5000" arrow="never" height="90px">
+							<el-carousel-item v-for="imageUrl in sites" :key="imageUrl.url">
+								<img :src="imageUrl.url" />
+							</el-carousel-item>
+						</el-carousel>
+					</template>
+				</div>
+			</div>
 			<!--页面导航-->
 			<div class="appproduct" id="appproduct">
 				<el-breadcrumb separator-class="el-icon-arrow-right">
@@ -168,12 +181,18 @@
 				</el-breadcrumb>
 			</div>
 			<!--客户中心-->
-			<div class="peopleCenter">
+			<div class="commonCenter">
 				<div class="centerLeft">
 					<div class="appcenter" id="appcenter">
 						<ul>
+							<!--<li> <h3>订单中心</h3></li>-->
 							<li> <a href="###"> 全部订单</a> </li>
-							<li class="active"><a href="###">代付款</a> </li>
+							<li> <a href="###"> 待复核</a> </li>
+							<li class="active"><a href="###">代付定金 <font style="color: red;margin: 0 6px;">8</font>  </a> </li>
+							<li> <a href="###"> 全部订单</a> </li>
+							<li> <a href="###"> 全部订单</a> </li>
+							<li> <a href="###"> 全部订单</a> </li>
+							<li> <a href="###"> 全部订单</a> </li>
 						</ul>
 					</div>
 				</div>
@@ -181,9 +200,16 @@
 				<div class="centerRight">
 					<h4>订单查询</h4>
 					<div class="orderSelect" id="apporderSelect">
-						<div class="orderselectA">
+						<div class="orderselectA" id="upfile">
 							<a href="###">不干胶订单</a>
-							<a href="###" class="active">彩印类订单</a>
+							<el-badge value="5" class="item">
+								<a href="###" class="active">彩印类订单</a>
+							</el-badge>
+
+							<el-badge value="您有订单未上传文件" class="item">
+								<a href="###">其他订单</a>
+							</el-badge>
+
 						</div>
 
 					</div>
@@ -194,49 +220,53 @@
 					</div>
 					<!--选择搜索条件-->
 					<div class="orderif">
-						<div class="orderdate" id="app">
-							<template>
-								<div class="block">
-									<span class="demonstration">下单时间</span>
-									<el-date-picker v-model="value7" type="daterange" align="right" unlink-panels range-separator="至" start-placeholder="开始日期" end-placeholder="结束日期" :picker-options="pickerOptions2">
-									</el-date-picker>
-								</div>								
-							</template>							
-						</div>
-						<div class="orderdate" id="appgood">
-							<template>							
+						<div class="locationBox">
+							<div class="orderdate" id="app">
+								<template>
+									<div class="block">
+										<span class="demonstration">下单时间</span>
+										<el-date-picker v-model="value7" type="daterange" align="right" unlink-panels range-separator="至" start-placeholder="开始日期" end-placeholder="结束日期" :picker-options="pickerOptions2">
+										</el-date-picker>
+									</div>
+								</template>
+							</div>
+							<div class="orderdate" id="appgood">
+								<template>
 									<span class="demonstration">发货时间</span>
 									<el-select v-model="value" placeholder="由近到远">
-										<el-option v-for="item in options2" :key="item.value" :label="item.label" :value="item.value">
-										</el-option>
-									</el-select>														
-							</template>							
-						</div>						
-						<!--搜索框-->
-						<div class="search active">
-							<input type="text" placeholder="请输入产品名称或订单号" />
-							<a href="###">订单搜索</a>
-						</div>
-						<!--按钮-->
-						<div class="addTolPrice">
-							<a onclick="sltAll('sltAllInput',1)">全选</a><a href="###">批量付款</a><a href="###">导出订单</a>
-							<div class="addborderLine">
-								共计<span>2</span>单，共<span>105.5</span>元
-							</div>
-
-						</div>
-						<!--选择页数-->
-						<div class="numArea">
-							<span>订单/页</span>
-							<div class="changnum" id="app1">
-								<template>
-									<el-select v-model="value" placeholder="5">
 										<el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
 										</el-option>
 									</el-select>
 								</template>
 							</div>
+							<!--搜索框-->
+							<div class="search active">
+								<input type="text" placeholder="请输入产品名称或订单号" />
+								<a href="###">订单搜索</a>
+							</div>
+						</div>
+						<div class="locationBox">
+							<!--按钮-->
+							<div class="addTolPrice">
+								<a onclick="sltAll('sltAllInput',1)">全选</a><a href="###">批量付款</a><a href="###">导出订单</a>
+								<div class="addborderLine">
+									共计<span>2</span>单，共<span>105.5</span>元
+								</div>
 
+							</div>
+							<!--选择页数-->
+							<div class="numArea">
+								<span>订单/页</span>
+								<div class="changnum" id="app1">
+									<template>
+										<el-select v-model="value" placeholder="5">
+											<el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
+											</el-option>
+										</el-select>
+									</template>
+								</div>
+
+							</div>
 						</div>
 
 					</div>
@@ -248,9 +278,10 @@
 								<col width="216">
 									<col width="120">
 										<col width="120">
-											<col width="204">
+											<col width="186">
 												<col width="86">
 													<col width="">
+														<col width="">
 							</colgroup>
 							<tbody>
 								<tr>
@@ -261,6 +292,7 @@
 									<th>订单金额</th>
 									<th>交易状态 </th>
 									<th>交易操作</th>
+									<th>印刷文件</th>
 								</tr>
 							</tbody>
 						</table>
@@ -315,10 +347,77 @@
 									<li>
 										<div id="app3">
 											<template>
-												<el-button type="text" @click="open5">立即付款</el-button>
+												<!--<el-button type="text" class="payRight">立即付款</el-button>-->
+												<!--<el-button type="text" class="delorder">取消订单</el-button>-->
+												<el-button type="text" class="customer">申请售后</el-button>
 											</template>
 										</div>
 
+									</li>
+									<li>
+										<a href="###">上传</a>
+									</li>
+
+								</ul>
+							</div>
+
+						</div>
+						<div class="listArea">
+							<div class="listAreatitle">
+								<ul>
+									<li>
+										<input type="checkbox" name="file" value="nameFile"><i>下单时间：</i><span>2018/10/6  11:15:24  </span>
+									</li>
+									<li>
+										<i>订单编号：</i><span>ZS18100603029</span>
+									</li>
+									<li>
+										<i>物流信息：</i><span>中通快递&nbsp;&nbsp;&nbsp; 73104696661116  </span>
+									</li>
+									<li>
+										<i>发货时间：</i><span>2018/10/6  11:15:24  </span>
+									</li>
+								</ul>
+							</div>
+							<!--订单名称-->
+							<div class="ordername">
+								<ul>
+									<li>
+										<a href="###">229091757887698311纯手工朱启英_BG特价双1000-1</a>
+									</li>
+									<li>
+										<span>不干胶</span>
+									</li>
+									<li>
+										<span class="red"> ￥0</span>
+									</li>
+									<li>
+										<span class="red"> ￥9.54</span>
+										<p>产品金额：¥4.9</p>
+										<p>运费：¥4.5</p>
+										<p>重量 (kg)：0.284</p>
+									</li>
+									<li>
+										<p>未付款 </p>
+										<div id="app2">
+											<template>
+												<el-button type="text" @click="open5">订单详情</el-button>
+											</template>
+										</div>
+
+									</li>
+									<li>
+										<div id="app3">
+											<template>
+												<!--<el-button type="text" class="payRight">立即付款</el-button>-->
+												<!--<el-button type="text" class="delorder">取消订单</el-button>-->
+												<el-button type="text" class="customer">申请售后</el-button>
+											</template>
+										</div>
+
+									</li>
+									<li>
+										<a href="###">上传</a>
 									</li>
 
 								</ul>
@@ -346,16 +445,20 @@
 						<strong>订单名称:</strong><span>229091757887698311纯手工朱启英_BG特价双1000-1</span>
 					</li>
 					<li>
-						<strong>订单编号：</strong><span>ZS18100603029</span><strong>   已 支  付：</strong><span>0 元</span>
+						<div class="tablineDiv"><strong>订单编号：</strong><span>ZS18100603029</span></div>
+						<div class="tablineDiv"><strong>已 支  付：</strong><span>0 元</span></div>
+
 					</li>
 					<li>
-						<strong>付款状态：</strong><span>未付款     </span><strong>   业务类型：</strong><span>不干胶</span>
+						<div class="tablineDiv"><strong>付款状态：</strong><span>未付款</span></div>
+						<div class="tablineDiv"><strong>业务类型：</strong><span>不干胶</span></div>
 					</li>
 					<li>
-						<strong>金       额： </strong><span>9.4元 </span><strong>   下单日期：</strong><span>2018/10/6 11:15:24</span>
+						<div class="tablineDiv"><strong>金&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;额：</strong><span>9.4元</span></div>
+						<div class="tablineDiv"><strong>下单日期：</strong><span>2018/10/6 11:15:24</span></div>
 					</li>
 					<li>
-						<strong>淘宝订单号：</strong><span>229091757887698311</span>
+						<span><strong>淘宝订单号：</strong> 条幅50CM宽彩色条幅尺寸0.5*3m1条 打扣(每隔2米打一个扣) 缝吊耳(四角缝吊耳) 裁净边-条幅60CM宽红底条幅黄字尺寸0.6*3m1条 打扣(每隔2米打一个扣) 缝筒-条幅70CM宽红底条幅黄字尺寸0.7*3m1条 打扣(每隔2米打一个扣) 缝吊耳(四角缝吊耳) 裁净边</span>
 					</li>
 				</ul>
 				<p class="red">下单人承诺：所提供资料（含知识产权）真实、合法，由此引发的所有问题由下单人负责。此订单等同于印刷委托书</p>
@@ -392,19 +495,17 @@
 				</table>
 				<div class="tbbutton active">
 					<a href="###">关闭</a>
-						<a href="###">发货</a>
+					<a href="###">发货</a>
 				</div>
-				<div class="tbbutton" style="display: none;">
-					<a href="###">关闭</a>					
+				<!--<div class="tbbutton" style="display: none;">
+					<a href="###">关闭</a>
 				</div>
+				
+				<div class="changButton">
+					<a href="OrderPayAlipay.html"></a>
+					<a href="OrderPayWechat.html"></a>
+				</div>-->
 			</div>
-			<!--选择框-->
-			<!--选择框-->
-			<div class="changButton">
-				<a href="OrderPayAlipay.html"></a>
-				<a href="OrderPayWechat.html"></a>
-			</div>
-		</div>
 		</div>
 		<!--底部-->
 		<div class="foot">
@@ -474,18 +575,17 @@
 
 				<p><i class="iconfont">&#xe62e;</i>&nbsp;&nbsp;如果您正在使用IE浏览器，推荐使用谷歌Chrome或Firefox火狐浏览器！</p>
 				<div class="Abutips">
-					<a href="###">
+					<a target="_blank" href="http://www.firefox.com.cn/">
 						<i class="iconfont">&#xe71d;</i>
 						<p>火狐</p>
 					</a>
-					<a href="###">
+					<a target="_blank" href="http://www.daque04.cn/19/3931.html?tab=65403">
 						<i class="iconfont">&#xe602;</i>
 						<p>谷歌</p>
 					</a>
 				</div>
 			</div>
 		</div>
-
 	</body>
 	<!-- import Vue before Element -->
 	<script src="https://unpkg.com/vue/dist/vue.js"></script>
@@ -493,7 +593,19 @@
 	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 	<script type="text/javascript" src="../js/common.js"></script>
 	<script>
-		//产品区域
+		new Vue().$mount('#upfile')
+			//广告区域banner
+		new Vue({
+				el: '#appbanner',
+				data: {
+					sites: [{
+						url: '../img/advert.png'
+					}, {
+						url: '../img/3.png'
+					}]
+				}
+			})
+			//产品区域
 		new Vue().$mount('#appproduct')
 			//分页
 		new Vue().$mount('#apppage')
@@ -509,7 +621,6 @@
 								const start = new Date();
 								start.setTime(start.getTime() - 3600 * 1000 * 24 * 3);
 								picker.$emit('pick', [start, end]);
-						
 							}
 						}, {
 							text: '最近一周',
@@ -583,10 +694,10 @@
 		var Main = {
 			methods: {
 				open5() {
-					this.$alert(' <div class="tabBoxArea"><h4>订单详情</h4><ul class="tabBox"><li><strong>订单名称:</strong><span>229091757887698311纯手工朱启英_BG特价双1000-1</span></li><li><strong>订单编号：</strong><span>ZS18100603029</span><strong> 已 支 付：</strong><span>0 元</span></li><li><strong>付款状态：</strong><span>未付款 </span><strong> 业务类型：</strong><span>不干胶</span></li><li><strong>金 &nbsp;&nbsp;&nbsp;&nbsp;额： </strong><span>9.4元 </span><strong> 下单日期：</strong><span>2018/10/6 11:15:24</span></li><li><strong>淘宝订单号：</strong><span>229091757887698311</span></li></ul><p class="red">下单人承诺：所提供资料（含知识产权）真实、合法，由此引发的所有问题由下单人负责。此订单等同于印刷委托书</p><h4>产品详情</h4><table class="orderAderss"><colgroup><col width="124"><col width="210"><col width="90"><col width="98"><col width="120"><col width="132"></colgroup><thead><tr><th>产品编号</th><th>产品名称</th><th>产品规格</th><th>状态</th><th>出库时间</th><th>物流信息</th></tr></thead><tbody><tr><td>ZS18100603029-1</td><td>229091757887698311纯手工朱启英_BG特价双1000-1</td><td>30*40</td><td>已入库</td><td></td><td>中通快递73104696661116</td></tr></tbody></table> <div class="tbbutton"> <a href="###">关闭</a></div></div>', '订单号：ZS18100603029', {
-						dangerouslyUseHTMLString: true,
-						showConfirmButton: false
-					});
+					this.$alert('<div class="tabBoxArea"><h4>订单详情</h4><ul class="tabBox"><li><strong>订单名称:</strong><span>229091757887698311纯手工朱启英_BG特价双1000-1</span></li><li><div class="tablineDiv"><strong>订单编号：</strong><span>ZS18100603029</span></div><div class="tablineDiv"><strong>已 支 付：</strong><span>0 元</span></div></li><li><div class="tablineDiv"><strong>付款状态：</strong><span>未付款</span></div><div class="tablineDiv"><strong>业务类型：</strong><span>不干胶</span></div></li><li><div class="tablineDiv"><strong>金&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;额：</strong><span>9.4元</span></div><div class="tablineDiv"><strong>下单日期：</strong><span>2018/10/6 11:15:24</span></div></li><li><span><strong>淘宝订单号：</strong> 条幅50CM宽彩色条幅尺寸0.5*3m1条 打扣(每隔2米打一个扣) 缝吊耳(四角缝吊耳) 裁净边-条幅60CM宽红底条幅黄字尺寸0.6*3m1条 打扣(每隔2米打一个扣) 缝筒-条幅70CM宽红底条幅黄字尺寸0.7*3m1条 打扣(每隔2米打一个扣) 缝吊耳(四角缝吊耳) 裁净边</span></li></ul><p class="red">下单人承诺：所提供资料（含知识产权）真实、合法，由此引发的所有问题由下单人负责。此订单等同于印刷委托书</p><h4>产品详情</h4><table class="orderAderss"><colgroup><col width="124"><col width="210"><col width="90"><col width="98"><col width="120"><col width="132"></colgroup><thead><tr><th>产品编号</th><th>产品名称</th><th>产品规格</th><th>状态</th><th>出库时间</th><th>物流信息</th></tr></thead><tbody><tr><td>ZS18100603029-1</td><td>229091757887698311纯手工朱启英_BG特价双1000-1</td><td>30*40</td><td>已入库</td><td></td><td>中通快递73104696661116</td></tr></tbody></table><div class="tbbutton active"><a href="###">关闭</a><a href="###">发货</a></div></div>','订单号：ZS18100603029', {
+							dangerouslyUseHTMLString: true,
+							showConfirmButton: false
+						});
 				}
 			}
 		}

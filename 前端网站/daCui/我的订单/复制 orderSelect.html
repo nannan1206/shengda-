@@ -158,7 +158,7 @@
 
 			</div>
 		</div>
-		<div class="peopleCenterArea">
+		<div class="commonCenterArea">
 			<!--页面导航-->
 			<div class="appproduct" id="appproduct">
 				<el-breadcrumb separator-class="el-icon-arrow-right">
@@ -168,7 +168,7 @@
 				</el-breadcrumb>
 			</div>
 			<!--客户中心-->
-			<div class="peopleCenter">
+			<div class="commonCenter">
 				<div class="centerLeft">
 					<div class="appcenter" id="appcenter">
 						<ul>
@@ -194,59 +194,62 @@
 					</div>
 					<!--选择搜索条件-->
 					<div class="orderif">
-						<div class="orderdate" id="app">
-							<template>
-								<div class="block">
-									<span class="demonstration">下单时间</span>
-									<el-date-picker v-model="value7" type="daterange" align="right" unlink-panels range-separator="至" start-placeholder="开始日期" end-placeholder="结束日期" :picker-options="pickerOptions2">
-									</el-date-picker>
-								</div>
-							</template>
-						</div>
-						<div class="orderdate" id="appgood">
-							<template>
-								<span class="demonstration">发货时间</span>
-								<el-select v-model="value" placeholder="由近到远">
-									<el-option v-for="item in options2" :key="item.value" :label="item.label" :value="item.value">
-									</el-option>
-								</el-select>
-							</template>
-						</div>
-						<div class="orderdate checkgood" id="appgood1">
-							<template>
-								<span class="demonstration">发货状态</span>
-								<el-select v-model="value" placeholder="请选择">
-									<el-option v-for="item in options2" :key="item.value" :label="item.label" :value="item.value">
-									</el-option>
-								</el-select>
-							</template>
-						</div>
-
-						<!--搜索框-->
-						<div class="search active">
-							<input type="text" placeholder="请输入产品名称或订单号" />
-							<a href="###">订单搜索</a>
-						</div>						
-						<!--按钮-->
-						<div class="addTolPrice">
-							<a onclick="sltAll('sltAllInput',1)">全选</a><a href="###">批量付款</a><a href="###">导出订单</a>
-							<div class="addborderLine">
-								共计<span>2</span>单，共<span>105.5</span>元
-							</div>
-
-						</div>
-						<!--选择页数-->
-						<div class="numArea">
-							<span>订单/页</span>
-							<div class="changnum" id="app1">
+						<div class="locationBox">
+							<div class="orderdate" id="app">
 								<template>
-									<el-select v-model="value" placeholder="5">
-										<el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
+									<div class="block">
+										<span class="demonstration">下单时间</span>
+										<el-date-picker v-model="value7" type="daterange" align="right" unlink-panels range-separator="至" start-placeholder="开始日期" end-placeholder="结束日期" :picker-options="pickerOptions2">
+										</el-date-picker>
+									</div>
+								</template>
+							</div>
+							<!--<div class="orderdate" id="appgood">
+								<template>
+									<span class="demonstration">发货时间</span>
+									<el-select v-model="value" placeholder="由近到远">
+										<el-option v-for="item in options2" :key="item.value" :label="item.label" :value="item.value">
 										</el-option>
 									</el-select>
 								</template>
-							</div>
+							</div>-->
+							<!--<div class="orderdate checkgood" id="appgood1">
+								<template>
+									<span class="demonstration">发货状态</span>
+									<el-select v-model="value" placeholder="请选择">
+										<el-option v-for="item in options2" :key="item.value" :label="item.label" :value="item.value">
+										</el-option>
+									</el-select>
+								</template>
+							</div>-->
 
+							<!--搜索框-->
+							<div class="search">
+								<input type="text" placeholder="请输入产品名称或订单号" />
+								<a href="###">订单搜索</a>
+							</div>
+						</div>
+
+						<!--按钮-->
+						<div class="locationBox">
+							<div class="addTolPrice">
+								<a onclick="sltAll('sltAllInput',1)">全选</a><a href="###">批量付款</a><a href="###">导出订单</a>
+								<div class="addborderLine">
+									共计<span>2</span>单，共<span>105.5</span>元
+								</div>
+							</div>
+							<!--选择页数-->
+							<div class="numArea">
+								<span>订单/页</span>
+								<div class="changnum" id="app1">
+									<template>
+										<el-select v-model="value" placeholder="5">
+											<el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
+											</el-option>
+										</el-select>
+									</template>
+								</div>
+							</div>
 						</div>
 
 					</div>
@@ -477,26 +480,42 @@
 
 		</div>
 		<!--ie9以下的遮罩提示框-->
-		<div class="changPayArea" style="display: none;">
-			<div class="payArea">
-				<h3>用户体验提示</h3>
-				<p><i class="iconfont">&#xe62e;</i>&nbsp;&nbsp;如果您正在使用QQ、360、百度等国产浏览器，请将浏览模式切换为极速模式（切换方法：点击地址栏右侧的<i class="iconfont">&#xe606;</i>按钮）。</p>
 
-				<p><i class="iconfont">&#xe62e;</i>&nbsp;&nbsp;如果您正在使用IE浏览器，推荐使用谷歌Chrome或Firefox火狐浏览器！</p>
-				<div class="Abutips">
-					<a href="###">
-						<i class="iconfont">&#xe71d;</i>
-						<p>火狐</p>
-					</a>
-					<a href="###">
-						<i class="iconfont">&#xe602;</i>
-						<p>谷歌</p>
-					</a>
-				</div>
+		<div class="payArea">
+			<h3>用户体验提示</h3>
+			<p><i class="iconfont">&#xe62e;</i>&nbsp;&nbsp;如果您正在使用QQ、360、百度等国产浏览器，请将浏览模式切换为极速模式（切换方法：点击地址栏右侧的<i class="iconfont">&#xe606;</i>按钮）。</p>
+
+			<p><i class="iconfont">&#xe62e;</i>&nbsp;&nbsp;如果您正在使用IE浏览器，推荐使用谷歌Chrome或Firefox火狐浏览器！</p>
+			<div class="Abutips">
+				<a href="###">
+					<i class="iconfont">&#xe71d;</i>
+					<p>火狐</p>
+				</a>
+				<a href="###">
+					<i class="iconfont">&#xe602;</i>
+					<p>谷歌</p>
+				</a>
 			</div>
 		</div>
 
 	</body>
+	<script>
+		// fade out
+		function fadeOut(el) {
+			el.style.opacity = 1;
+			(function fade() {
+				if ((el.style.opacity -= .1) < 0) {
+					el.style.display = 'none';
+				} else {
+					requestAnimationFrame(fade);
+				}
+			})();
+		}
+		var el = document.querySelector('.payArea');
+		el.addEventListener('click', function(e) {
+			fadeOut(el);
+		});
+	</script>
 	<!-- import Vue before Element -->
 	<script src="https://unpkg.com/vue/dist/vue.js"></script>
 	<!-- import JavaScript -->
@@ -572,7 +591,7 @@
 					}, {
 						value: '选项2',
 						label: '未发货'
-					}],				
+					}],
 				}
 			}
 		}

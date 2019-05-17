@@ -157,6 +157,7 @@
 			</div>
 		</div>
 		<!--产品中心-->
+		<hr />
 		<div class="productbody">
 			<div class="appproduct" id="appproduct">
 				<el-breadcrumb separator-class="el-icon-arrow-right">
@@ -175,6 +176,7 @@
 							<el-carousel :interval="3000" arrow="always" height="550px">
 								<el-carousel-item v-for="imageUrl in sites" :key="imageUrl.url">
 									<img :src="imageUrl.url" />
+
 								</el-carousel-item>
 							</el-carousel>
 						</template>
@@ -198,7 +200,7 @@
 
 									<span>对联专用110克铜版纸</span>
 
-								</li>							
+								</li>
 							</ul>
 						</dd>
 					</dl>
@@ -248,72 +250,74 @@
 					<dl>
 						<dd>
 							<a target="_blank" href="cart.html" class="addcar">加入购物车</a>
+							<a  class="addcar soldOut" style="display: none;">已下架</a>
 						</dd>
 					</dl>
 				</div>
 
 			</div>
+		</div>
 
-			<!--底部-->
-			<div class="foot">
-				<div class="footer">
-					<div class="appfoot" id="appfoot">
-						<dl>
-							<dt>关于我们</dt>
-							<dd>
-								<a>公司简介</a>
-							</dd>
-							<dd>
-								<a>联系我们</a>
-							</dd>
-							<dd>
-								<a href="###">加入我们</a>
-							</dd>
-							<dd>
-								<a>新闻公告</a>
-							</dd>
-						</dl>
-						<dl>
-							<dt>帮助与支持</dt>
-							<dd>
-								<a>常见问题</a>
-							</dd>
-							<dd>
-								<a>下载中心</a>
-							</dd>
-							<dd>
-								<a>下单注意事项</a>
-							</dd>
+		<!--底部-->
+		<div class="foot">
+			<div class="footer">
+				<div class="appfoot" id="appfoot">
+					<dl>
+						<dt>关于我们</dt>
+						<dd>
+							<a>公司简介</a>
+						</dd>
+						<dd>
+							<a>联系我们</a>
+						</dd>
+						<dd>
+							<a href="###">加入我们</a>
+						</dd>
+						<dd>
+							<a>新闻公告</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>帮助与支持</dt>
+						<dd>
+							<a>常见问题</a>
+						</dd>
+						<dd>
+							<a>下载中心</a>
+						</dd>
+						<dd>
+							<a>下单注意事项</a>
+						</dd>
 
-						</dl>
-						<dl>
-							<dt>官方微信（可供查单、报价）</dt>
-							<dd>
-								<img src="../img/weChat.png" width="90px" height="90px" />
-							</dd>
+					</dl>
+					<!--<dl>
+						<dt>官方微信（可供查单、报价）</dt>
+						<dd>
+							<img src="../img/weChat.png" width="90px" height="90px" />
+						</dd>
 
-						</dl>
-						<dl>
-							<dt>客服</dt>
-							<dd>
-								<a>客服QQ：800011909</a>
-							</dd>
-							<dd>
-								<span>客服热线：</span>
-							</dd>
-							<dd>
-								<span class="telnum">400-60-36588</span>
-							</dd>
-						</dl>
-					</div>
-
-				</div>
-				<!--底部备案-->
-				<div class="copyRight">
-					Copyright © 2016 - 2020 <a href="/">河南盛大彩色印刷有限公司</a> 版权所有 <a href="http://www.miitbeian.gov.cn" target="_blank">备案号：豫ICP备15032432号</a>
+					</dl>-->
+					<dl>
+						<dt>客服</dt>
+						<dd>
+							<a>客服QQ：800011909</a>
+						</dd>
+						<dd>
+							<span>客服热线：</span>
+						</dd>
+						<dd>
+							<span class="telnum">400-60-36588</span>
+						</dd>
+					</dl>
 				</div>
 
 			</div>
+			<!--底部备案-->
+			<div class="copyRight">
+				Copyright © 2016 - 2020 <a href="/">河南盛大彩色印刷有限公司</a> 版权所有 <a href="http://www.miitbeian.gov.cn" target="_blank">备案号：豫ICP备15032432号</a>
+			</div>
+
+		</div>
 
 	</body>
 	<!-- import Vue before Element -->
@@ -327,6 +331,7 @@
 		  data: {
 		    sites: [		    
 		      { url: '../img/pro.jpg' },
+		      { url: '../img/fu.jpg' },
 		      { url: '../img/adlogin1.png' }
 		    ]
 		  }

@@ -6,12 +6,19 @@
 		<title>河南郑州印刷厂_彩色印刷_名片单页海报印刷-河南盛大彩色印刷有限公司</title>
 		<meta name="keywords" content="盛大印刷，郑州印刷厂，盛大彩印，数码印刷，不干胶印刷，郑州名片印刷，盛大印刷厂，海报印刷，单页印刷，河南印刷厂，名片印刷">
 		<meta name="description" content="河南盛大彩色印刷有限公司是河南地区知名的印刷服务企业，成立于2000年。主营商务印刷（DM单页、海报、画册、手提袋等）、拼版名片、不干胶标签、骑马钉、覆膜、数码彩印为主要业务范围，面向广大广告公司、设计公司、文印店、图文店等业内同行提供服务。">
-		<meta name="renderer" content="webkit">	
+		<meta name="renderer" content="webkit">
 		<!--网页导航图标-->
 		<link rel="shortcut icon" type="image/x-icon" href="../css/dacui.ico" />
 		<link rel="stylesheet" href="../css/global.css" />
 		<link rel="stylesheet" href="../css/common.css" />
 		<link rel="stylesheet" href="../css/login.css" />
+		<script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="100229030" data-redirecturi="http://192.168.20.136:8020/daCui/%E9%87%8D%E8%AE%BE%E5%AF%86%E7%A0%81/bindingQQ.html" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			function qqLogin() {
+				QC.Login.showPopup();
+			}
+		</script>
 	</head>
 
 	<body>
@@ -28,7 +35,7 @@
 		<!--登录主页面-->
 		<div class="loginbody">
 			<div class="loginbleft">
-				<img src="../img/adlogin1.png" alt="登录区域广告图" width="530px" height="450px"/>
+				<img src="../img/adlogin1.png" alt="登录区域广告图" width="530px" height="450px" />
 			</div>
 			<!--登录表单-->
 			<div class="loginbright">
@@ -54,10 +61,9 @@
 									<div class="remember">
 										<el-checkbox v-model="checked">记住我</el-checkbox>
 
-										<a href="../重设密码/rebuildPass.html" target="_blank"  class="rebbutton">重设密码</a>
+										<a href="../重设密码/rebuildPass.html" target="_blank" class="rebbutton">重设密码</a>
 									</div>
 									<a href="###" class="loginbutton">登录</a>
-									<a href="register.html" target="_blank"  class="rebbutton">免费注册</a>
 								</div>
 
 							</el-tab-pane>
@@ -78,20 +84,26 @@
 											</div>
 											<input name="qq" value="" id='pass4' type="text" placeholder="请输入验证码" maxlength="" />
 										</div>
-									<!--	<el-button type="warning">获取验证码</el-button>-->
-									<a href="###" class="regbut active">获取验证码</a>
+										<!--	<el-button type="warning">获取验证码</el-button>-->
+										<a href="###" class="regbut active">获取验证码</a>
 									</div>
 									<div class="remember">
 										<el-checkbox v-model="checked">记住我</el-checkbox>
 
-									<a href="../重设密码/rebuildPass.html" target="_blank"  class="rebbutton">重设密码</a>
+										<a href="../重设密码/rebuildPass.html" target="_blank" class="rebbutton">重设密码</a>
 									</div>
 									<a href="###" class="loginbutton">登录</a>
-									<a href="register.html" target="_blank"  class="rebbutton">免费注册</a>
 								</div>
 
 							</el-tab-pane>
 						</el-tabs>
+						<!--绑定qq-->
+						<div class="bindingQQ">
+							<a href="javascript:void(0)" onclick="qqLogin()" class="pdl"><b class="QQ-icon"></b><span>QQ</span></a>
+							<span class="line">|</span>
+							<a href="javascript:void(0)" class="pdl"><b class="weixin-icon"></b><span>微信</span></a>
+							<div class="regist-link"><a href="register.html" target="_blank" class="rebbutton"><i class="el-icon-d-arrow-right"></i>立即注册</a></div>
+						</div>
 					</template>
 				</div>
 
@@ -105,7 +117,7 @@
 			<div class="copyRight">
 				Copyright © 2016 - 2020 <a href="/">河南盛大彩色印刷有限公司</a> 版权所有 <a href="http://www.miitbeian.gov.cn" target="_blank">备案号：豫ICP备15032432号</a>
 			</div>
-			
+
 		</div>
 
 	</body>
@@ -115,36 +127,18 @@
 	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 	<!--<script type="text/javascript" src="../js/polyfill.js" ></script>-->
 	<script>
-	 var app = new Vue({
-        el: '#applogin',
-        data: {
-            activeName: "first",
-            checked: false
-        },
-
-        methods: {
-            handleClick: function (tab, event) {
-                console.log(tab, event);
-            }
-        }
-    });
-	
-	
-//		var Main = {
-//			data() {
-//					return {
-//						activeName: 'first',
-//						checked: false
-//					};
-//				},
-//				methods: {
-//					handleClick(tab, event) {
-//						console.log(tab, event);
-//					}
-//				}
-//		};
-//		var Ctor = Vue.extend(Main)
-//		new Ctor().$mount('#applogin')		
+		var app = new Vue({
+			el: '#applogin',
+			data: {
+				activeName: "first",
+				checked: false
+			},
+			methods: {
+				handleClick: function(tab, event) {
+					console.log(tab, event);
+				}
+			}
+		});
 	</script>
 
 </html>

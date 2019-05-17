@@ -172,71 +172,215 @@
 					<el-date-picker v-model="value5" type="datetimerange" :picker-options="pickerOptions2" range-separator="至" start-placeholder="开始日期" end-placeholder="结束日期" align="right">
 					</el-date-picker>
 				</div>
-				
+
 			</template>
-			
+
 		</div>
-		
+
 		<div class="tabBoxArea">
-					<h4>订单详情</h4>
-					<ul class="tabBox">
-						<li>
-							<strong>订单名称:</strong><span>229091757887698311纯手工朱启英_BG特价双1000-1</span>
-						</li>
-						<li>
-							<strong>订单编号：</strong><span>ZS18100603029</span><strong>   已 支  付：</strong><span>0 元</span>
-						</li>
-						<li>
-							<strong>付款状态：</strong><span>未付款     </span><strong>   业务类型：</strong><span>不干胶</span>
-						</li>
-						<li>
-							<strong>金       额： </strong><span>9.4元 </span><strong>   下单日期：</strong><span>2018/10/6 11:15:24</span>
-						</li>
-						<li>
-							<strong>淘宝订单号：</strong><span>229091757887698311</span>
-						</li>
-					</ul>
-					<p class="red">下单人承诺：所提供资料（含知识产权）真实、合法，由此引发的所有问题由下单人负责。此订单等同于印刷委托书</p>
-					<h4>产品详情</h4>
-					<table class="orderAderss">
-						<colgroup>
-							<col width="124">
-								<col width="210">
+			<h4>订单详情</h4>
+			<!--<table align="left" border="0" width="100%">
+				<colgroup>
+					<col width="50%" />
+					<col width="50%" />
+				</colgroup>
+				<tr>
+					<td  colspan="2"><strong>订单名称:</strong><span>229091757887698311纯手工朱启英_BG特价双1000-1</span></td>
+				</tr>
+				<tr>
+					<td><strong>订单编号：</strong><span>ZS18100603029</span></td>
+					<td><strong>已 支  付：</strong><span>0 元</span></td>
+				</tr>
+				<tr>
+					<td><strong>付款状态：</strong><span>未付款</span></td>
+					<td><strong>业务类型：</strong><span>不干胶</span></td>
+				</tr>
+			</table>
+			-->
+		<div class="tabBoxArea">
+				<h4>订单详情</h4>
+				<ul class="tabBox">
+					<li>
+						<strong>订单名称:</strong><span>229091757887698311纯手工朱启英_BG特价双1000-1</span>
+					</li>
+					<li>
+						<div class="tablineDiv"><strong>订单编号：</strong><span>ZS18100603029</span></div>
+						<div class="tablineDiv"><strong>已 支  付 ：</strong><span>0 元</span></div>
+
+					</li>
+					<li>
+						<div class="tablineDiv"><strong>付款状态：</strong><span>未付款</span></div>
+						<div class="tablineDiv"><strong>业务类型：</strong><span>不干胶</span></div>
+					</li>
+					<li>
+						<div class="tablineDiv"><strong>金&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;额：</strong><span>9.4元</span></div>
+						<div class="tablineDiv"><strong>下单日期：</strong><span>2018/10/6 11:15:24</span></div>
+					</li>
+					<li>
+						<span><strong>淘宝订单号：</strong> 条幅50CM宽彩色条幅尺寸0.5*3m1条 打扣(每隔2米打一个扣) 缝吊耳(四角缝吊耳) 裁净边-条幅60CM宽红底条幅黄字尺寸0.6*3m1条 打扣(每隔2米打一个扣) 缝筒-条幅70CM宽红底条幅黄字尺寸0.7*3m1条 打扣(每隔2米打一个扣) 缝吊耳(四角缝吊耳) 裁净边</span>
+					</li>
+				</ul>
+				<p class="red">下单人承诺：所提供资料（含知识产权）真实、合法，由此引发的所有问题由下单人负责。此订单等同于印刷委托书</p>
+				<h4>产品详情</h4>
+				<table class="orderAderss">
+					<colgroup>
+						<col width="124">
+							<col width="210">
+								<col width="90">
+									<col width="98">
+										<col width="120">
+											<col width="132">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>产品编号</th>
+							<th>产品名称</th>
+							<th>产品规格</th>
+							<th>状态</th>
+							<th>出库时间</th>
+							<th>物流信息</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ZS18100603029-1</td>
+							<td>229091757887698311纯手工朱启英_BG特价双1000-1</td>
+							<td>30*40</td>
+							<td>已入库</td>
+							<td></td>
+							<td>中通快递73104696661116</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="tbbutton active">
+					<a href="###">关闭</a>
+					<a href="###">发货</a>
+				</div>				
+			</div>
+		
+			<div class="tabBoxArea">
+				<h4>订单详情</h4>
+				<ul class="tabBox">
+					<li><strong>订单名称:</strong><span>229091757887698311纯手工朱启英_BG特价双1000-1</span></li>
+					<li><strong>订单编号：</strong><span>ZS18100603029</span><strong> 已 支 付：</strong><span>0 元</span></li>
+					<li><strong>付款状态：</strong><span>未付款 </span><strong> 业务类型：</strong><span>不干胶</span></li>
+					<li><strong>金 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;额：</strong><span>9.4元 </span><strong> 下单日期：</strong><span>2018/10/6 11:15:24</span></li>
+					<li><span><strong>淘宝订单号：</strong>条幅50CM宽彩色条幅尺寸0.5*3m1条 打扣(每隔2米打一个扣) 缝吊耳(四角缝吊耳) 裁净边-条幅60CM宽红底条幅黄字尺寸0.6*3m1条 打扣(每隔2米打一个扣) 缝筒-条幅70CM宽红底条幅黄字尺寸0.7*3m1条 打扣(每隔2米打一个扣) 缝吊耳(四角缝吊耳) 裁净边</span></li>
+				</ul>
+				<p class="red">下单人承诺：所提供资料（含知识产权）真实、合法，由此引发的所有问题由下单人负责。此订单等同于印刷委托书</p>
+				<h4>产品详情</h4>
+				<table class="orderAderss">
+					<colgroup>
+						<col width="124">
+							<col width="210">
+								<col width="90">
+									<col width="90">
+										<col width="90">
+											<col width="98">
+												<col width="120">
+													<col width="132">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>产品编号</th>
+							<th>产品名称</th>
+							<th>产品规格</th>
+							<th>数量</th>
+							<th>款数</th>
+							<th>状态</th>
+							<th>出库时间</th>
+							<th>物流信息</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>ZS18100603029-1</td>
+							<td>229091757887698311纯手工朱启英_BG特价双1000-1</td>
+							<td>30*40</td>
+							<td>2000</td>
+							<td>3</td>
+							<td>已入库</td>
+							<td></td>
+							<td>中通快递73104696661116</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="tbbutton active"><a href="###">关闭</a><a href="###">发货</a></div>
+			</div>
+
+			<style>
+				.tablineDiv{width: 50%;height: auto;float: left;}
+			</style>
+
+			<ul class="tabBox">
+				<li>
+					<strong>订单名称:</strong><span>229091757887698311纯手工朱启英_BG特价双1000-1</span>
+				</li>
+				<li>
+					<div class="tablineDiv"><strong>订单编号：</strong><span>ZS18100603029</span></div>
+					<div class="tablineDiv"><strong>已 支  付：</strong><span>0 元</span></div>
+					<!--<strong>订单编号：</strong><span>ZS18100603029</span><strong>已 支  付：</strong><span>0 元</span>-->
+				</li>
+				<li>
+					<div class="tablineDiv"><strong>付款状态：</strong><span>未付款</span></div>
+					<div class="tablineDiv"><strong>业务类型：</strong><span>不干胶</span></div>
+					<!--<strong>付款状态：</strong><span>未付款</span><strong>业务类型：</strong><span>不干胶</span>-->
+				</li>
+				<li>
+					<div class="tablineDiv"><strong>金&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;额：</strong><span>9.4元</span></div>
+					<div class="tablineDiv"><strong>下单日期：</strong><span>2018/10/6 11:15:24</span></div>
+					<!--<strong>金 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;额：</strong><span>9.4元</span><strong>下单日期：</strong><span>2018/10/6 11:15:24</span>-->
+				</li>
+				<li>
+					<div class="tablineDiv"></div>
+					<div class="tablineDiv"></div>
+					<span><strong>淘宝订单号：</strong> 条幅50CM宽彩色条幅尺寸0.5*3m1条 打扣(每隔2米打一个扣) 缝吊耳(四角缝吊耳) 裁净边-条幅60CM宽红底条幅黄字尺寸0.6*3m1条 打扣(每隔2米打一个扣) 缝筒-条幅70CM宽红底条幅黄字尺寸0.7*3m1条 打扣(每隔2米打一个扣) 缝吊耳(四角缝吊耳) 裁净边</span>
+				</li>
+			</ul>
+			<p class="red">下单人承诺：所提供资料（含知识产权）真实、合法，由此引发的所有问题由下单人负责。此订单等同于印刷委托书</p>
+			<h4>产品详情</h4>
+			<table class="orderAderss">
+				<colgroup>
+					<col width="124">
+						<col width="210">
+							<col width="90">
+								<col width="90">
 									<col width="90">
 										<col width="98">
 											<col width="120">
 												<col width="132">
-						</colgroup>
-						<thead>
-							<tr>
-								<th>产品编号</th>
-								<th>产品名称</th>
-								<th>产品规格</th>
-								<th>状态</th>
-								<th>出库时间</th>
-								<th>物流信息</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>ZS18100603029-1</td>
-								<td>229091757887698311纯手工朱启英_BG特价双1000-1</td>
-								<td>30*40</td>
-								<td>已入库</td>
-								<td></td>
-								<td>中通快递73104696661116</td>
-							</tr>
-						</tbody>
-					</table>
-			       <div class="tbbutton active">
-			       	 <a href="###">关闭</a> 
-			       	  <a href="###">发货</a> 
-			       </div>
-			     
-				</div>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>产品编号</th>
+						<th>产品名称</th>
+						<th>产品规格</th>
+						<th>数量</th>
+						<th>款数</th>
+						<th>状态</th>
+						<th>出库时间</th>
+						<th>物流信息</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>ZS18100603029-1</td>
+						<td>229091757887698311纯手工朱启英_BG特价双1000-1</td>
+						<td>30*40</td>
+						<td>2000</td>
+						<td>3</td>
+						<td>已入库</td>
+						<td></td>
+						<td>中通快递73104696661116</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="tbbutton active">
+				<a href="###">关闭</a>
+				<a href="###">发货</a>
+			</div>
 
-		
-		
+		</div>
 
 		<!--底部-->
 		<div class="foot">
@@ -273,7 +417,7 @@
 					<dl>
 						<dt>官方微信（可供查单、报价）</dt>
 						<dd>
-							<img src="../img/weChat.png" width="90px" height="90px" alt="加载不出来" title="鼠标放上去"/>
+							<img src="../img/weChat.png" width="90px" height="90px" alt="加载不出来" title="鼠标放上去" />
 						</dd>
 
 					</dl>

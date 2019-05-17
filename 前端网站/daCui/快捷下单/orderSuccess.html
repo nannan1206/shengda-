@@ -155,7 +155,7 @@
 
 			</div>
 		</div>
-		<div class="peopleCenterArea">
+		<div class="commonCenterArea">
 			<!--购物车-->
 			<div class="carAreabody">
 				<div class="cartitle">
@@ -164,7 +164,7 @@
 				<!--订单提交成功-->
 				<div class="ordersussTIps">
 					<i class="iconfont">&#xe69e;</i><span>恭喜您，下单成功！</span>
-					<!--订单信息-->					
+					<!--订单信息-->
 					<div class="odetailmessage">
 						<span>订单名称：【通版】红包、不干胶</span><i class="iconfont" onclick="Show_Hidden(tr1)" title="点击展示订单完整信息">&#xe623;</i>
 						<div class="odMesshide" id="tr1" style="display: none;">
@@ -176,12 +176,19 @@
 							<p>订单名称：包、不干胶红包、不干胶红包、不干胶</p>
 
 						</div>
-
 						<!--点击跳转-->
 						<div class="ahreforder">
 							<span>您可以点击进入“<a target="_blank" href="../我的订单/orderSelect.html">我的订单</a>”进行点击查看订单进度</span>
-						</div>
+						</div>			
+						
 					</div>
+			    <i class="iconfont">&#xe609;</i><span>请选择支付方式</span><span class="payment">（实付金额：5元）</span>
+			       <div class="changButton">
+							<a target="_blank" href="OrderPayAlipay.html"></a>
+							<a target="_blank" href="OrderPayWechat.html"></a>
+						</div>
+				
+				
 				</div>
 
 			</div>
@@ -256,12 +263,13 @@
 	<script type="text/javascript" src="../js/common.js"></script>
 	<!--<script type="text/javascript" src="../js/polyfill.js" ></script>-->
 	<script type="text/javascript">
-						function Show_Hidden(trid) {
+		function Show_Hidden(trid) {
 							if (trid.style.display == "block") {
 								trid.style.display = 'none';
 							} else {
 								trid.style.display = 'block';
 							}
 						}
-					</script>
+	</script>
+
 </html>

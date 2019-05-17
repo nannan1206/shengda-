@@ -118,6 +118,27 @@
 
 								<el-button slot="reference">产品展示</a>
 							</el-popover>
+								<el-popover placement="bottom" title="" width="470" trigger="click">
+							<div class="prolist">
+								<div class="prolistTitle">
+									<a href="###">通版</a>
+								</div>
+								<a href="###">通版新品</a>								
+							</div>
+							<div class="prolist">
+								<div class="prolistTitle">
+									<a href="###">喷画</a>
+								</div>
+								<a href="###">旗帜</a>
+								<a href="###">喷绘</a>
+								<a href="###">户内写真</a>
+								<a href="###">户外精喷</a>
+								<a href="###">UV卷材写真</a>
+								<a href="###">展架</a>
+								<a href="###">展板</a>								
+							</div>
+							<el-button slot="reference">快捷下单</a>
+						</el-popover>
 
 							<el-popover placement="bottom" title="" width="470" trigger="click">
 								<div class="prolist">
@@ -155,43 +176,46 @@
 
 			</div>
 		</div>
-		<div class="peopleCenterArea">
+		<div class="commonCenterArea">
 			<!--购物车-->
 			<div class="carAreabody">
 				<div class="cartitle">
 					<h4>填写并确认订单信息</h4>
 				</div>
 				<!--收货人信息-->
-				<div class="peopleMessage">
+				<div class="publicModule">
 					<h5>收货人信息</h5>
 					<!--已有收货信息-->
-					<div class="haveMeaasge active" id="app" style="display: none;">
-						<ul>
-							<li>
-
-								<el-input size="small" class="nameinput" placeholder="联系人" v-model="input10" clearable></el-input>
-								<el-input size="small" placeholder="联系电话" v-model="input10" clearable></el-input>
-
-								<el-cascader :options="options" @active-item-change="handleItemChange" :props="props" size="small" class="addinput" placeholder="省市区"></el-cascader>
-
-								<el-input size="small" placeholder="详细地址" v-model="input10" class="addinput" clearable></el-input>
-
-							</li>
-
-							<li>
-								<span>如果您的收货地址不是以上地址，请选择 </span><span><input type="checkbox" checked />发快递 </span>
-							</li>
-							<li>
-
-								<el-select size="small" v-model="value" placeholder="请选择">
-									<el-option v-for="item in options1" :key="item.value" :label="item.label" :value="item.value">
-									</el-option>
-								</el-select>
-
-							</li>
-						</ul>
+					<div class="publicKeyModule active" id="app" >
+						<el-form :model="ruleForm" :rules="rules" ref="ruleForm" inline="true">
+								<div class="addreinputForm">
+									<div class="addreinput">
+										<el-form-item prop="name">
+											<el-input size="small" class="detailinput" placeholder="交货地址(可智能识别)" v-model="input10" class="detailinput" maxlength="200" clearable></el-input>
+										</el-form-item>
+										<el-form-item prop="nam1e">
+											<el-input size="small" class="nameinput" placeholder="联系人" v-model="input10" maxlength="20" clearable></el-input>
+										</el-form-item>
+										<el-form-item prop="nam2e">
+											<el-input size="small" placeholder="联系电话" v-model="input10" maxlength="50" clearable></el-input>
+										</el-form-item>
+										<el-form-item prop="nam3e">
+											<el-cascader :options="options" @active-item-change="handleItemChange" :props="props" size="small" class="addinput" placeholder="省市区"></el-cascader>
+										</el-form-item>
+									</div>
+									<div class="addresword">
+										<span>如果您的收货地址不是以上地址，请选择 </span><span><input type="checkbox" checked />发快递 </span>
+									</div>
+									<div>
+										<el-select size="small" v-model="value" placeholder="请选择">
+											<el-option v-for="item in options1" :key="item.value" :label="item.label" :value="item.value">
+											</el-option>
+										</el-select>
+									</div>
+								</div>
+							</el-form>
 					</div>
-					<div class="haveMeaasge">
+					<div class="publicKeyModule" style="display: none;">
 						<ul>
 							<li>
 								<div class="nameactive">
@@ -212,31 +236,34 @@
 					<h5>确认订单信息</h5>
 					<table class="cartable">
 						<colgroup>
-							<col width="400" />
-							<col width="290" />
+							<col width="300" />
+							<col width="390" />
 							<col width="150" />
 							<col width="150" />
 							<col width="150" />
 						</colgroup>
-						<tr>
+						<thead>
+							<tr>
 							<th>印品名称 </th>
 							<th> 规格 </th>
 							<th>单价 </th>
 							<th> 数量 </th>
 							<th> 商品金额</th>
 						</tr>
-						<tbody>							 
-							  
+						</thead>						
+						<tbody>
+
 							<tr>
 								<td>
 									<a href="###">
 										<img src="../img/pro-3.png" alt="产品图片" />
-									</a>									
-									<a href="###" class="proname">2019年成品主题台历双面印刷可记事</a>
+									</a>
+									<a href="###" class="proname">成品主题台历双面印刷</a>
 								</td>
 								<td>
 									<p>尺寸：33*33cm</p>
-									<p>材质：牛皮纸</p>
+									<p>材质： 红包专用纸（印金）-02
+									</p>
 									<p>材质：33*33cm</p>
 								</td>
 								<td>
@@ -247,8 +274,8 @@
 									<i>￥777777</i>
 								</td>
 
-							</tr> 
-							  
+							</tr>
+
 						</tbody>
 					</table>
 
@@ -366,7 +393,6 @@
 				},
 				methods: {
 					handleItemChange(val) {
-						
 						console.log('active item:', val);
 						setTimeout(_ => {
 							if (val.indexOf('江苏') > -1 && !this.options[0].cities.length) {

@@ -6,21 +6,21 @@
 .icon{width:30px;height: 30px;line-height: 30px;border-right:1px solid #e6e6e6;float: left;}
 .name input{width: 268px;height: 30px; font: 14px/30px "微软雅黑";padding:0 10px;}
 .remember .rebbutton{float: right;}
-.rebbutton:hover{color: #fdd000;}
-/*记住我*/.remember .el-checkbox__input.is-checked+.el-checkbox__label{color: #fdd000;border-color: #fdd000;}
-.remember .el-checkbox__input.is-checked .el-checkbox__inner,.remember .el-checkbox__input.is-indeterminate .el-checkbox__inner{background-color: #fdd000;border-color: #fdd000;}
-.remember .el-checkbox__input.is-focus .el-checkbox__inner,.remember .el-checkbox__inner:hover{border-color: #fdd000;}
+.rebbutton:hover{color: #ffc400;}
+/*记住我*/.remember .el-checkbox__input.is-checked+.el-checkbox__label{color: #ffc400;border-color: #ffc400;}
+.remember .el-checkbox__input.is-checked .el-checkbox__inner,.remember .el-checkbox__input.is-indeterminate .el-checkbox__inner{background-color: #ffc400;border-color: #ffc400;}
+.remember .el-checkbox__input.is-focus .el-checkbox__inner,.remember .el-checkbox__inner:hover{border-color: #ffc400;}
 .rebbutton{font: 14px/27px "微软雅黑";color: #999999;}
-.loginbutton{width:350px;height: 50px;margin: 10px auto;display: block;font:18px/50px "微软雅黑";color: #333333;text-align: center;background-color: #fdd000;border-radius: 4px;}
+.loginbutton{width:350px;height: 50px;margin: 10px auto;display: block;font:18px/50px "微软雅黑";color: #333333;text-align: center;background-color: #ffc400;border-radius: 4px;}
 .phonenum{width: 100%;height: auto;overflow: auto;}
 .phonenum .name{width:206px !important;margin-left: 0;float: left;}
 .phonenum .name input{width: 148px;}
-.phonenum .el-button--warning{width: 110px;height: 50px;margin:0 6px;background:#fdd000 ;border: 0;color: #000000;}
+.phonenum .el-button--warning{width: 110px;height: 50px;margin:0 6px;background:#ffc400 ;border: 0;color: #000000;}
 /*注册页面*/.registerBody{width: 1000px;height:650px;background-color: #FFFFFF;margin: 0 auto;}
-.titleArea{width: 100%;height:70px;background-color:#FDD000;text-align: center;font:24px/70px "微软雅黑";color: #333333;}
+.titleArea{width: 100%;height:70px;background-color:#ffc400;text-align: center;font:24px/70px "微软雅黑";color: #333333;}
 .reForm{width: 350px;height: auto;margin:30px auto;}
-.regbut{width: 110px;height: 50px;display: block;float: right;text-align: center;font: 14px/50px "微软雅黑";background:#fdd000 ;border: 0;color: #000000;border-radius: 4px;}
-.active{background:#CCCCCC ;}
+.regbut{width: 110px;height: 50px;display: block;float: right;text-align: center;font: 14px/50px "微软雅黑";background:#ffc400 ;border: 0;color: #000000;border-radius: 4px;}
+.active{background:#CCCCCC !important;}
 .rebbutton span{color: #FF5C33;}
 .addsp{float: right;margin-top: 18px;margin-right: -14px;color: #FF5C33;}
 /*重设密码*/.repassForm{width:870px;height: 450px;margin:50px auto;}
@@ -30,17 +30,18 @@
 .wordtips span{font: 12px/20px "微软雅黑";color:#ff5c33;}
 .wordtips i{float: left;margin:6px;color:#ff5c33;font-size: 12px;}
 .chengestyle{width: 556px;height: 60px;border: 1px solid #bbbbbb;margin:18px auto ;}
-.chengestyle a{float: right;margin:16px 46px;width: 100px;height: 30px;display: block;color:#000;background: #fdd000;border-radius: 3px;text-align: center;font: 14px/30px "微软雅黑";}
+.chengestyle a{float: right;margin:16px 46px;width: 100px;height: 30px;display: block;color:#000;background: #ffc400;border-radius: 3px;text-align: center;font: 14px/30px "微软雅黑";}
 .chengestyle span{float: left;margin:18px 30px 15px 34px;font: 16px/26px "微软雅黑";}
-/*第二步*/.rebuilForm{width: 450px;height:260px;margin:60px auto 0;}
+/*第二步*/.rebuilForm{width: 450px;height:260px;margin:60px 0 0 156px;}
 .personal,.loginForm{width: 100%;height: 40px;margin: 16px auto;font: 14px/40px "微软雅黑";}
 .personal label,.loginForm label{width: 100px;height: 40px;color: #666666;float: left;text-align: right;}
 .addimgCss{padding: 0 10px;}
 .addimgCss,.numimg{width:322px;height: 40px;line-height:38px;margin-left: 6px;border: 1px solid #DDDDDD;border-radius: 4px;float: left;}
+.addimgCss input{width:322px;height: 38px;line-height:38px;}
 .numimg{width: 214px;float: left;}
-.imgNum,.passButton{width: 124px;height: 40px;background:#fdd000;float:right;text-align: center;border-radius: 4px;cursor: pointer;}
-.numimg input{width:194px;height:39px;padding: 0 10px;border-radius: 4px;}
-.passButton{width: 350px;height: 50px;font: 18px/50px "微软雅黑";margin-top: 16px;}
+.imgNum,.passButton{width: 124px;height: 40px;background:#ffc400;float:right;text-align: center;border-radius: 4px;cursor: pointer;}
+.numimg input{width:194px;height:38px;padding: 0 10px;border-radius: 4px;}
+.passButton{width: 344px;height: 50px;font: 18px/50px "微软雅黑";margin-top: 16px;}
 /*邮箱验证*/.succemail{font: 14px/20px "微软雅黑";display:block;}
 .succemail i{float: left;margin: 0 10px 0 140px;color: #4CAE4C;}
 .succemail a{color:#ff5c33;text-decoration: underline;font-style: italic;}
@@ -51,3 +52,14 @@
 .passFinish a,.passFinish span{float:left;}
 .passFinish a{color:#ff5c33;margin:2px 3px;}
 .hideActive{ display:none;}
+/*绑定qq*/.bindingQQ{width: 100%;height:30px;}
+.bindingQQ a.pdl{float:left;width: auto;height: auto;}
+.bindingQQ span{float:left;margin: 0 4px;font: 12px/24px "微软雅黑";color: #666666;}
+.bindingQQ a.pdl b.QQ-icon{background-position: 0 0;}
+.bindingQQ a.pdl b.weixin-icon{background-position: -20px 0;}
+.bindingQQ a.pdl b{width: 19px;height: 18px;display: block;background: url(../img/QQ-weixin.png) no-repeat;margin: 4px auto;float: left;}
+.regist-link{float: right;}
+/*绑定qq页面*/.qqloginimg{width: 100%;height:auto;text-align: center;}
+.qqloginimg img{margin: 0 auto;width: 100px;height: 100px;border-radius: 50%;}
+.qqloginimg .qqnick{width: 100%;font: 12px/18px "微软雅黑";color: #6f7479;}
+.qqBinding .rebuilForm{margin:40px 0 0 156px;}
